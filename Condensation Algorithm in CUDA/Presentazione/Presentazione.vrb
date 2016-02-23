@@ -1,0 +1,27 @@
+\frametitle{Implementazione GPU}\framesubtitle {Kernel ricerca del massimo:}
+\begin{columns}
+\begin{column}{5cm}
+\vspace{0.5cm}
+\begin{itemize}
+\item<3-> I thread salvano i primi valori sulla shared
+\item<4-> Riduzione. \tiny( Ogni thread confronta sequenzialmente il valore appena salvato con il corrispettivo dopo $N_{\mbox{\tiny thread}}$)
+\item<5-> Confronto telescopico. \tiny( Solo metà dei thread del blocco lavorano, confrontano il loro valore con quello della seconda metà)
+\item<6-> Confronto \emph{atomico}.  \tiny(I primi thread di ogni blocco contengono il massimo relativo del blocco. Procedono a confronatre tale valore con quello precaricato uno per volta regolati da un \emph{lock}.)
+\end{itemize}
+\vspace{3cm}
+\end{column}
+\begin{column}{5cm}
+ \uncover<2>{\tiny (si supponga una griglia 1D composta da 2 blocchi di 2 thread agenti su una lista di 7 numeri)}
+\vspace{1cm}
+
+\begin{overprint}
+\includegraphics<2>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram00.pdf}
+\includegraphics<3>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram01.pdf}
+\includegraphics<4>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram02.pdf}
+\includegraphics<5>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram03.pdf}
+\includegraphics<6>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram04.pdf}
+\includegraphics<7>{/home/tony/CudaCorso/Presentazione/pics/MaxiDiagram05.pdf}
+\end{overprint}
+\vspace{3cm}
+\end{column}
+\end{columns}

@@ -1,0 +1,121 @@
+/*//---------------------------------------------------------------------------------------------------------
+|
+|  VERSIONE 4: UTILIZZO DI MEMORIA TEXTURE il kernel si aspetta che la colonna dei pivot sia precaricata in un array bindato texture
+|
+*///---------------------------------------------------------------------------------------------------------
+//Pensato per essere eseguito con griglia 2d di blocchi 1d
+//Scrive la matrice condensato nell'indirizzo B precedentemente allocato! quindi devo avere 2 copie della matrice!
+
+
+// 1D float texture
+texture <float> texRef;
+
+//Pensato per essere eseguito con griglia 2d di blocchi 1d
+//Scrive la matrice condensato nell'indirizzo B precedentemente allocato! quindi devo avere 2 copie della matrice!
+
+__global__ void stepCondensationSimple(float * B,float * A, int numBColumn,int numBRow) 
+{
+
+   //indice proprio del thread che gli dice dove si trova nel suo blocco
+   unsigned int cacheIndex = threadIdx.x;
+ 
+   //indice proprio del thread che gli dice su quale sito della matrice sta lavorando, visito ogni sito una sola volta!
+   unsigned int tid_i = blockDim.y * blockIdx.y ;
+   unsigned int tid_j = blockDim.x * blockIdx.x + threadIdx.x ;
+   const unsigned int incremento_verticale = blockDim.y*gridDim.y;
+   const unsigned int incremento_orizzontale = blockDim.x * gridDim.x;
+
+
+
+   //fase zero, voglio che ogni thread si copi nella shared // i valori della riga pivot da utilizzare  		
+   __shared__ float rigaPivot[THREAD_PER_BLOCK]; //__shared__ float rigaPivot[THREAD_PER_BLOCK];
+
+   // il valore dell'unica colonna pivot da utilizzare e' precaricaricato nella memoria texture quindi alloco una variabile local
+   float colonnaPivot;
+
+  while(tid_j<numBColumn){// per ogni macro colonna
+	rigaPivot[cacheIndex] = A[(numBColumn)*(numBColumn+1) + tid_j];	//copia la riga pivot nella cache, piu' precisamente ogni thread si copia nella shared il valore che lui stesso (solo lui) usera' piu' volte! per questo non serve sincare
+	//notare numBColum= numAcolum -1!
+
+	while(tid_i<numBRow){	//per ogni macro riga
+ 		colonnaPivot = tex1Dfetch ( texRef, tid_i );    //ogni thread nel blocco copiera' lo stesso elemento piu' volte, quindi uso texture!
+		B[tid_i*(numBColumn) + tid_j] = A[tid_i*(numBColumn+1) + tid_j] - rigaPivot[cacheIndex]*colonnaPivot;
+
+		tid_i += incremento_verticale;
+	}
+	//Una volta finito di scorrere in verticale passo alla seconda colonna
+	tid_i = blockDim.y * blockIdx.y ;
+  	tid_j+= incremento_orizzontale;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//---------------------------------------------------------------------------------------------------------
+| Step Condensazione
+| 
+http://cuda-programming.blogspot.it/2013/01/what-is-constant-memory-in-cuda.html
+	usiamo la memoria texture! vedi lez5
+
+
+*///---------------------------------------------------------------------------------------------------------
+
+
+// 1D float texture
+//texture <float> texRef;
+
+//Pensato per essere eseguito con griglia 2d di blocchi 1d
+//Scrive la matrice condensato nell'indirizzo B precedentemente allocato! quindi devo avere 2 copie della matrice!
+
+__global__ void stepCondensationSimple_old(float * B,float * A, int numBColumn,int numBRow) 
+{
+
+   //indice proprio del thread che gli dice dove si trova nel suo blocco
+   unsigned int cacheIndex = threadIdx.x;
+ 
+   //indice proprio del thread che gli dice su quale sito della matrice sta lavorando, visito ogni sito una sola volta!
+   unsigned int tid_i = blockDim.y * blockIdx.y ;
+   unsigned int tid_j = blockDim.x * blockIdx.x + threadIdx.x ;
+
+   //fase zero, voglio che ogni thread si copi nella shared // i valori della riga pivot da utilizzare  		
+   __shared__ float rigaPivot[THREAD_PER_BLOCK]; //__shared__ float rigaPivot[THREAD_PER_BLOCK];
+
+   // il valore dell'unica colonna pivot da utilizzare e' precaricaricato nella memoria texture quindi alloco una variabile local
+   float colonnaPivot;
+
+  while(tid_j<numBColumn){// per ogni macro colonna
+	rigaPivot[cacheIndex] = A[(numBColumn)*(numBColumn+1) + tid_j];	//copia la riga pivot nella cache, piu' precisamente ogni thread si copia nella shared il valore che lui stesso (solo lui) usera' piu' volte! per questo non serve sincare
+	//notare numBColum= numAcolum -1!
+
+	while(tid_i<numBRow){	//per ogni macro riga
+ 		colonnaPivot = tex1Dfetch ( texRef, tid_i );    //ogni thread nel blocco copiera' lo stesso elemento piu' volte, quindi uso texture!
+		B[tid_i*(numBColumn) + tid_j] = A[tid_i*(numBColumn+1) + tid_j] - rigaPivot[cacheIndex]*colonnaPivot;
+
+
+
+		tid_i+=blockDim.y*gridDim.y;
+	}
+	//Una volta finito di scorrere in verticale passo alla seconda colonna
+	tid_i = blockDim.y * blockIdx.y ;
+  	tid_j+= blockDim.x * gridDim.x;
+  }
+
+
+}
+
+

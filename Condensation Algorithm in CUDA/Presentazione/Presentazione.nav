@@ -1,0 +1,62 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {1}{Progetto iniziale}{2}{Progetto iniziale}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Concetti chiave:}}\headcommand {\beamer@subsectionpages {2}{1}}
+\headcommand {\slideentry {1}{1}{1}{2/5}{Concetti chiave:}{0}}
+\headcommand {\beamer@framepages {2}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Il codice}}\headcommand {\beamer@subsectionpages {2}{5}}
+\headcommand {\slideentry {1}{2}{1}{6/9}{Il codice}{0}}
+\headcommand {\beamer@framepages {6}{9}}
+\headcommand {\sectionentry {2}{Algoritmi di condensazione}{10}{Algoritmi di condensazione}{0}}
+\headcommand {\beamer@sectionpages {2}{9}}
+\headcommand {\beamer@subsectionpages {6}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{L'idea}}\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\slideentry {2}{1}{1}{10/11}{L'idea}{0}}
+\headcommand {\beamer@framepages {10}{11}}
+\headcommand {\slideentry {2}{1}{2}{12/16}{L'idea}{0}}
+\headcommand {\beamer@framepages {12}{16}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{17}{La formula di Salem-Said}}\headcommand {\beamer@subsectionpages {10}{16}}
+\headcommand {\slideentry {2}{2}{1}{17/21}{La formula di Salem-Said}{0}}
+\headcommand {\beamer@framepages {17}{21}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{22}{L'algoritmo modificato.}}\headcommand {\beamer@subsectionpages {17}{21}}
+\headcommand {\slideentry {2}{3}{1}{22/26}{L'algoritmo modificato.}{0}}
+\headcommand {\beamer@framepages {22}{26}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{27}{Vantaggi}}\headcommand {\beamer@subsectionpages {22}{26}}
+\headcommand {\slideentry {2}{4}{1}{27/30}{Vantaggi}{0}}
+\headcommand {\beamer@framepages {27}{30}}
+\headcommand {\sectionentry {3}{Implementazione CPU}{31}{Implementazione CPU}{0}}
+\headcommand {\beamer@sectionpages {10}{30}}
+\headcommand {\beamer@subsectionpages {27}{30}}
+\headcommand {\slideentry {3}{0}{2}{31/36}{}{0}}
+\headcommand {\beamer@framepages {31}{36}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{37}{analisi}}\headcommand {\beamer@subsectionpages {31}{36}}
+\headcommand {\slideentry {3}{1}{1}{37/51}{analisi}{0}}
+\headcommand {\beamer@framepages {37}{51}}
+\headcommand {\sectionentry {4}{Implementazione GPU}{52}{Implementazione GPU}{0}}
+\headcommand {\beamer@sectionpages {31}{51}}
+\headcommand {\beamer@subsectionpages {37}{51}}
+\headcommand {\slideentry {4}{0}{2}{52/56}{}{0}}
+\headcommand {\beamer@framepages {52}{56}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{57}{Kernel ricerca Pivot}}\headcommand {\beamer@subsectionpages {52}{56}}
+\headcommand {\slideentry {4}{1}{1}{57/63}{Kernel ricerca Pivot}{0}}
+\headcommand {\beamer@framepages {57}{63}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{64}{Kernel passo di condensazione}}\headcommand {\beamer@subsectionpages {57}{63}}
+\headcommand {\slideentry {4}{2}{1}{64/72}{Kernel passo di condensazione}{0}}
+\headcommand {\beamer@framepages {64}{72}}
+\headcommand {\slideentry {4}{2}{2}{73/77}{Kernel passo di condensazione}{0}}
+\headcommand {\beamer@framepages {73}{77}}
+\headcommand {\sectionentry {5}{Conclusioni}{78}{Conclusioni}{0}}
+\headcommand {\beamer@sectionpages {52}{77}}
+\headcommand {\beamer@subsectionpages {64}{77}}
+\headcommand {\slideentry {5}{0}{3}{78/78}{}{0}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\slideentry {5}{0}{4}{79/79}{}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\beamer@partpages {1}{79}}
+\headcommand {\beamer@subsectionpages {78}{79}}
+\headcommand {\beamer@sectionpages {78}{79}}
+\headcommand {\beamer@documentpages {79}}
+\headcommand {\def \inserttotalframenumber {16}}

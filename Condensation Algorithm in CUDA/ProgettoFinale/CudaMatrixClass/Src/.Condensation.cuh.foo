@@ -1,0 +1,367 @@
+//Metodi di condensazione vera e propria, restituiscono il vettore dei pivot
+bool matrice::Cpu_Condensation(float * pivot){
+  int ROW_0 =ROW;	//mi salvo un ricordo delle dimensioni iniziali della matrice
+  int COL_0 =COL;
+
+  int pivot_j;
+  bool flag;
+
+    for(int k=0 ; k<ROW_0-1 ; k++){
+//cout<<" Step "<<k<<" di"<<ROW-1<<endl;
+
+	
+	//1) trovo l'indice del pivot
+	flag = Cpu_Max_Pivoting (&pivot_j);
+//cout<<" Pivot A[ "<<COL-1<<" ]["<<pivot_j<<"] = "<<A_host[(ROW-1)*COL +pivot_j]<<endl;
+	if(flag){
+		pivot[k]= A_host[(ROW-1)*COL +pivot_j];
+	//2) divido l'ultima riga per il pivot
+		Cpu_Division(pivot_j);
+//cout<<" divido ultima riga per il pivot A "<<endl;	Cpu_print();
+	//3) swappo la colonna se indice non e' l'ultimo
+		if(pivot_j!=COL-1){
+			Cpu_Swap_Col(pivot_j, COL-1);
+			pivot[k]=-pivot[k];}
+//cout<<" swappo il pivot mettendolo alla fine"<<endl;	Cpu_print();
+
+
+	//4) Condenso
+		Cpu_Step_Condensation_Simple();
+//cout<<" Condenso"<< endl;	Cpu_print();
+
+	}
+
+	else if(!flag) {
+		cout<<" Matrice singolare"<<endl;
+		pivot[k]=0;
+		break;
+	}
+    }
+    pivot[ROW_0-1]=A_host[0];
+    COL =COL_0;
+    ROW =ROW_0;
+    N=COL*ROW;
+    sync_DeviceToHost();//Attenzione ricopio la copia storata sul device.. e se quella non esiste? dovrei fare un if con in caso una copia host
+
+
+return flag;
+}
+
+
+bool matrice::Gpu_Condensation(float * pivot){   //Ibrida, salvo la lista dei pivot sull'host e faccio fare a lui la produttoria! (in termini generali il determinante per matrici grandi converge rapidamente a 0 o all'infinito. c'e' grande rischio di overflow e underflow, quindi per trattarlo sarebbe necessario una struttura "numero grande"
+  int ROW_0 =ROW;	//mi salvo un ricordo delle dimensioni iniziali della matrice
+  int COL_0 =COL;
+
+  int pivot_j;
+  float pivot_value;
+  bool flag;
+
+    for(int k=0 ; k<ROW_0-1 ; k++){
+//cout<<" Step "<<k<<" di"<<ROW-1<<endl;
+
+	
+	//1) trovo l'indice del pivot (GPU)
+	flag = Gpu_Max_Pivoting_Speedy (&pivot_j, &pivot_value);
+	pivot[k]= pivot_value;
+//cout<<" Pivot A[ "<<COL-1<<" ]["<<pivot_j<<"] = "<<pivot[k]<<endl;
+	if(flag){
+		
+	//2) divido l'ultima riga per il pivot
+		Gpu_Division_Speedy(&pivot_value);
+//cout<<" divido ultima riga per il pivot A "<<endl;	Gpu_print();
+	//3) swappo la colonna se indice non e' l'ultimo
+		if(pivot_j!=COL-1){
+			Gpu_Swap_Col(pivot_j, COL-1);
+			pivot[k]=-pivot[k];}
+//cout<<" swappo il pivot mettendolo alla fine"<<endl;	Gpu_print();
+
+
+	//4) Condenso
+		Gpu_Step_Condensation_Simple();
+//cout<<" Condenso"<< endl;	Gpu_print();
+
+	}
+
+	else if(!flag) {
+		cout<<" Matrice singolare"<<endl;
+		pivot[k]=0;
+		break;
+	}
+    }
+
+    pivot[ROW_0-1]=Gpu_pick(0,0);
+
+    //Ricostruzione della matrice distrutta dalla condensazione
+    cudaFree( A_dev); //libero la memoria all'indirizzo dove si trova la matrice devastata (questo perche' ora e' molto piu' piccola!)
+    COL =COL_0;
+    ROW =ROW_0;
+    N=COL*ROW;
+    unsigned int ByteSize = N*sizeof(float);
+    //GpuByteCount +=	ByteSize;
+    cudaMalloc( (void **)&A_dev, ByteSize  );
+    sync_HostToDevice();//Attenzione ricopio la copia storata sul host.. e se quella non esiste? dovrei fare un if con in caso una copia host
+
+
+return flag;
+}
+
+bool matrice::Ibrid_Condensation(float * pivot){   //Ibrida, salvo la lista dei pivot sull'host e faccio fare a lui la produttoria! (in termini generali il determinante per matrici grandi converge rapidamente a 0 o all'infinito. c'e' grande rischio di overflow e underflow, quindi per trattarlo sarebbe necessario una struttura "numero grande"
+  int ROW_0 =ROW;	//mi salvo un ricordo delle dimensioni iniziali della matrice
+  int COL_0 =COL;
+
+  int pivot_j;
+  float pivot_value;
+  bool flag;
+
+    for(int k=0 ; k<ROW_0-1 ; k++){
+//cout<<" Step "<<k<<" di"<<ROW-1<<endl;
+
+	
+	//1) trovo l'indice del pivot (CPU)
+	flag = Cpu_Max_Pivoting_Speedy (&pivot_j, &pivot_value);
+	pivot[k]= pivot_value;
+//cout<<" Pivot A[ "<<COL-1<<" ]["<<pivot_j<<"] = "<<pivot[k]<<endl;
+	if(flag){
+		
+	//2) divido l'ultima riga per il pivot
+		Gpu_Division_Speedy(&pivot_value);
+//cout<<" divido ultima riga per il pivot A "<<endl;	Gpu_print();
+	//3) swappo la colonna se indice non e' l'ultimo
+		if(pivot_j!=COL-1){
+			Gpu_Swap_Col(pivot_j, COL-1);
+			pivot[k]=-pivot[k];}
+//cout<<" swappo il pivot mettendolo alla fine"<<endl;	Gpu_print();
+
+
+	//4) Condenso
+		Gpu_Step_Condensation_Simple();
+//cout<<" Condenso"<< endl;	Gpu_print();
+
+	}
+
+	else if(!flag) {
+		cout<<" Matrice singolare"<<endl;
+		pivot[k]=0;
+		break;
+	}
+    }
+
+    pivot[ROW_0-1]=Gpu_pick(0,0);
+
+    //Ricostruzione della matrice distrutta dalla condensazione
+    cudaFree( A_dev); //libero la memoria all'indirizzo dove si trova la matrice devastata (questo perche' ora e' molto piu' piccola!)
+    COL =COL_0;
+    ROW =ROW_0;
+    N=COL*ROW;
+    unsigned int ByteSize = N*sizeof(float);
+    //GpuByteCount +=	ByteSize;
+    cudaMalloc( (void **)&A_dev, ByteSize  );
+    sync_HostToDevice();//Attenzione ricopio la copia storata sul host.. e se quella non esiste? dovrei fare un if con in caso una copia host
+
+
+return flag;
+}
+
+
+bool matrice::Gpu_Condensation_Best(float * pivot){   //Ibrida, salvo la lista dei pivot sull'host e faccio fare a lui la produttoria! (in termini generali il determinante per matrici grandi converge rapidamente a 0 o all'infinito. c'e' grande rischio di overflow e underflow, quindi per trattarlo sarebbe necessario una struttura "numero grande"
+  int ROW_0 =ROW;	//mi salvo un ricordo delle dimensioni iniziali della matrice
+  int COL_0 =COL;
+
+  int pivot_j;
+  float pivot_value;
+  bool flag;
+
+    for(int k=0 ; k<ROW_0-1 ; k++){
+//cout<<" Step "<<k<<" di"<<ROW-1<<endl;
+
+	
+	//1) trovo l'indice del pivot (GPU)
+	flag = Gpu_Max_Pivoting_Speedy (&pivot_j, &pivot_value);
+	pivot[k]= pivot_value;
+cout<<" Pivot A[ "<<COL-1<<" ]["<<pivot_j<<"] = "<<pivot[k]<<endl;
+	if(flag){
+		
+	//2) divido l'ultima riga per il pivot
+		Gpu_Division_Speedy(&pivot_value);
+//cout<<" divido ultima riga per il pivot A "<<endl;	Gpu_print();
+	//3) swappo la colonna se indice non e' l'ultimo
+		if(pivot_j!=COL-1){
+			Gpu_Swap_Col(pivot_j, COL-1);
+			pivot[k]=-pivot[k];}
+//cout<<" swappo il pivot mettendolo alla fine"<<endl;	Gpu_print();
+
+
+	//4) Condenso
+		Gpu_Step_Condensation_Simple_Best();
+//cout<<" Condenso"<< endl;	Gpu_print();
+
+	}
+
+	else if(!flag) {
+		cout<<" Matrice singolare"<<endl;
+		pivot[k]=0;
+		break;
+	}
+    }
+
+    pivot[ROW_0-1]=Gpu_pick(0,0);
+
+    //Ricostruzione della matrice distrutta dalla condensazione
+    cudaFree( A_dev); //libero la memoria all'indirizzo dove si trova la matrice devastata (questo perche' ora e' molto piu' piccola!)
+    COL =COL_0;
+    ROW =ROW_0;
+    N=COL*ROW;
+    unsigned int ByteSize = N*sizeof(float);
+    //GpuByteCount +=	ByteSize;
+    cudaMalloc( (void **)&A_dev, ByteSize  );
+    sync_HostToDevice();//Attenzione ricopio la copia storata sul host.. e se quella non esiste? dovrei fare un if con in caso una copia host
+
+
+return flag;
+}
+
+bool matrice::Ibrid_Condensation_Best(float * pivot){   //Ibrida, salvo la lista dei pivot sull'host e faccio fare a lui la produttoria! (in termini generali il determinante per matrici grandi converge rapidamente a 0 o all'infinito. c'e' grande rischio di overflow e underflow, quindi per trattarlo sarebbe necessario una struttura "numero grande"
+  int ROW_0 =ROW;	//mi salvo un ricordo delle dimensioni iniziali della matrice
+  int COL_0 =COL;
+
+  int pivot_j;
+  float pivot_value;
+  bool flag;
+
+    for(int k=0 ; k<ROW_0-1 ; k++){
+//cout<<" Step "<<k<<" di"<<ROW-1<<endl;
+
+	
+	//1) trovo l'indice del pivot (CPU)
+	flag = Cpu_Max_Pivoting_Speedy (&pivot_j, &pivot_value);
+	pivot[k]= pivot_value;
+//cout<<" Pivot A[ "<<COL-1<<" ]["<<pivot_j<<"] = "<<pivot[k]<<endl;
+	if(flag){
+		
+	//2) divido l'ultima riga per il pivot
+		Gpu_Division_Speedy(&pivot_value);
+//cout<<" divido ultima riga per il pivot A "<<endl;	Gpu_print();
+	//3) swappo la colonna se indice non e' l'ultimo
+		if(pivot_j!=COL-1){
+			Gpu_Swap_Col(pivot_j, COL-1);
+			pivot[k]=-pivot[k];}
+//cout<<" swappo il pivot mettendolo alla fine"<<endl;	Gpu_print();
+
+
+	//4) Condenso
+		Gpu_Step_Condensation_Simple_Best();
+//cout<<" Condenso"<< endl;	Gpu_print();
+
+	}
+
+	else if(!flag) {
+		cout<<" Matrice singolare"<<endl;
+		pivot[k]=0;
+		break;
+	}
+    }
+
+    pivot[ROW_0-1]=Gpu_pick(0,0);
+
+    //Ricostruzione della matrice distrutta dalla condensazione
+    cudaFree( A_dev); //libero la memoria all'indirizzo dove si trova la matrice devastata (questo perche' ora e' molto piu' piccola!)
+    COL =COL_0;
+    ROW =ROW_0;
+    N=COL*ROW;
+    unsigned int ByteSize = N*sizeof(float);
+    //GpuByteCount +=	ByteSize;
+    cudaMalloc( (void **)&A_dev, ByteSize  );
+    sync_HostToDevice();//Attenzione ricopio la copia storata sul host.. e se quella non esiste? dovrei fare un if con in caso una copia host
+
+
+return flag;
+}
+
+
+
+
+
+//Metodi che infine calcolano la produttoria
+float matrice::Cpu_Determinant_Condensation(){
+  float determinant; 
+  if(flagSquare){ //la condensazione in teoria funzionerebbe anche per matrici non quadrate...
+	float pivot[ROW];
+	Cpu_Condensation(pivot);
+	determinant=pivot[0];
+	//for(int k=0 ; k<ROW ; k++)cout<<pivot[k]<<endl;
+	for(int k=1 ; k<ROW ; k++)determinant*=pivot[k];
+
+
+  }
+  else cout<<"errore! determinante solo per matrici quadrate!"<<endl;
+return determinant;
+}
+
+
+float matrice::Gpu_Determinant_Condensation(){
+  float determinant; 
+  if(flagSquare){ //la condensazione in teoria funzionerebbe anche per matrici non quadrate...
+	float pivot[ROW];//conviene inizializzarli a zero! cosi' se il pivot trova uno zero breakka tutto  e chiude velocemente la routine!
+	Gpu_Condensation(pivot);
+	determinant=pivot[0];
+	//for(int k=0 ; k<ROW ; k++)cout<<pivot[k]<<endl;
+	for(int k=1 ; k<ROW ; k++)determinant*=pivot[k];
+
+
+  }
+  else cout<<"errore! determinante solo per matrici quadrate!"<<endl;
+return determinant;
+}
+
+
+
+
+
+float matrice::Gpu_Determinant_Condensation_Best(){
+  float determinant; 
+  if(flagSquare){ //la condensazione in teoria funzionerebbe anche per matrici non quadrate...
+	float pivot[ROW];//conviene inizializzarli a zero! cosi' se il pivot trova uno zero breakka tutto  e chiude velocemente la routine!
+	Gpu_Condensation_Best(pivot);
+	determinant=pivot[0];
+	//for(int k=0 ; k<ROW ; k++)cout<<pivot[k]<<endl;
+	for(int k=1 ; k<ROW ; k++)determinant*=pivot[k];
+
+
+  }
+  else cout<<"errore! determinante solo per matrici quadrate!"<<endl;
+return determinant;
+}
+
+float matrice::Ibrid_Determinant_Condensation(){
+  float determinant; 
+  if(flagSquare){ //la condensazione in teoria funzionerebbe anche per matrici non quadrate...
+	float pivot[ROW];//conviene inizializzarli a zero! cosi' se il pivot trova uno zero breakka tutto  e chiude velocemente la routine!
+	Ibrid_Condensation(pivot);
+	determinant=pivot[0];
+	//for(int k=0 ; k<ROW ; k++)cout<<pivot[k]<<endl;
+	for(int k=1 ; k<ROW ; k++)determinant*=pivot[k];
+
+
+  }
+  else cout<<"errore! determinante solo per matrici quadrate!"<<endl;
+return determinant;
+}
+
+
+
+
+
+float matrice::Ibrid_Determinant_Condensation_Best(){
+  float determinant; 
+  if(flagSquare){ //la condensazione in teoria funzionerebbe anche per matrici non quadrate...
+	float pivot[ROW];//conviene inizializzarli a zero! cosi' se il pivot trova uno zero breakka tutto  e chiude velocemente la routine!
+	Ibrid_Condensation_Best(pivot);
+	determinant=pivot[0];
+	//for(int k=0 ; k<ROW ; k++)cout<<pivot[k]<<endl;
+	for(int k=1 ; k<ROW ; k++)determinant*=pivot[k];
+
+
+  }
+  else cout<<"errore! determinante solo per matrici quadrate!"<<endl;
+return determinant;
+}
