@@ -1,0 +1,2 @@
+Error: estimation of statistical error, 
+It lacks the division by the square root of the number of the sample.
