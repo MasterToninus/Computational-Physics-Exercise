@@ -1,0 +1,26 @@
+#!/bin/bash 
+MAX=999
+echo "clear" > plot.gpi
+echo "reset" >> plot.gpi
+
+echo "set key center top">> plot.gpi
+echo "set size ratio -1">> plot.gpi
+echo "unset key">> plot.gpi
+echo "set terminal gif animate delay 1" >> plot.gpi
+echo "set output \"animate.gif\"" >> plot.gpi
+
+# echo "unset border ; unset xtics ; unset ytics ; unset ztics " >> plot.gpi
+
+
+	echo " L=1" >> plot.gpi
+	echo "set xrange [ 0 : L ] noreverse nowriteback" >> plot.gpi
+	echo "set yrange [ 0 : L ] noreverse nowriteback" >> plot.gpi
+
+
+for i in `seq 0 ${MAX}`
+do
+echo "set title \"step : ${i}\" " \
+>> plot.gpi
+echo "plot 'prova.dat' index ${i} u 1:2:3 w circles lt 1 lc -1,'prova.dat' index ${i} using 1:2:4:5 with vectors head filled lt 1" \
+>> plot.gpi
+done

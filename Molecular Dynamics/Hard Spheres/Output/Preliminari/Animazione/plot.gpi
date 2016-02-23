@@ -1,0 +1,2010 @@
+clear
+reset
+set key center top
+set size ratio -1
+unset key
+set terminal gif animate delay 1
+set output "animate.gif"
+ L=1
+set xrange [ 0 : L ] noreverse nowriteback
+set yrange [ 0 : L ] noreverse nowriteback
+set title "step : 0" 
+plot 'prova.dat' index 0 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 0 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 1" 
+plot 'prova.dat' index 1 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 1 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 2" 
+plot 'prova.dat' index 2 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 2 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 3" 
+plot 'prova.dat' index 3 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 3 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 4" 
+plot 'prova.dat' index 4 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 4 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 5" 
+plot 'prova.dat' index 5 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 5 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 6" 
+plot 'prova.dat' index 6 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 6 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 7" 
+plot 'prova.dat' index 7 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 7 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 8" 
+plot 'prova.dat' index 8 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 8 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 9" 
+plot 'prova.dat' index 9 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 9 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 10" 
+plot 'prova.dat' index 10 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 10 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 11" 
+plot 'prova.dat' index 11 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 11 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 12" 
+plot 'prova.dat' index 12 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 12 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 13" 
+plot 'prova.dat' index 13 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 13 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 14" 
+plot 'prova.dat' index 14 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 14 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 15" 
+plot 'prova.dat' index 15 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 15 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 16" 
+plot 'prova.dat' index 16 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 16 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 17" 
+plot 'prova.dat' index 17 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 17 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 18" 
+plot 'prova.dat' index 18 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 18 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 19" 
+plot 'prova.dat' index 19 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 19 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 20" 
+plot 'prova.dat' index 20 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 20 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 21" 
+plot 'prova.dat' index 21 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 21 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 22" 
+plot 'prova.dat' index 22 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 22 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 23" 
+plot 'prova.dat' index 23 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 23 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 24" 
+plot 'prova.dat' index 24 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 24 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 25" 
+plot 'prova.dat' index 25 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 25 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 26" 
+plot 'prova.dat' index 26 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 26 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 27" 
+plot 'prova.dat' index 27 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 27 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 28" 
+plot 'prova.dat' index 28 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 28 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 29" 
+plot 'prova.dat' index 29 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 29 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 30" 
+plot 'prova.dat' index 30 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 30 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 31" 
+plot 'prova.dat' index 31 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 31 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 32" 
+plot 'prova.dat' index 32 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 32 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 33" 
+plot 'prova.dat' index 33 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 33 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 34" 
+plot 'prova.dat' index 34 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 34 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 35" 
+plot 'prova.dat' index 35 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 35 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 36" 
+plot 'prova.dat' index 36 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 36 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 37" 
+plot 'prova.dat' index 37 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 37 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 38" 
+plot 'prova.dat' index 38 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 38 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 39" 
+plot 'prova.dat' index 39 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 39 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 40" 
+plot 'prova.dat' index 40 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 40 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 41" 
+plot 'prova.dat' index 41 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 41 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 42" 
+plot 'prova.dat' index 42 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 42 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 43" 
+plot 'prova.dat' index 43 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 43 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 44" 
+plot 'prova.dat' index 44 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 44 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 45" 
+plot 'prova.dat' index 45 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 45 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 46" 
+plot 'prova.dat' index 46 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 46 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 47" 
+plot 'prova.dat' index 47 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 47 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 48" 
+plot 'prova.dat' index 48 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 48 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 49" 
+plot 'prova.dat' index 49 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 49 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 50" 
+plot 'prova.dat' index 50 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 50 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 51" 
+plot 'prova.dat' index 51 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 51 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 52" 
+plot 'prova.dat' index 52 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 52 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 53" 
+plot 'prova.dat' index 53 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 53 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 54" 
+plot 'prova.dat' index 54 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 54 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 55" 
+plot 'prova.dat' index 55 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 55 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 56" 
+plot 'prova.dat' index 56 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 56 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 57" 
+plot 'prova.dat' index 57 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 57 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 58" 
+plot 'prova.dat' index 58 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 58 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 59" 
+plot 'prova.dat' index 59 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 59 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 60" 
+plot 'prova.dat' index 60 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 60 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 61" 
+plot 'prova.dat' index 61 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 61 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 62" 
+plot 'prova.dat' index 62 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 62 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 63" 
+plot 'prova.dat' index 63 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 63 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 64" 
+plot 'prova.dat' index 64 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 64 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 65" 
+plot 'prova.dat' index 65 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 65 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 66" 
+plot 'prova.dat' index 66 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 66 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 67" 
+plot 'prova.dat' index 67 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 67 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 68" 
+plot 'prova.dat' index 68 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 68 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 69" 
+plot 'prova.dat' index 69 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 69 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 70" 
+plot 'prova.dat' index 70 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 70 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 71" 
+plot 'prova.dat' index 71 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 71 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 72" 
+plot 'prova.dat' index 72 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 72 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 73" 
+plot 'prova.dat' index 73 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 73 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 74" 
+plot 'prova.dat' index 74 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 74 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 75" 
+plot 'prova.dat' index 75 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 75 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 76" 
+plot 'prova.dat' index 76 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 76 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 77" 
+plot 'prova.dat' index 77 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 77 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 78" 
+plot 'prova.dat' index 78 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 78 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 79" 
+plot 'prova.dat' index 79 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 79 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 80" 
+plot 'prova.dat' index 80 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 80 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 81" 
+plot 'prova.dat' index 81 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 81 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 82" 
+plot 'prova.dat' index 82 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 82 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 83" 
+plot 'prova.dat' index 83 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 83 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 84" 
+plot 'prova.dat' index 84 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 84 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 85" 
+plot 'prova.dat' index 85 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 85 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 86" 
+plot 'prova.dat' index 86 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 86 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 87" 
+plot 'prova.dat' index 87 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 87 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 88" 
+plot 'prova.dat' index 88 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 88 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 89" 
+plot 'prova.dat' index 89 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 89 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 90" 
+plot 'prova.dat' index 90 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 90 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 91" 
+plot 'prova.dat' index 91 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 91 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 92" 
+plot 'prova.dat' index 92 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 92 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 93" 
+plot 'prova.dat' index 93 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 93 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 94" 
+plot 'prova.dat' index 94 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 94 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 95" 
+plot 'prova.dat' index 95 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 95 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 96" 
+plot 'prova.dat' index 96 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 96 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 97" 
+plot 'prova.dat' index 97 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 97 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 98" 
+plot 'prova.dat' index 98 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 98 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 99" 
+plot 'prova.dat' index 99 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 99 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 100" 
+plot 'prova.dat' index 100 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 100 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 101" 
+plot 'prova.dat' index 101 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 101 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 102" 
+plot 'prova.dat' index 102 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 102 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 103" 
+plot 'prova.dat' index 103 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 103 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 104" 
+plot 'prova.dat' index 104 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 104 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 105" 
+plot 'prova.dat' index 105 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 105 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 106" 
+plot 'prova.dat' index 106 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 106 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 107" 
+plot 'prova.dat' index 107 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 107 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 108" 
+plot 'prova.dat' index 108 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 108 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 109" 
+plot 'prova.dat' index 109 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 109 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 110" 
+plot 'prova.dat' index 110 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 110 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 111" 
+plot 'prova.dat' index 111 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 111 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 112" 
+plot 'prova.dat' index 112 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 112 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 113" 
+plot 'prova.dat' index 113 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 113 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 114" 
+plot 'prova.dat' index 114 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 114 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 115" 
+plot 'prova.dat' index 115 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 115 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 116" 
+plot 'prova.dat' index 116 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 116 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 117" 
+plot 'prova.dat' index 117 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 117 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 118" 
+plot 'prova.dat' index 118 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 118 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 119" 
+plot 'prova.dat' index 119 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 119 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 120" 
+plot 'prova.dat' index 120 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 120 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 121" 
+plot 'prova.dat' index 121 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 121 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 122" 
+plot 'prova.dat' index 122 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 122 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 123" 
+plot 'prova.dat' index 123 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 123 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 124" 
+plot 'prova.dat' index 124 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 124 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 125" 
+plot 'prova.dat' index 125 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 125 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 126" 
+plot 'prova.dat' index 126 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 126 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 127" 
+plot 'prova.dat' index 127 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 127 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 128" 
+plot 'prova.dat' index 128 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 128 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 129" 
+plot 'prova.dat' index 129 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 129 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 130" 
+plot 'prova.dat' index 130 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 130 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 131" 
+plot 'prova.dat' index 131 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 131 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 132" 
+plot 'prova.dat' index 132 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 132 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 133" 
+plot 'prova.dat' index 133 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 133 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 134" 
+plot 'prova.dat' index 134 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 134 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 135" 
+plot 'prova.dat' index 135 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 135 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 136" 
+plot 'prova.dat' index 136 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 136 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 137" 
+plot 'prova.dat' index 137 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 137 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 138" 
+plot 'prova.dat' index 138 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 138 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 139" 
+plot 'prova.dat' index 139 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 139 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 140" 
+plot 'prova.dat' index 140 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 140 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 141" 
+plot 'prova.dat' index 141 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 141 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 142" 
+plot 'prova.dat' index 142 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 142 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 143" 
+plot 'prova.dat' index 143 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 143 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 144" 
+plot 'prova.dat' index 144 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 144 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 145" 
+plot 'prova.dat' index 145 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 145 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 146" 
+plot 'prova.dat' index 146 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 146 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 147" 
+plot 'prova.dat' index 147 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 147 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 148" 
+plot 'prova.dat' index 148 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 148 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 149" 
+plot 'prova.dat' index 149 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 149 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 150" 
+plot 'prova.dat' index 150 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 150 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 151" 
+plot 'prova.dat' index 151 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 151 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 152" 
+plot 'prova.dat' index 152 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 152 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 153" 
+plot 'prova.dat' index 153 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 153 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 154" 
+plot 'prova.dat' index 154 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 154 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 155" 
+plot 'prova.dat' index 155 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 155 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 156" 
+plot 'prova.dat' index 156 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 156 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 157" 
+plot 'prova.dat' index 157 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 157 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 158" 
+plot 'prova.dat' index 158 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 158 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 159" 
+plot 'prova.dat' index 159 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 159 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 160" 
+plot 'prova.dat' index 160 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 160 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 161" 
+plot 'prova.dat' index 161 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 161 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 162" 
+plot 'prova.dat' index 162 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 162 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 163" 
+plot 'prova.dat' index 163 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 163 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 164" 
+plot 'prova.dat' index 164 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 164 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 165" 
+plot 'prova.dat' index 165 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 165 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 166" 
+plot 'prova.dat' index 166 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 166 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 167" 
+plot 'prova.dat' index 167 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 167 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 168" 
+plot 'prova.dat' index 168 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 168 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 169" 
+plot 'prova.dat' index 169 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 169 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 170" 
+plot 'prova.dat' index 170 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 170 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 171" 
+plot 'prova.dat' index 171 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 171 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 172" 
+plot 'prova.dat' index 172 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 172 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 173" 
+plot 'prova.dat' index 173 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 173 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 174" 
+plot 'prova.dat' index 174 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 174 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 175" 
+plot 'prova.dat' index 175 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 175 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 176" 
+plot 'prova.dat' index 176 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 176 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 177" 
+plot 'prova.dat' index 177 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 177 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 178" 
+plot 'prova.dat' index 178 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 178 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 179" 
+plot 'prova.dat' index 179 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 179 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 180" 
+plot 'prova.dat' index 180 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 180 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 181" 
+plot 'prova.dat' index 181 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 181 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 182" 
+plot 'prova.dat' index 182 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 182 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 183" 
+plot 'prova.dat' index 183 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 183 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 184" 
+plot 'prova.dat' index 184 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 184 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 185" 
+plot 'prova.dat' index 185 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 185 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 186" 
+plot 'prova.dat' index 186 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 186 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 187" 
+plot 'prova.dat' index 187 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 187 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 188" 
+plot 'prova.dat' index 188 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 188 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 189" 
+plot 'prova.dat' index 189 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 189 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 190" 
+plot 'prova.dat' index 190 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 190 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 191" 
+plot 'prova.dat' index 191 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 191 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 192" 
+plot 'prova.dat' index 192 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 192 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 193" 
+plot 'prova.dat' index 193 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 193 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 194" 
+plot 'prova.dat' index 194 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 194 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 195" 
+plot 'prova.dat' index 195 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 195 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 196" 
+plot 'prova.dat' index 196 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 196 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 197" 
+plot 'prova.dat' index 197 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 197 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 198" 
+plot 'prova.dat' index 198 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 198 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 199" 
+plot 'prova.dat' index 199 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 199 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 200" 
+plot 'prova.dat' index 200 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 200 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 201" 
+plot 'prova.dat' index 201 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 201 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 202" 
+plot 'prova.dat' index 202 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 202 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 203" 
+plot 'prova.dat' index 203 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 203 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 204" 
+plot 'prova.dat' index 204 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 204 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 205" 
+plot 'prova.dat' index 205 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 205 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 206" 
+plot 'prova.dat' index 206 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 206 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 207" 
+plot 'prova.dat' index 207 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 207 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 208" 
+plot 'prova.dat' index 208 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 208 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 209" 
+plot 'prova.dat' index 209 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 209 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 210" 
+plot 'prova.dat' index 210 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 210 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 211" 
+plot 'prova.dat' index 211 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 211 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 212" 
+plot 'prova.dat' index 212 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 212 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 213" 
+plot 'prova.dat' index 213 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 213 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 214" 
+plot 'prova.dat' index 214 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 214 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 215" 
+plot 'prova.dat' index 215 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 215 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 216" 
+plot 'prova.dat' index 216 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 216 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 217" 
+plot 'prova.dat' index 217 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 217 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 218" 
+plot 'prova.dat' index 218 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 218 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 219" 
+plot 'prova.dat' index 219 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 219 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 220" 
+plot 'prova.dat' index 220 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 220 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 221" 
+plot 'prova.dat' index 221 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 221 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 222" 
+plot 'prova.dat' index 222 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 222 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 223" 
+plot 'prova.dat' index 223 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 223 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 224" 
+plot 'prova.dat' index 224 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 224 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 225" 
+plot 'prova.dat' index 225 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 225 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 226" 
+plot 'prova.dat' index 226 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 226 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 227" 
+plot 'prova.dat' index 227 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 227 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 228" 
+plot 'prova.dat' index 228 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 228 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 229" 
+plot 'prova.dat' index 229 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 229 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 230" 
+plot 'prova.dat' index 230 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 230 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 231" 
+plot 'prova.dat' index 231 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 231 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 232" 
+plot 'prova.dat' index 232 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 232 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 233" 
+plot 'prova.dat' index 233 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 233 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 234" 
+plot 'prova.dat' index 234 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 234 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 235" 
+plot 'prova.dat' index 235 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 235 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 236" 
+plot 'prova.dat' index 236 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 236 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 237" 
+plot 'prova.dat' index 237 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 237 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 238" 
+plot 'prova.dat' index 238 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 238 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 239" 
+plot 'prova.dat' index 239 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 239 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 240" 
+plot 'prova.dat' index 240 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 240 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 241" 
+plot 'prova.dat' index 241 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 241 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 242" 
+plot 'prova.dat' index 242 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 242 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 243" 
+plot 'prova.dat' index 243 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 243 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 244" 
+plot 'prova.dat' index 244 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 244 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 245" 
+plot 'prova.dat' index 245 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 245 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 246" 
+plot 'prova.dat' index 246 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 246 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 247" 
+plot 'prova.dat' index 247 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 247 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 248" 
+plot 'prova.dat' index 248 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 248 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 249" 
+plot 'prova.dat' index 249 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 249 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 250" 
+plot 'prova.dat' index 250 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 250 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 251" 
+plot 'prova.dat' index 251 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 251 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 252" 
+plot 'prova.dat' index 252 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 252 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 253" 
+plot 'prova.dat' index 253 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 253 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 254" 
+plot 'prova.dat' index 254 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 254 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 255" 
+plot 'prova.dat' index 255 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 255 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 256" 
+plot 'prova.dat' index 256 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 256 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 257" 
+plot 'prova.dat' index 257 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 257 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 258" 
+plot 'prova.dat' index 258 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 258 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 259" 
+plot 'prova.dat' index 259 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 259 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 260" 
+plot 'prova.dat' index 260 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 260 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 261" 
+plot 'prova.dat' index 261 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 261 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 262" 
+plot 'prova.dat' index 262 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 262 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 263" 
+plot 'prova.dat' index 263 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 263 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 264" 
+plot 'prova.dat' index 264 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 264 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 265" 
+plot 'prova.dat' index 265 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 265 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 266" 
+plot 'prova.dat' index 266 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 266 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 267" 
+plot 'prova.dat' index 267 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 267 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 268" 
+plot 'prova.dat' index 268 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 268 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 269" 
+plot 'prova.dat' index 269 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 269 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 270" 
+plot 'prova.dat' index 270 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 270 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 271" 
+plot 'prova.dat' index 271 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 271 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 272" 
+plot 'prova.dat' index 272 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 272 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 273" 
+plot 'prova.dat' index 273 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 273 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 274" 
+plot 'prova.dat' index 274 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 274 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 275" 
+plot 'prova.dat' index 275 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 275 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 276" 
+plot 'prova.dat' index 276 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 276 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 277" 
+plot 'prova.dat' index 277 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 277 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 278" 
+plot 'prova.dat' index 278 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 278 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 279" 
+plot 'prova.dat' index 279 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 279 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 280" 
+plot 'prova.dat' index 280 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 280 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 281" 
+plot 'prova.dat' index 281 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 281 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 282" 
+plot 'prova.dat' index 282 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 282 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 283" 
+plot 'prova.dat' index 283 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 283 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 284" 
+plot 'prova.dat' index 284 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 284 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 285" 
+plot 'prova.dat' index 285 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 285 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 286" 
+plot 'prova.dat' index 286 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 286 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 287" 
+plot 'prova.dat' index 287 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 287 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 288" 
+plot 'prova.dat' index 288 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 288 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 289" 
+plot 'prova.dat' index 289 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 289 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 290" 
+plot 'prova.dat' index 290 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 290 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 291" 
+plot 'prova.dat' index 291 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 291 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 292" 
+plot 'prova.dat' index 292 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 292 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 293" 
+plot 'prova.dat' index 293 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 293 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 294" 
+plot 'prova.dat' index 294 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 294 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 295" 
+plot 'prova.dat' index 295 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 295 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 296" 
+plot 'prova.dat' index 296 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 296 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 297" 
+plot 'prova.dat' index 297 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 297 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 298" 
+plot 'prova.dat' index 298 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 298 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 299" 
+plot 'prova.dat' index 299 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 299 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 300" 
+plot 'prova.dat' index 300 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 300 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 301" 
+plot 'prova.dat' index 301 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 301 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 302" 
+plot 'prova.dat' index 302 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 302 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 303" 
+plot 'prova.dat' index 303 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 303 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 304" 
+plot 'prova.dat' index 304 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 304 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 305" 
+plot 'prova.dat' index 305 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 305 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 306" 
+plot 'prova.dat' index 306 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 306 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 307" 
+plot 'prova.dat' index 307 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 307 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 308" 
+plot 'prova.dat' index 308 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 308 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 309" 
+plot 'prova.dat' index 309 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 309 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 310" 
+plot 'prova.dat' index 310 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 310 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 311" 
+plot 'prova.dat' index 311 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 311 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 312" 
+plot 'prova.dat' index 312 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 312 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 313" 
+plot 'prova.dat' index 313 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 313 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 314" 
+plot 'prova.dat' index 314 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 314 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 315" 
+plot 'prova.dat' index 315 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 315 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 316" 
+plot 'prova.dat' index 316 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 316 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 317" 
+plot 'prova.dat' index 317 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 317 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 318" 
+plot 'prova.dat' index 318 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 318 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 319" 
+plot 'prova.dat' index 319 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 319 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 320" 
+plot 'prova.dat' index 320 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 320 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 321" 
+plot 'prova.dat' index 321 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 321 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 322" 
+plot 'prova.dat' index 322 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 322 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 323" 
+plot 'prova.dat' index 323 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 323 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 324" 
+plot 'prova.dat' index 324 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 324 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 325" 
+plot 'prova.dat' index 325 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 325 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 326" 
+plot 'prova.dat' index 326 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 326 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 327" 
+plot 'prova.dat' index 327 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 327 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 328" 
+plot 'prova.dat' index 328 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 328 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 329" 
+plot 'prova.dat' index 329 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 329 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 330" 
+plot 'prova.dat' index 330 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 330 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 331" 
+plot 'prova.dat' index 331 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 331 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 332" 
+plot 'prova.dat' index 332 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 332 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 333" 
+plot 'prova.dat' index 333 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 333 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 334" 
+plot 'prova.dat' index 334 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 334 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 335" 
+plot 'prova.dat' index 335 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 335 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 336" 
+plot 'prova.dat' index 336 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 336 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 337" 
+plot 'prova.dat' index 337 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 337 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 338" 
+plot 'prova.dat' index 338 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 338 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 339" 
+plot 'prova.dat' index 339 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 339 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 340" 
+plot 'prova.dat' index 340 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 340 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 341" 
+plot 'prova.dat' index 341 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 341 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 342" 
+plot 'prova.dat' index 342 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 342 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 343" 
+plot 'prova.dat' index 343 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 343 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 344" 
+plot 'prova.dat' index 344 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 344 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 345" 
+plot 'prova.dat' index 345 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 345 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 346" 
+plot 'prova.dat' index 346 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 346 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 347" 
+plot 'prova.dat' index 347 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 347 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 348" 
+plot 'prova.dat' index 348 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 348 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 349" 
+plot 'prova.dat' index 349 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 349 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 350" 
+plot 'prova.dat' index 350 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 350 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 351" 
+plot 'prova.dat' index 351 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 351 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 352" 
+plot 'prova.dat' index 352 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 352 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 353" 
+plot 'prova.dat' index 353 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 353 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 354" 
+plot 'prova.dat' index 354 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 354 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 355" 
+plot 'prova.dat' index 355 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 355 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 356" 
+plot 'prova.dat' index 356 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 356 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 357" 
+plot 'prova.dat' index 357 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 357 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 358" 
+plot 'prova.dat' index 358 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 358 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 359" 
+plot 'prova.dat' index 359 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 359 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 360" 
+plot 'prova.dat' index 360 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 360 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 361" 
+plot 'prova.dat' index 361 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 361 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 362" 
+plot 'prova.dat' index 362 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 362 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 363" 
+plot 'prova.dat' index 363 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 363 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 364" 
+plot 'prova.dat' index 364 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 364 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 365" 
+plot 'prova.dat' index 365 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 365 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 366" 
+plot 'prova.dat' index 366 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 366 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 367" 
+plot 'prova.dat' index 367 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 367 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 368" 
+plot 'prova.dat' index 368 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 368 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 369" 
+plot 'prova.dat' index 369 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 369 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 370" 
+plot 'prova.dat' index 370 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 370 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 371" 
+plot 'prova.dat' index 371 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 371 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 372" 
+plot 'prova.dat' index 372 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 372 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 373" 
+plot 'prova.dat' index 373 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 373 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 374" 
+plot 'prova.dat' index 374 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 374 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 375" 
+plot 'prova.dat' index 375 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 375 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 376" 
+plot 'prova.dat' index 376 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 376 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 377" 
+plot 'prova.dat' index 377 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 377 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 378" 
+plot 'prova.dat' index 378 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 378 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 379" 
+plot 'prova.dat' index 379 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 379 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 380" 
+plot 'prova.dat' index 380 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 380 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 381" 
+plot 'prova.dat' index 381 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 381 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 382" 
+plot 'prova.dat' index 382 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 382 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 383" 
+plot 'prova.dat' index 383 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 383 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 384" 
+plot 'prova.dat' index 384 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 384 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 385" 
+plot 'prova.dat' index 385 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 385 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 386" 
+plot 'prova.dat' index 386 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 386 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 387" 
+plot 'prova.dat' index 387 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 387 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 388" 
+plot 'prova.dat' index 388 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 388 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 389" 
+plot 'prova.dat' index 389 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 389 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 390" 
+plot 'prova.dat' index 390 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 390 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 391" 
+plot 'prova.dat' index 391 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 391 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 392" 
+plot 'prova.dat' index 392 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 392 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 393" 
+plot 'prova.dat' index 393 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 393 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 394" 
+plot 'prova.dat' index 394 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 394 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 395" 
+plot 'prova.dat' index 395 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 395 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 396" 
+plot 'prova.dat' index 396 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 396 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 397" 
+plot 'prova.dat' index 397 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 397 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 398" 
+plot 'prova.dat' index 398 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 398 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 399" 
+plot 'prova.dat' index 399 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 399 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 400" 
+plot 'prova.dat' index 400 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 400 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 401" 
+plot 'prova.dat' index 401 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 401 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 402" 
+plot 'prova.dat' index 402 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 402 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 403" 
+plot 'prova.dat' index 403 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 403 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 404" 
+plot 'prova.dat' index 404 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 404 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 405" 
+plot 'prova.dat' index 405 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 405 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 406" 
+plot 'prova.dat' index 406 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 406 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 407" 
+plot 'prova.dat' index 407 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 407 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 408" 
+plot 'prova.dat' index 408 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 408 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 409" 
+plot 'prova.dat' index 409 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 409 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 410" 
+plot 'prova.dat' index 410 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 410 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 411" 
+plot 'prova.dat' index 411 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 411 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 412" 
+plot 'prova.dat' index 412 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 412 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 413" 
+plot 'prova.dat' index 413 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 413 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 414" 
+plot 'prova.dat' index 414 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 414 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 415" 
+plot 'prova.dat' index 415 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 415 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 416" 
+plot 'prova.dat' index 416 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 416 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 417" 
+plot 'prova.dat' index 417 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 417 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 418" 
+plot 'prova.dat' index 418 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 418 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 419" 
+plot 'prova.dat' index 419 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 419 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 420" 
+plot 'prova.dat' index 420 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 420 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 421" 
+plot 'prova.dat' index 421 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 421 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 422" 
+plot 'prova.dat' index 422 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 422 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 423" 
+plot 'prova.dat' index 423 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 423 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 424" 
+plot 'prova.dat' index 424 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 424 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 425" 
+plot 'prova.dat' index 425 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 425 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 426" 
+plot 'prova.dat' index 426 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 426 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 427" 
+plot 'prova.dat' index 427 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 427 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 428" 
+plot 'prova.dat' index 428 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 428 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 429" 
+plot 'prova.dat' index 429 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 429 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 430" 
+plot 'prova.dat' index 430 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 430 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 431" 
+plot 'prova.dat' index 431 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 431 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 432" 
+plot 'prova.dat' index 432 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 432 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 433" 
+plot 'prova.dat' index 433 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 433 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 434" 
+plot 'prova.dat' index 434 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 434 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 435" 
+plot 'prova.dat' index 435 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 435 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 436" 
+plot 'prova.dat' index 436 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 436 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 437" 
+plot 'prova.dat' index 437 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 437 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 438" 
+plot 'prova.dat' index 438 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 438 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 439" 
+plot 'prova.dat' index 439 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 439 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 440" 
+plot 'prova.dat' index 440 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 440 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 441" 
+plot 'prova.dat' index 441 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 441 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 442" 
+plot 'prova.dat' index 442 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 442 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 443" 
+plot 'prova.dat' index 443 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 443 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 444" 
+plot 'prova.dat' index 444 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 444 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 445" 
+plot 'prova.dat' index 445 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 445 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 446" 
+plot 'prova.dat' index 446 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 446 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 447" 
+plot 'prova.dat' index 447 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 447 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 448" 
+plot 'prova.dat' index 448 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 448 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 449" 
+plot 'prova.dat' index 449 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 449 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 450" 
+plot 'prova.dat' index 450 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 450 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 451" 
+plot 'prova.dat' index 451 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 451 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 452" 
+plot 'prova.dat' index 452 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 452 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 453" 
+plot 'prova.dat' index 453 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 453 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 454" 
+plot 'prova.dat' index 454 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 454 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 455" 
+plot 'prova.dat' index 455 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 455 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 456" 
+plot 'prova.dat' index 456 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 456 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 457" 
+plot 'prova.dat' index 457 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 457 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 458" 
+plot 'prova.dat' index 458 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 458 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 459" 
+plot 'prova.dat' index 459 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 459 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 460" 
+plot 'prova.dat' index 460 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 460 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 461" 
+plot 'prova.dat' index 461 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 461 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 462" 
+plot 'prova.dat' index 462 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 462 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 463" 
+plot 'prova.dat' index 463 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 463 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 464" 
+plot 'prova.dat' index 464 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 464 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 465" 
+plot 'prova.dat' index 465 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 465 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 466" 
+plot 'prova.dat' index 466 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 466 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 467" 
+plot 'prova.dat' index 467 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 467 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 468" 
+plot 'prova.dat' index 468 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 468 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 469" 
+plot 'prova.dat' index 469 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 469 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 470" 
+plot 'prova.dat' index 470 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 470 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 471" 
+plot 'prova.dat' index 471 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 471 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 472" 
+plot 'prova.dat' index 472 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 472 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 473" 
+plot 'prova.dat' index 473 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 473 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 474" 
+plot 'prova.dat' index 474 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 474 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 475" 
+plot 'prova.dat' index 475 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 475 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 476" 
+plot 'prova.dat' index 476 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 476 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 477" 
+plot 'prova.dat' index 477 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 477 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 478" 
+plot 'prova.dat' index 478 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 478 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 479" 
+plot 'prova.dat' index 479 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 479 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 480" 
+plot 'prova.dat' index 480 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 480 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 481" 
+plot 'prova.dat' index 481 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 481 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 482" 
+plot 'prova.dat' index 482 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 482 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 483" 
+plot 'prova.dat' index 483 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 483 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 484" 
+plot 'prova.dat' index 484 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 484 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 485" 
+plot 'prova.dat' index 485 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 485 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 486" 
+plot 'prova.dat' index 486 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 486 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 487" 
+plot 'prova.dat' index 487 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 487 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 488" 
+plot 'prova.dat' index 488 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 488 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 489" 
+plot 'prova.dat' index 489 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 489 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 490" 
+plot 'prova.dat' index 490 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 490 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 491" 
+plot 'prova.dat' index 491 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 491 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 492" 
+plot 'prova.dat' index 492 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 492 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 493" 
+plot 'prova.dat' index 493 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 493 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 494" 
+plot 'prova.dat' index 494 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 494 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 495" 
+plot 'prova.dat' index 495 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 495 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 496" 
+plot 'prova.dat' index 496 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 496 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 497" 
+plot 'prova.dat' index 497 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 497 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 498" 
+plot 'prova.dat' index 498 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 498 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 499" 
+plot 'prova.dat' index 499 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 499 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 500" 
+plot 'prova.dat' index 500 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 500 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 501" 
+plot 'prova.dat' index 501 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 501 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 502" 
+plot 'prova.dat' index 502 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 502 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 503" 
+plot 'prova.dat' index 503 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 503 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 504" 
+plot 'prova.dat' index 504 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 504 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 505" 
+plot 'prova.dat' index 505 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 505 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 506" 
+plot 'prova.dat' index 506 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 506 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 507" 
+plot 'prova.dat' index 507 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 507 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 508" 
+plot 'prova.dat' index 508 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 508 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 509" 
+plot 'prova.dat' index 509 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 509 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 510" 
+plot 'prova.dat' index 510 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 510 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 511" 
+plot 'prova.dat' index 511 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 511 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 512" 
+plot 'prova.dat' index 512 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 512 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 513" 
+plot 'prova.dat' index 513 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 513 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 514" 
+plot 'prova.dat' index 514 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 514 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 515" 
+plot 'prova.dat' index 515 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 515 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 516" 
+plot 'prova.dat' index 516 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 516 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 517" 
+plot 'prova.dat' index 517 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 517 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 518" 
+plot 'prova.dat' index 518 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 518 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 519" 
+plot 'prova.dat' index 519 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 519 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 520" 
+plot 'prova.dat' index 520 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 520 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 521" 
+plot 'prova.dat' index 521 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 521 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 522" 
+plot 'prova.dat' index 522 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 522 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 523" 
+plot 'prova.dat' index 523 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 523 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 524" 
+plot 'prova.dat' index 524 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 524 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 525" 
+plot 'prova.dat' index 525 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 525 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 526" 
+plot 'prova.dat' index 526 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 526 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 527" 
+plot 'prova.dat' index 527 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 527 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 528" 
+plot 'prova.dat' index 528 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 528 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 529" 
+plot 'prova.dat' index 529 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 529 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 530" 
+plot 'prova.dat' index 530 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 530 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 531" 
+plot 'prova.dat' index 531 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 531 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 532" 
+plot 'prova.dat' index 532 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 532 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 533" 
+plot 'prova.dat' index 533 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 533 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 534" 
+plot 'prova.dat' index 534 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 534 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 535" 
+plot 'prova.dat' index 535 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 535 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 536" 
+plot 'prova.dat' index 536 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 536 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 537" 
+plot 'prova.dat' index 537 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 537 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 538" 
+plot 'prova.dat' index 538 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 538 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 539" 
+plot 'prova.dat' index 539 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 539 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 540" 
+plot 'prova.dat' index 540 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 540 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 541" 
+plot 'prova.dat' index 541 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 541 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 542" 
+plot 'prova.dat' index 542 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 542 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 543" 
+plot 'prova.dat' index 543 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 543 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 544" 
+plot 'prova.dat' index 544 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 544 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 545" 
+plot 'prova.dat' index 545 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 545 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 546" 
+plot 'prova.dat' index 546 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 546 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 547" 
+plot 'prova.dat' index 547 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 547 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 548" 
+plot 'prova.dat' index 548 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 548 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 549" 
+plot 'prova.dat' index 549 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 549 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 550" 
+plot 'prova.dat' index 550 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 550 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 551" 
+plot 'prova.dat' index 551 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 551 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 552" 
+plot 'prova.dat' index 552 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 552 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 553" 
+plot 'prova.dat' index 553 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 553 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 554" 
+plot 'prova.dat' index 554 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 554 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 555" 
+plot 'prova.dat' index 555 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 555 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 556" 
+plot 'prova.dat' index 556 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 556 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 557" 
+plot 'prova.dat' index 557 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 557 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 558" 
+plot 'prova.dat' index 558 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 558 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 559" 
+plot 'prova.dat' index 559 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 559 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 560" 
+plot 'prova.dat' index 560 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 560 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 561" 
+plot 'prova.dat' index 561 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 561 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 562" 
+plot 'prova.dat' index 562 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 562 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 563" 
+plot 'prova.dat' index 563 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 563 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 564" 
+plot 'prova.dat' index 564 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 564 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 565" 
+plot 'prova.dat' index 565 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 565 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 566" 
+plot 'prova.dat' index 566 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 566 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 567" 
+plot 'prova.dat' index 567 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 567 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 568" 
+plot 'prova.dat' index 568 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 568 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 569" 
+plot 'prova.dat' index 569 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 569 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 570" 
+plot 'prova.dat' index 570 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 570 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 571" 
+plot 'prova.dat' index 571 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 571 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 572" 
+plot 'prova.dat' index 572 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 572 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 573" 
+plot 'prova.dat' index 573 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 573 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 574" 
+plot 'prova.dat' index 574 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 574 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 575" 
+plot 'prova.dat' index 575 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 575 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 576" 
+plot 'prova.dat' index 576 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 576 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 577" 
+plot 'prova.dat' index 577 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 577 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 578" 
+plot 'prova.dat' index 578 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 578 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 579" 
+plot 'prova.dat' index 579 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 579 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 580" 
+plot 'prova.dat' index 580 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 580 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 581" 
+plot 'prova.dat' index 581 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 581 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 582" 
+plot 'prova.dat' index 582 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 582 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 583" 
+plot 'prova.dat' index 583 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 583 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 584" 
+plot 'prova.dat' index 584 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 584 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 585" 
+plot 'prova.dat' index 585 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 585 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 586" 
+plot 'prova.dat' index 586 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 586 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 587" 
+plot 'prova.dat' index 587 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 587 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 588" 
+plot 'prova.dat' index 588 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 588 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 589" 
+plot 'prova.dat' index 589 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 589 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 590" 
+plot 'prova.dat' index 590 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 590 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 591" 
+plot 'prova.dat' index 591 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 591 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 592" 
+plot 'prova.dat' index 592 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 592 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 593" 
+plot 'prova.dat' index 593 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 593 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 594" 
+plot 'prova.dat' index 594 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 594 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 595" 
+plot 'prova.dat' index 595 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 595 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 596" 
+plot 'prova.dat' index 596 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 596 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 597" 
+plot 'prova.dat' index 597 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 597 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 598" 
+plot 'prova.dat' index 598 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 598 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 599" 
+plot 'prova.dat' index 599 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 599 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 600" 
+plot 'prova.dat' index 600 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 600 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 601" 
+plot 'prova.dat' index 601 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 601 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 602" 
+plot 'prova.dat' index 602 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 602 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 603" 
+plot 'prova.dat' index 603 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 603 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 604" 
+plot 'prova.dat' index 604 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 604 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 605" 
+plot 'prova.dat' index 605 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 605 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 606" 
+plot 'prova.dat' index 606 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 606 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 607" 
+plot 'prova.dat' index 607 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 607 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 608" 
+plot 'prova.dat' index 608 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 608 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 609" 
+plot 'prova.dat' index 609 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 609 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 610" 
+plot 'prova.dat' index 610 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 610 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 611" 
+plot 'prova.dat' index 611 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 611 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 612" 
+plot 'prova.dat' index 612 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 612 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 613" 
+plot 'prova.dat' index 613 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 613 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 614" 
+plot 'prova.dat' index 614 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 614 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 615" 
+plot 'prova.dat' index 615 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 615 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 616" 
+plot 'prova.dat' index 616 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 616 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 617" 
+plot 'prova.dat' index 617 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 617 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 618" 
+plot 'prova.dat' index 618 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 618 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 619" 
+plot 'prova.dat' index 619 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 619 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 620" 
+plot 'prova.dat' index 620 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 620 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 621" 
+plot 'prova.dat' index 621 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 621 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 622" 
+plot 'prova.dat' index 622 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 622 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 623" 
+plot 'prova.dat' index 623 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 623 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 624" 
+plot 'prova.dat' index 624 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 624 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 625" 
+plot 'prova.dat' index 625 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 625 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 626" 
+plot 'prova.dat' index 626 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 626 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 627" 
+plot 'prova.dat' index 627 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 627 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 628" 
+plot 'prova.dat' index 628 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 628 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 629" 
+plot 'prova.dat' index 629 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 629 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 630" 
+plot 'prova.dat' index 630 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 630 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 631" 
+plot 'prova.dat' index 631 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 631 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 632" 
+plot 'prova.dat' index 632 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 632 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 633" 
+plot 'prova.dat' index 633 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 633 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 634" 
+plot 'prova.dat' index 634 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 634 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 635" 
+plot 'prova.dat' index 635 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 635 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 636" 
+plot 'prova.dat' index 636 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 636 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 637" 
+plot 'prova.dat' index 637 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 637 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 638" 
+plot 'prova.dat' index 638 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 638 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 639" 
+plot 'prova.dat' index 639 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 639 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 640" 
+plot 'prova.dat' index 640 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 640 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 641" 
+plot 'prova.dat' index 641 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 641 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 642" 
+plot 'prova.dat' index 642 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 642 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 643" 
+plot 'prova.dat' index 643 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 643 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 644" 
+plot 'prova.dat' index 644 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 644 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 645" 
+plot 'prova.dat' index 645 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 645 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 646" 
+plot 'prova.dat' index 646 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 646 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 647" 
+plot 'prova.dat' index 647 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 647 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 648" 
+plot 'prova.dat' index 648 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 648 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 649" 
+plot 'prova.dat' index 649 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 649 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 650" 
+plot 'prova.dat' index 650 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 650 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 651" 
+plot 'prova.dat' index 651 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 651 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 652" 
+plot 'prova.dat' index 652 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 652 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 653" 
+plot 'prova.dat' index 653 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 653 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 654" 
+plot 'prova.dat' index 654 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 654 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 655" 
+plot 'prova.dat' index 655 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 655 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 656" 
+plot 'prova.dat' index 656 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 656 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 657" 
+plot 'prova.dat' index 657 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 657 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 658" 
+plot 'prova.dat' index 658 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 658 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 659" 
+plot 'prova.dat' index 659 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 659 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 660" 
+plot 'prova.dat' index 660 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 660 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 661" 
+plot 'prova.dat' index 661 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 661 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 662" 
+plot 'prova.dat' index 662 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 662 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 663" 
+plot 'prova.dat' index 663 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 663 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 664" 
+plot 'prova.dat' index 664 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 664 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 665" 
+plot 'prova.dat' index 665 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 665 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 666" 
+plot 'prova.dat' index 666 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 666 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 667" 
+plot 'prova.dat' index 667 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 667 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 668" 
+plot 'prova.dat' index 668 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 668 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 669" 
+plot 'prova.dat' index 669 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 669 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 670" 
+plot 'prova.dat' index 670 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 670 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 671" 
+plot 'prova.dat' index 671 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 671 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 672" 
+plot 'prova.dat' index 672 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 672 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 673" 
+plot 'prova.dat' index 673 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 673 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 674" 
+plot 'prova.dat' index 674 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 674 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 675" 
+plot 'prova.dat' index 675 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 675 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 676" 
+plot 'prova.dat' index 676 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 676 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 677" 
+plot 'prova.dat' index 677 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 677 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 678" 
+plot 'prova.dat' index 678 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 678 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 679" 
+plot 'prova.dat' index 679 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 679 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 680" 
+plot 'prova.dat' index 680 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 680 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 681" 
+plot 'prova.dat' index 681 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 681 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 682" 
+plot 'prova.dat' index 682 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 682 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 683" 
+plot 'prova.dat' index 683 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 683 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 684" 
+plot 'prova.dat' index 684 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 684 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 685" 
+plot 'prova.dat' index 685 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 685 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 686" 
+plot 'prova.dat' index 686 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 686 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 687" 
+plot 'prova.dat' index 687 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 687 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 688" 
+plot 'prova.dat' index 688 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 688 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 689" 
+plot 'prova.dat' index 689 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 689 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 690" 
+plot 'prova.dat' index 690 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 690 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 691" 
+plot 'prova.dat' index 691 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 691 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 692" 
+plot 'prova.dat' index 692 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 692 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 693" 
+plot 'prova.dat' index 693 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 693 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 694" 
+plot 'prova.dat' index 694 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 694 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 695" 
+plot 'prova.dat' index 695 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 695 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 696" 
+plot 'prova.dat' index 696 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 696 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 697" 
+plot 'prova.dat' index 697 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 697 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 698" 
+plot 'prova.dat' index 698 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 698 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 699" 
+plot 'prova.dat' index 699 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 699 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 700" 
+plot 'prova.dat' index 700 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 700 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 701" 
+plot 'prova.dat' index 701 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 701 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 702" 
+plot 'prova.dat' index 702 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 702 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 703" 
+plot 'prova.dat' index 703 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 703 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 704" 
+plot 'prova.dat' index 704 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 704 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 705" 
+plot 'prova.dat' index 705 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 705 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 706" 
+plot 'prova.dat' index 706 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 706 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 707" 
+plot 'prova.dat' index 707 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 707 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 708" 
+plot 'prova.dat' index 708 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 708 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 709" 
+plot 'prova.dat' index 709 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 709 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 710" 
+plot 'prova.dat' index 710 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 710 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 711" 
+plot 'prova.dat' index 711 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 711 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 712" 
+plot 'prova.dat' index 712 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 712 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 713" 
+plot 'prova.dat' index 713 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 713 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 714" 
+plot 'prova.dat' index 714 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 714 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 715" 
+plot 'prova.dat' index 715 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 715 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 716" 
+plot 'prova.dat' index 716 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 716 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 717" 
+plot 'prova.dat' index 717 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 717 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 718" 
+plot 'prova.dat' index 718 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 718 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 719" 
+plot 'prova.dat' index 719 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 719 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 720" 
+plot 'prova.dat' index 720 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 720 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 721" 
+plot 'prova.dat' index 721 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 721 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 722" 
+plot 'prova.dat' index 722 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 722 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 723" 
+plot 'prova.dat' index 723 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 723 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 724" 
+plot 'prova.dat' index 724 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 724 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 725" 
+plot 'prova.dat' index 725 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 725 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 726" 
+plot 'prova.dat' index 726 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 726 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 727" 
+plot 'prova.dat' index 727 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 727 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 728" 
+plot 'prova.dat' index 728 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 728 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 729" 
+plot 'prova.dat' index 729 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 729 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 730" 
+plot 'prova.dat' index 730 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 730 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 731" 
+plot 'prova.dat' index 731 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 731 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 732" 
+plot 'prova.dat' index 732 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 732 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 733" 
+plot 'prova.dat' index 733 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 733 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 734" 
+plot 'prova.dat' index 734 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 734 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 735" 
+plot 'prova.dat' index 735 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 735 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 736" 
+plot 'prova.dat' index 736 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 736 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 737" 
+plot 'prova.dat' index 737 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 737 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 738" 
+plot 'prova.dat' index 738 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 738 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 739" 
+plot 'prova.dat' index 739 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 739 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 740" 
+plot 'prova.dat' index 740 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 740 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 741" 
+plot 'prova.dat' index 741 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 741 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 742" 
+plot 'prova.dat' index 742 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 742 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 743" 
+plot 'prova.dat' index 743 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 743 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 744" 
+plot 'prova.dat' index 744 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 744 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 745" 
+plot 'prova.dat' index 745 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 745 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 746" 
+plot 'prova.dat' index 746 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 746 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 747" 
+plot 'prova.dat' index 747 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 747 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 748" 
+plot 'prova.dat' index 748 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 748 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 749" 
+plot 'prova.dat' index 749 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 749 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 750" 
+plot 'prova.dat' index 750 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 750 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 751" 
+plot 'prova.dat' index 751 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 751 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 752" 
+plot 'prova.dat' index 752 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 752 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 753" 
+plot 'prova.dat' index 753 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 753 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 754" 
+plot 'prova.dat' index 754 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 754 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 755" 
+plot 'prova.dat' index 755 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 755 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 756" 
+plot 'prova.dat' index 756 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 756 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 757" 
+plot 'prova.dat' index 757 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 757 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 758" 
+plot 'prova.dat' index 758 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 758 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 759" 
+plot 'prova.dat' index 759 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 759 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 760" 
+plot 'prova.dat' index 760 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 760 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 761" 
+plot 'prova.dat' index 761 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 761 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 762" 
+plot 'prova.dat' index 762 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 762 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 763" 
+plot 'prova.dat' index 763 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 763 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 764" 
+plot 'prova.dat' index 764 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 764 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 765" 
+plot 'prova.dat' index 765 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 765 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 766" 
+plot 'prova.dat' index 766 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 766 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 767" 
+plot 'prova.dat' index 767 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 767 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 768" 
+plot 'prova.dat' index 768 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 768 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 769" 
+plot 'prova.dat' index 769 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 769 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 770" 
+plot 'prova.dat' index 770 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 770 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 771" 
+plot 'prova.dat' index 771 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 771 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 772" 
+plot 'prova.dat' index 772 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 772 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 773" 
+plot 'prova.dat' index 773 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 773 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 774" 
+plot 'prova.dat' index 774 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 774 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 775" 
+plot 'prova.dat' index 775 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 775 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 776" 
+plot 'prova.dat' index 776 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 776 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 777" 
+plot 'prova.dat' index 777 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 777 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 778" 
+plot 'prova.dat' index 778 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 778 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 779" 
+plot 'prova.dat' index 779 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 779 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 780" 
+plot 'prova.dat' index 780 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 780 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 781" 
+plot 'prova.dat' index 781 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 781 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 782" 
+plot 'prova.dat' index 782 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 782 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 783" 
+plot 'prova.dat' index 783 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 783 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 784" 
+plot 'prova.dat' index 784 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 784 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 785" 
+plot 'prova.dat' index 785 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 785 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 786" 
+plot 'prova.dat' index 786 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 786 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 787" 
+plot 'prova.dat' index 787 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 787 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 788" 
+plot 'prova.dat' index 788 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 788 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 789" 
+plot 'prova.dat' index 789 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 789 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 790" 
+plot 'prova.dat' index 790 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 790 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 791" 
+plot 'prova.dat' index 791 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 791 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 792" 
+plot 'prova.dat' index 792 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 792 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 793" 
+plot 'prova.dat' index 793 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 793 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 794" 
+plot 'prova.dat' index 794 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 794 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 795" 
+plot 'prova.dat' index 795 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 795 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 796" 
+plot 'prova.dat' index 796 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 796 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 797" 
+plot 'prova.dat' index 797 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 797 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 798" 
+plot 'prova.dat' index 798 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 798 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 799" 
+plot 'prova.dat' index 799 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 799 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 800" 
+plot 'prova.dat' index 800 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 800 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 801" 
+plot 'prova.dat' index 801 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 801 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 802" 
+plot 'prova.dat' index 802 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 802 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 803" 
+plot 'prova.dat' index 803 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 803 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 804" 
+plot 'prova.dat' index 804 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 804 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 805" 
+plot 'prova.dat' index 805 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 805 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 806" 
+plot 'prova.dat' index 806 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 806 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 807" 
+plot 'prova.dat' index 807 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 807 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 808" 
+plot 'prova.dat' index 808 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 808 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 809" 
+plot 'prova.dat' index 809 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 809 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 810" 
+plot 'prova.dat' index 810 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 810 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 811" 
+plot 'prova.dat' index 811 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 811 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 812" 
+plot 'prova.dat' index 812 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 812 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 813" 
+plot 'prova.dat' index 813 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 813 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 814" 
+plot 'prova.dat' index 814 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 814 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 815" 
+plot 'prova.dat' index 815 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 815 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 816" 
+plot 'prova.dat' index 816 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 816 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 817" 
+plot 'prova.dat' index 817 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 817 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 818" 
+plot 'prova.dat' index 818 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 818 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 819" 
+plot 'prova.dat' index 819 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 819 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 820" 
+plot 'prova.dat' index 820 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 820 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 821" 
+plot 'prova.dat' index 821 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 821 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 822" 
+plot 'prova.dat' index 822 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 822 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 823" 
+plot 'prova.dat' index 823 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 823 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 824" 
+plot 'prova.dat' index 824 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 824 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 825" 
+plot 'prova.dat' index 825 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 825 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 826" 
+plot 'prova.dat' index 826 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 826 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 827" 
+plot 'prova.dat' index 827 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 827 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 828" 
+plot 'prova.dat' index 828 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 828 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 829" 
+plot 'prova.dat' index 829 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 829 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 830" 
+plot 'prova.dat' index 830 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 830 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 831" 
+plot 'prova.dat' index 831 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 831 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 832" 
+plot 'prova.dat' index 832 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 832 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 833" 
+plot 'prova.dat' index 833 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 833 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 834" 
+plot 'prova.dat' index 834 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 834 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 835" 
+plot 'prova.dat' index 835 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 835 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 836" 
+plot 'prova.dat' index 836 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 836 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 837" 
+plot 'prova.dat' index 837 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 837 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 838" 
+plot 'prova.dat' index 838 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 838 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 839" 
+plot 'prova.dat' index 839 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 839 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 840" 
+plot 'prova.dat' index 840 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 840 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 841" 
+plot 'prova.dat' index 841 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 841 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 842" 
+plot 'prova.dat' index 842 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 842 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 843" 
+plot 'prova.dat' index 843 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 843 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 844" 
+plot 'prova.dat' index 844 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 844 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 845" 
+plot 'prova.dat' index 845 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 845 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 846" 
+plot 'prova.dat' index 846 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 846 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 847" 
+plot 'prova.dat' index 847 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 847 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 848" 
+plot 'prova.dat' index 848 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 848 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 849" 
+plot 'prova.dat' index 849 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 849 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 850" 
+plot 'prova.dat' index 850 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 850 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 851" 
+plot 'prova.dat' index 851 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 851 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 852" 
+plot 'prova.dat' index 852 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 852 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 853" 
+plot 'prova.dat' index 853 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 853 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 854" 
+plot 'prova.dat' index 854 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 854 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 855" 
+plot 'prova.dat' index 855 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 855 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 856" 
+plot 'prova.dat' index 856 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 856 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 857" 
+plot 'prova.dat' index 857 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 857 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 858" 
+plot 'prova.dat' index 858 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 858 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 859" 
+plot 'prova.dat' index 859 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 859 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 860" 
+plot 'prova.dat' index 860 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 860 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 861" 
+plot 'prova.dat' index 861 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 861 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 862" 
+plot 'prova.dat' index 862 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 862 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 863" 
+plot 'prova.dat' index 863 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 863 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 864" 
+plot 'prova.dat' index 864 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 864 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 865" 
+plot 'prova.dat' index 865 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 865 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 866" 
+plot 'prova.dat' index 866 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 866 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 867" 
+plot 'prova.dat' index 867 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 867 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 868" 
+plot 'prova.dat' index 868 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 868 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 869" 
+plot 'prova.dat' index 869 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 869 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 870" 
+plot 'prova.dat' index 870 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 870 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 871" 
+plot 'prova.dat' index 871 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 871 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 872" 
+plot 'prova.dat' index 872 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 872 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 873" 
+plot 'prova.dat' index 873 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 873 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 874" 
+plot 'prova.dat' index 874 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 874 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 875" 
+plot 'prova.dat' index 875 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 875 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 876" 
+plot 'prova.dat' index 876 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 876 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 877" 
+plot 'prova.dat' index 877 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 877 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 878" 
+plot 'prova.dat' index 878 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 878 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 879" 
+plot 'prova.dat' index 879 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 879 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 880" 
+plot 'prova.dat' index 880 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 880 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 881" 
+plot 'prova.dat' index 881 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 881 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 882" 
+plot 'prova.dat' index 882 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 882 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 883" 
+plot 'prova.dat' index 883 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 883 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 884" 
+plot 'prova.dat' index 884 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 884 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 885" 
+plot 'prova.dat' index 885 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 885 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 886" 
+plot 'prova.dat' index 886 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 886 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 887" 
+plot 'prova.dat' index 887 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 887 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 888" 
+plot 'prova.dat' index 888 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 888 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 889" 
+plot 'prova.dat' index 889 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 889 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 890" 
+plot 'prova.dat' index 890 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 890 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 891" 
+plot 'prova.dat' index 891 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 891 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 892" 
+plot 'prova.dat' index 892 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 892 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 893" 
+plot 'prova.dat' index 893 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 893 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 894" 
+plot 'prova.dat' index 894 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 894 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 895" 
+plot 'prova.dat' index 895 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 895 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 896" 
+plot 'prova.dat' index 896 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 896 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 897" 
+plot 'prova.dat' index 897 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 897 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 898" 
+plot 'prova.dat' index 898 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 898 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 899" 
+plot 'prova.dat' index 899 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 899 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 900" 
+plot 'prova.dat' index 900 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 900 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 901" 
+plot 'prova.dat' index 901 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 901 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 902" 
+plot 'prova.dat' index 902 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 902 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 903" 
+plot 'prova.dat' index 903 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 903 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 904" 
+plot 'prova.dat' index 904 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 904 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 905" 
+plot 'prova.dat' index 905 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 905 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 906" 
+plot 'prova.dat' index 906 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 906 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 907" 
+plot 'prova.dat' index 907 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 907 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 908" 
+plot 'prova.dat' index 908 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 908 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 909" 
+plot 'prova.dat' index 909 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 909 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 910" 
+plot 'prova.dat' index 910 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 910 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 911" 
+plot 'prova.dat' index 911 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 911 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 912" 
+plot 'prova.dat' index 912 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 912 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 913" 
+plot 'prova.dat' index 913 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 913 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 914" 
+plot 'prova.dat' index 914 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 914 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 915" 
+plot 'prova.dat' index 915 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 915 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 916" 
+plot 'prova.dat' index 916 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 916 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 917" 
+plot 'prova.dat' index 917 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 917 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 918" 
+plot 'prova.dat' index 918 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 918 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 919" 
+plot 'prova.dat' index 919 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 919 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 920" 
+plot 'prova.dat' index 920 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 920 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 921" 
+plot 'prova.dat' index 921 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 921 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 922" 
+plot 'prova.dat' index 922 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 922 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 923" 
+plot 'prova.dat' index 923 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 923 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 924" 
+plot 'prova.dat' index 924 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 924 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 925" 
+plot 'prova.dat' index 925 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 925 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 926" 
+plot 'prova.dat' index 926 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 926 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 927" 
+plot 'prova.dat' index 927 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 927 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 928" 
+plot 'prova.dat' index 928 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 928 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 929" 
+plot 'prova.dat' index 929 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 929 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 930" 
+plot 'prova.dat' index 930 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 930 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 931" 
+plot 'prova.dat' index 931 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 931 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 932" 
+plot 'prova.dat' index 932 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 932 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 933" 
+plot 'prova.dat' index 933 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 933 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 934" 
+plot 'prova.dat' index 934 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 934 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 935" 
+plot 'prova.dat' index 935 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 935 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 936" 
+plot 'prova.dat' index 936 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 936 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 937" 
+plot 'prova.dat' index 937 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 937 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 938" 
+plot 'prova.dat' index 938 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 938 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 939" 
+plot 'prova.dat' index 939 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 939 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 940" 
+plot 'prova.dat' index 940 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 940 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 941" 
+plot 'prova.dat' index 941 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 941 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 942" 
+plot 'prova.dat' index 942 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 942 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 943" 
+plot 'prova.dat' index 943 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 943 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 944" 
+plot 'prova.dat' index 944 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 944 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 945" 
+plot 'prova.dat' index 945 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 945 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 946" 
+plot 'prova.dat' index 946 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 946 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 947" 
+plot 'prova.dat' index 947 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 947 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 948" 
+plot 'prova.dat' index 948 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 948 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 949" 
+plot 'prova.dat' index 949 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 949 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 950" 
+plot 'prova.dat' index 950 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 950 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 951" 
+plot 'prova.dat' index 951 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 951 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 952" 
+plot 'prova.dat' index 952 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 952 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 953" 
+plot 'prova.dat' index 953 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 953 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 954" 
+plot 'prova.dat' index 954 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 954 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 955" 
+plot 'prova.dat' index 955 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 955 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 956" 
+plot 'prova.dat' index 956 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 956 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 957" 
+plot 'prova.dat' index 957 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 957 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 958" 
+plot 'prova.dat' index 958 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 958 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 959" 
+plot 'prova.dat' index 959 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 959 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 960" 
+plot 'prova.dat' index 960 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 960 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 961" 
+plot 'prova.dat' index 961 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 961 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 962" 
+plot 'prova.dat' index 962 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 962 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 963" 
+plot 'prova.dat' index 963 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 963 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 964" 
+plot 'prova.dat' index 964 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 964 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 965" 
+plot 'prova.dat' index 965 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 965 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 966" 
+plot 'prova.dat' index 966 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 966 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 967" 
+plot 'prova.dat' index 967 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 967 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 968" 
+plot 'prova.dat' index 968 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 968 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 969" 
+plot 'prova.dat' index 969 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 969 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 970" 
+plot 'prova.dat' index 970 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 970 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 971" 
+plot 'prova.dat' index 971 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 971 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 972" 
+plot 'prova.dat' index 972 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 972 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 973" 
+plot 'prova.dat' index 973 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 973 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 974" 
+plot 'prova.dat' index 974 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 974 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 975" 
+plot 'prova.dat' index 975 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 975 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 976" 
+plot 'prova.dat' index 976 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 976 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 977" 
+plot 'prova.dat' index 977 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 977 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 978" 
+plot 'prova.dat' index 978 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 978 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 979" 
+plot 'prova.dat' index 979 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 979 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 980" 
+plot 'prova.dat' index 980 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 980 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 981" 
+plot 'prova.dat' index 981 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 981 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 982" 
+plot 'prova.dat' index 982 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 982 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 983" 
+plot 'prova.dat' index 983 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 983 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 984" 
+plot 'prova.dat' index 984 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 984 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 985" 
+plot 'prova.dat' index 985 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 985 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 986" 
+plot 'prova.dat' index 986 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 986 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 987" 
+plot 'prova.dat' index 987 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 987 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 988" 
+plot 'prova.dat' index 988 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 988 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 989" 
+plot 'prova.dat' index 989 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 989 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 990" 
+plot 'prova.dat' index 990 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 990 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 991" 
+plot 'prova.dat' index 991 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 991 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 992" 
+plot 'prova.dat' index 992 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 992 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 993" 
+plot 'prova.dat' index 993 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 993 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 994" 
+plot 'prova.dat' index 994 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 994 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 995" 
+plot 'prova.dat' index 995 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 995 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 996" 
+plot 'prova.dat' index 996 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 996 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 997" 
+plot 'prova.dat' index 997 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 997 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 998" 
+plot 'prova.dat' index 998 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 998 using 1:2:4:5 with vectors head filled lt 1
+set title "step : 999" 
+plot 'prova.dat' index 999 u 1:2:3 w circles lt 1 lc -1,'prova.dat' index 999 using 1:2:4:5 with vectors head filled lt 1

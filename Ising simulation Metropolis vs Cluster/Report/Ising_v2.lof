@@ -1,0 +1,29 @@
+\select@language {italian}
+\contentsline {figure}{\numberline {1}{\ignorespaces Modello di Ising: Ogni punto macroscopico contiene un reticolo di Spin.\relax }}{1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Condizione di Bordo periodico: reticolo Toroidale.\relax }}{2}
+\contentsline {figure}{\numberline {3}{\ignorespaces 1) Preliminari\_Snap\_Metro.cpp $\hskip 1em\relax / \hskip 1em\relax $2) Preliminari\_Snap\_Cluster.cpp }}{8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Bariera di Spin.}}{8}
+\contentsline {figure}{\numberline {5}{\ignorespaces Riscaldamento a $\beta = 0,008 $ \relax }}{9}
+\contentsline {figure}{\numberline {6}{\ignorespaces Preliminari$\_$TempoEsecuzione.cpp}}{9}
+\contentsline {figure}{\numberline {7}{\ignorespaces ParteB$\_$Termal$\_$Metro.cpp }}{10}
+\contentsline {figure}{\numberline {8}{\ignorespaces ParteB$\_$Termal$\_$Cluster.cpp }}{10}
+\contentsline {figure}{\numberline {9}{\ignorespaces ParteB$\_$Autocorrelazione$\_$CAvst$\_$Cluster.cpp }}{11}
+\contentsline {figure}{\numberline {10}{\ignorespaces ParteB$\_$Autocorrelazione$\_$CAvst$\_$Metro.cpp }}{12}
+\contentsline {figure}{\numberline {11}{\ignorespaces ParteB$\_$TauvsX$\_$Metro.cpp $\hskip 1em\relax $e$\hskip 1em\relax $ ParteB$\_$TauvsX$\_$Cluster.cpp}}{12}
+\contentsline {figure}{\numberline {12}{\ignorespaces ParteB$\_$Tc$\_$TauvsN$\_$Cluster.cpp}}{13}
+\contentsline {figure}{\numberline {13}{\ignorespaces ParteB$\_$Tc$\_$TauvsN$\_$Metro.cpp}}{13}
+\contentsline {figure}{\numberline {14}{\ignorespaces ParteB$\_$Tc$\_$TauvsN.cpp }}{14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Preliminari$\_$Magnetizzazione.cpp }}{15}
+\contentsline {figure}{\numberline {16}{\ignorespaces ParteB$\_$Termal$\_$M$\_$Confronto.cpp}}{15}
+\contentsline {figure}{\numberline {17}{\ignorespaces 1) ParteA\_MvsBeta.cpp \hskip 1em\relax $/\tmspace +\thickmuskip {.2777em}$ 2) ParteA\_HvsBeta.cpp }}{17}
+\contentsline {figure}{\numberline {18}{\ignorespaces 1) ParteA\_ChivsBeta.cpp \hskip 1em\relax $/\tmspace +\thickmuskip {.2777em}$ 2) ParteA\_cvsBeta.cpp }}{17}
+\contentsline {figure}{\numberline {19}{\ignorespaces 1) ParteA\_SigmaMvsBeta.cpp \hskip 1em\relax $/\tmspace +\thickmuskip {.2777em}$ 2) ParteA\_SigmaHvsBeta.cpp }}{18}
+\contentsline {figure}{\numberline {20}{\ignorespaces 1) ParteA\_distroM.cpp $\rightarrow $ distroM\_file.p \hskip 1em\relax $/\tmspace +\thickmuskip {.2777em}$ 2) ParteA\_distroH.cpp $\rightarrow $ distroH\_file.p }}{19}
+\contentsline {figure}{\numberline {21}{\ignorespaces Campionatura per la Funzione di Correlazione.}}{20}
+\contentsline {figure}{\numberline {22}{\ignorespaces ParteC$\_$StS0vst$\_$Cluster.cpp }}{21}
+\contentsline {figure}{\numberline {23}{\ignorespaces ParteC$\_$StS0vst$\_$Moltitudini $\tmspace +\thickmuskip {.2777em}\rightarrow \tmspace +\thickmuskip {.2777em}$ molti\_S0Stvst.p }}{21}
+\contentsline {figure}{\numberline {24}{\ignorespaces ParteC\_Tc\_StS0vst\_Cluster.cpp }}{23}
+\contentsline {figure}{\numberline {25}{\ignorespaces ParteC\_Tc\_StS0vst\_Cluster.cpp $\tmspace +\thickmuskip {.2777em}\rightarrow \tmspace +\thickmuskip {.2777em}$ grafico\_file.p }}{23}
+\contentsline {figure}{\numberline {26}{\ignorespaces ParteD\_Ossvst.cpp $\tmspace +\thickmuskip {.2777em}\rightarrow \tmspace +\thickmuskip {.2777em}$ Chivst\_file.p }}{26}
+\contentsline {figure}{\numberline {27}{\ignorespaces ParteD\_Ossvst.cpp $\tmspace +\thickmuskip {.2777em}\rightarrow \tmspace +\thickmuskip {.2777em}$ Mvst\_file.p }}{27}
+\contentsline {figure}{\numberline {28}{\ignorespaces ParteD\_Ossvst.cpp $\tmspace +\thickmuskip {.2777em}\rightarrow \tmspace +\thickmuskip {.2777em}$ cvst\_file.p }}{28}

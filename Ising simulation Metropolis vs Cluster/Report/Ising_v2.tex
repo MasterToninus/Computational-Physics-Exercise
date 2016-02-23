@@ -1,0 +1,144 @@
+\title{Introduzione alla Simulazione Computazionale del Modello Di Ising}
+\author{
+        Antonio Michele Miti \\
+	Mat: 072838
+%                Dipartimento di Fisica \\
+%        Università Milano-Bicocca\\
+%        Piazza della Scienza 3, Milano 20126, \underline{Italy}
+}
+%\date{\today}
+
+% Formato pagina!
+\documentclass[11pt]{article}
+%\documentclass{acmconf}
+\usepackage[paper=a4paper,top=1.5cm,left=1.5cm,right=1.5cm,
+    foot=1cm,bottom=1.5cm]{geometry}
+
+% Convenzioni Italiane
+\usepackage[italian]{babel}
+
+\usepackage{amsmath}
+
+%Teoremi
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[section]
+\theoremstyle{remark}
+\newtheorem{oss}{Osservazione}
+
+%campi numerici
+\usepackage{amsfonts}
+\newcommand\Naturals{\ensuremath{\mathbb{N}}\xspace}
+\newcommand\Integers{\ensuremath{\mathbb{Z}}\xspace}
+\newcommand\Rationals{\ensuremath{\mathbb{Q}}\xspace}
+\newcommand\Reals{\ensuremath{\mathbb{R}}\xspace}
+\newcommand\Complex{\ensuremath{\mathbb{C}}\xspace}
+
+
+%c C plus plus
+\usepackage{relsize}
+\usepackage{lipsum}
+%c from texinfo.tex
+\def\ifmonospace{\ifdim\fontdimen3\font=0pt }
+\def\C++{%
+\ifmonospace%
+    C++%
+\else%
+    C\kern-.1667em\raise.30ex\hbox{\smaller{++}}%
+\fi%
+\spacefactor1000 }
+%caratteri personalizzati per c++
+\newcommand\Cls[1]{\textsf{#1}}
+\newcommand\Lang[1]{\textsc{#1}}
+\newcommand{\kw}[1]{\texttt{\textbf{#1}}}
+\newcommand{\cd}[1]{\texttt{#1}}
+
+
+%lettere accentate
+\usepackage[utf8]{inputenc}
+
+
+%usare immagini
+%\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+\usepackage{latexsym}
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{sidecap}
+
+
+%per visualizzare codice    http://texblog.org/2008/04/02/include-source-code-in-latex-with-listings/
+\usepackage{listings}
+\lstloadlanguages{ C++ }
+\lstset{language=C++, numbers=left, stepnumber=2, frame=single,}
+
+%Flow Chart
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+% Define block styles
+\tikzstyle{decision} = [diamond, draw,aspect=3.2,text width=10em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, 
+    text width=13.5em, text centered, rounded corners, minimum height=5em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=4.5cm,
+    minimum height=2em]
+
+%Diagrammi ad albero
+\usetikzlibrary{trees,decorations.pathreplacing,decorations.pathmorphing}
+\tikzstyle{casella} = [rectangle, draw, node distance=4.5cm,
+    text width=20em]
+
+%tabelle
+\usepackage{multirow}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+L'obiettivo che si pone questo articolo è di fornire un'introduzione ai metodi numerici per la simulazione del Modello di Ising in 2 dimensioni e alla loro implementazione computazionale.
+
+Dopo una breve esposizione delle caratteristiche del modello vengono introdotti due algoritmi, di \emph{Metropolis} e di \emph{Swenden-Wang}, che permettono di generare catene di configurazioni microscopiche compatibili con un prescelto stato macroscopico del sistema.
+
+I concetti presentati nell'introduzione sono stati implementati in un programma di simulazione in linguaggio \C++. Nel secondo capitolo si passa ad analizzare le caratteristiche principali dell'algoritmo di simulazione, come il tempo di termalizzazione e il tempo di autocorrelazione delle configurazioni, per determinare l'efficienza del programma realizzato.
+
+Successivamente si passa allo studio delle proprietà del modello fisico simulato, viene mostrato come la simulazione realizzata a dimensione finita possa esibire una transizione di fase, da ferro-magnetica a para-magnetica, misurando l'andamento degli osservabili di stato e della lunghezza di correlazione in funzione della temperatura del sistema.
+
+Infine si effettua lo studio di \emph{Finite Size Scaling}  con lo scopo di stimare le caratteristiche del sistema di Ising al limite termodinamico.
+
+\end{abstract}
+
+%\tableofcontents
+\input{./Introduzione.tex}
+
+\clearpage
+\input{./ParteB.tex}
+\clearpage
+\input{./ParteA.tex}
+\clearpage
+\input{./ParteC.tex}
+
+\clearpage
+\input{./ParteD.tex}
+
+
+
+
+\clearpage
+\listoffigures
+
+\bibliographystyle{plain}
+\bibliography{Bibi.bib}
+
+
+\end{document}
+This is never printed
+
+
+classi \Cls{Nomeclasse}
+
+metodi \cd{NomeMetodo}
+
+tipo \cd{Nometipo}

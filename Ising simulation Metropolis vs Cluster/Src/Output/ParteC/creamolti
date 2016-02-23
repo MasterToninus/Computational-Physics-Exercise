@@ -1,0 +1,73 @@
+#!/bin/bash 
+MAX=50
+echo "clear" > molti_S0Stvst.p
+echo "reset" >> molti_S0Stvst.p
+
+echo "set title \"<S0 St> vs t (Cluster)\" " >> molti_S0Stvst.p
+
+echo "set xlabel \"t\"" >> molti_S0Stvst.p
+echo "set xrange [0:40]" >> molti_S0Stvst.p
+
+echo "set ylabel \"<S0 St>\"" >> molti_S0Stvst.p
+echo "#set yrange [-0.001:0.06]" >> molti_S0Stvst.p
+echo "unset key" >> molti_S0Stvst.p
+
+echo "plot 'molti_S0Stvst_.dat' index 0 using 1:2:3 with yerrorbars" \
+>> molti_S0Stvst.p
+echo "A_0=1" >> molti_S0Stvst.p
+echo "f_0(x) = exp(-x/A_0)" >> molti_S0Stvst.p
+echo "f_0(x) = exp(-x/A_0)" >> molti_S0Stvst.p
+	echo "N=5" >> molti_S0Stvst.p
+		echo "fit f_0(x) 'molti_S0Stvst_.dat' index 0 every ::0::N using 1:2:3 via A_0" >> molti_S0Stvst.p
+		echo "replot f_0(x)" >> molti_S0Stvst.p
+
+for i in `seq 1 35`
+do
+
+echo "replot 'molti_S0Stvst_.dat' index ${i} using 1:2:3 with yerrorbars" \
+>> molti_S0Stvst.p
+echo "A_${i}=1" \
+>> molti_S0Stvst.p
+echo "f_${i}(x) = exp(-x/A_${i})" >> molti_S0Stvst.p
+	echo "N=5" >> molti_S0Stvst.p
+		echo "fit f_${i}(x) 'molti_S0Stvst_.dat' index ${i} every ::0::N using 1:2:3 via A_${i}" >> molti_S0Stvst.p
+		echo "replot f_${i}(x)" >> molti_S0Stvst.p
+done
+
+for i in `seq 36 39`
+do
+
+echo "replot 'molti_S0Stvst_.dat' index ${i} using 1:2:3 with yerrorbars" \
+>> molti_S0Stvst.p
+echo "A_${i}=1" \
+>> molti_S0Stvst.p
+echo "f_${i}(x) = exp(-x/A_${i})" >> molti_S0Stvst.p
+	echo "N=20" >> molti_S0Stvst.p
+		echo "fit f_${i}(x) 'molti_S0Stvst_.dat' index ${i} every ::0::N using 1:2:3 via A_${i}" >> molti_S0Stvst.p
+		echo "replot f_${i}(x)" >> molti_S0Stvst.p
+done
+
+for i in `seq 40 80`
+do
+
+echo "replot 'molti_S0Stvst_.dat' index ${i} using 1:2:3 with yerrorbars" \
+>> molti_S0Stvst.p
+echo "A_${i}=1" \
+>> molti_S0Stvst.p
+echo "f_${i}(x) = exp(-x/A_${i})" >> molti_S0Stvst.p
+	echo "N=25" >> molti_S0Stvst.p
+		echo "fit f_${i}(x) 'molti_S0Stvst_.dat' index ${i} every ::0::N using 1:2:3 via A_${i}" >> molti_S0Stvst.p
+		echo "replot f_${i}(x)" >> molti_S0Stvst.p
+done
+
+
+for i in `seq 0 80`
+do
+
+echo "print A_${i}" \
+>> molti_S0Stvst.p
+
+
+
+
+done

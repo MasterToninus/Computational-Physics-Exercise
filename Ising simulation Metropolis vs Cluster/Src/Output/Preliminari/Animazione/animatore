@@ -1,0 +1,35 @@
+#!/bin/bash 
+MAX=50
+echo "clear" > plot.gpi
+echo "reset" >> plot.gpi
+
+echo "set key center top">> plot.gpi
+echo "set size ratio -1">> plot.gpi
+echo "unset key">> plot.gpi
+echo "set terminal gif animate delay 30" >> plot.gpi
+echo "set output \"animate.gif\"" >> plot.gpi
+echo "set isosample 40" >> plot.gpi
+echo "set hidden3d" >> plot.gpi
+
+echo "unset border ; unset xtics ; unset ytics ; unset ztics " >> plot.gpi
+
+echo "set view map" >> plot.gpi
+echo "unset surface" >> plot.gpi
+echo "set style data pm3d" >> plot.gpi
+echo "set pm3d implicit at b" >> plot.gpi
+echo "set palette positive nops_allcF maxcolors 0 gamma 1.5 gray" >> plot.gpi
+
+
+echo " N=150" >> plot.gpi
+echo "set xrange [ 0 : N ] noreverse nowriteback" >> plot.gpi
+echo "set yrange [ 0 : N ] noreverse nowriteback" >> plot.gpi
+echo "set zrange [ -1.0000 : 1.00000 ] noreverse nowriteback" >> plot.gpi
+
+
+for i in `seq 0 ${MAX}`
+do
+echo "set title \"step : ${i}\" " \
+>> plot.gpi
+echo "splot 'prova.dat' index ${i} " \
+>> plot.gpi
+done

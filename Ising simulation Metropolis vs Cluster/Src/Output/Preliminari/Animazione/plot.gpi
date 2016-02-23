@@ -1,0 +1,121 @@
+clear
+reset
+set key center top
+set size ratio -1
+unset key
+set terminal gif animate delay 30
+set output "animate.gif"
+set isosample 40
+set hidden3d
+unset border ; unset xtics ; unset ytics ; unset ztics 
+set view map
+unset surface
+set style data pm3d
+set pm3d implicit at b
+set palette positive nops_allcF maxcolors 0 gamma 1.5 gray
+ N=150
+set xrange [ 0 : N ] noreverse nowriteback
+set yrange [ 0 : N ] noreverse nowriteback
+set zrange [ -1.0000 : 1.00000 ] noreverse nowriteback
+set title "step : 0" 
+splot 'prova.dat' index 0 
+set title "step : 1" 
+splot 'prova.dat' index 1 
+set title "step : 2" 
+splot 'prova.dat' index 2 
+set title "step : 3" 
+splot 'prova.dat' index 3 
+set title "step : 4" 
+splot 'prova.dat' index 4 
+set title "step : 5" 
+splot 'prova.dat' index 5 
+set title "step : 6" 
+splot 'prova.dat' index 6 
+set title "step : 7" 
+splot 'prova.dat' index 7 
+set title "step : 8" 
+splot 'prova.dat' index 8 
+set title "step : 9" 
+splot 'prova.dat' index 9 
+set title "step : 10" 
+splot 'prova.dat' index 10 
+set title "step : 11" 
+splot 'prova.dat' index 11 
+set title "step : 12" 
+splot 'prova.dat' index 12 
+set title "step : 13" 
+splot 'prova.dat' index 13 
+set title "step : 14" 
+splot 'prova.dat' index 14 
+set title "step : 15" 
+splot 'prova.dat' index 15 
+set title "step : 16" 
+splot 'prova.dat' index 16 
+set title "step : 17" 
+splot 'prova.dat' index 17 
+set title "step : 18" 
+splot 'prova.dat' index 18 
+set title "step : 19" 
+splot 'prova.dat' index 19 
+set title "step : 20" 
+splot 'prova.dat' index 20 
+set title "step : 21" 
+splot 'prova.dat' index 21 
+set title "step : 22" 
+splot 'prova.dat' index 22 
+set title "step : 23" 
+splot 'prova.dat' index 23 
+set title "step : 24" 
+splot 'prova.dat' index 24 
+set title "step : 25" 
+splot 'prova.dat' index 25 
+set title "step : 26" 
+splot 'prova.dat' index 26 
+set title "step : 27" 
+splot 'prova.dat' index 27 
+set title "step : 28" 
+splot 'prova.dat' index 28 
+set title "step : 29" 
+splot 'prova.dat' index 29 
+set title "step : 30" 
+splot 'prova.dat' index 30 
+set title "step : 31" 
+splot 'prova.dat' index 31 
+set title "step : 32" 
+splot 'prova.dat' index 32 
+set title "step : 33" 
+splot 'prova.dat' index 33 
+set title "step : 34" 
+splot 'prova.dat' index 34 
+set title "step : 35" 
+splot 'prova.dat' index 35 
+set title "step : 36" 
+splot 'prova.dat' index 36 
+set title "step : 37" 
+splot 'prova.dat' index 37 
+set title "step : 38" 
+splot 'prova.dat' index 38 
+set title "step : 39" 
+splot 'prova.dat' index 39 
+set title "step : 40" 
+splot 'prova.dat' index 40 
+set title "step : 41" 
+splot 'prova.dat' index 41 
+set title "step : 42" 
+splot 'prova.dat' index 42 
+set title "step : 43" 
+splot 'prova.dat' index 43 
+set title "step : 44" 
+splot 'prova.dat' index 44 
+set title "step : 45" 
+splot 'prova.dat' index 45 
+set title "step : 46" 
+splot 'prova.dat' index 46 
+set title "step : 47" 
+splot 'prova.dat' index 47 
+set title "step : 48" 
+splot 'prova.dat' index 48 
+set title "step : 49" 
+splot 'prova.dat' index 49 
+set title "step : 50" 
+splot 'prova.dat' index 50 

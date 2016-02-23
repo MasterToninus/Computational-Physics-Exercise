@@ -1,0 +1,2960 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: DistrodS.eps
+%%Creator: gnuplot 4.4 patchlevel 3
+%%CreationDate: Wed Jun 20 22:56:46 2012
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 560 248
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/TransparentPatterns false def
+/gnulinewidth 7.500 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+%
+/vshift -66 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+Level1 {} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (DistrodS.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.4 patchlevel 3)
+  /Author (xaceruntu)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Wed Jun 20 22:56:46 2012)
+  /DOCINFO pdfmark
+end
+} ifelse
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 560 50 lineto 560 248 lineto 50 248 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.4 (August 2010)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {Gshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+end
+%%EndProlog
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 200 scalefont setfont
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 640 M
+8983 0 V
+stroke
+LTb
+860 640 M
+63 0 V
+stroke
+740 640 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 1008 M
+8983 0 V
+stroke
+LTb
+860 1008 M
+63 0 V
+stroke
+740 1008 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 5)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 1375 M
+8983 0 V
+stroke
+LTb
+860 1375 M
+63 0 V
+stroke
+740 1375 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 10)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 1743 M
+8983 0 V
+stroke
+LTb
+860 1743 M
+63 0 V
+stroke
+740 1743 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 15)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 2110 M
+8983 0 V
+stroke
+LTb
+860 2110 M
+63 0 V
+stroke
+740 2110 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 20)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 2478 M
+6972 0 V
+1891 0 R
+120 0 V
+stroke
+LTb
+860 2478 M
+63 0 V
+stroke
+740 2478 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 25)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 2845 M
+6972 0 V
+1891 0 R
+120 0 V
+stroke
+LTb
+860 2845 M
+63 0 V
+stroke
+740 2845 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 30)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 3213 M
+6972 0 V
+1891 0 R
+120 0 V
+stroke
+LTb
+860 3213 M
+63 0 V
+stroke
+740 3213 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 35)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 3580 M
+6972 0 V
+1891 0 R
+120 0 V
+stroke
+LTb
+860 3580 M
+63 0 V
+stroke
+740 3580 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 40)]
+] -66.7 MRshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+860 640 M
+0 3087 V
+stroke
+LTb
+860 640 M
+0 63 V
+stroke
+860 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+1897 640 M
+0 3087 V
+stroke
+LTb
+1897 640 M
+0 63 V
+stroke
+1897 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.1)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+2935 640 M
+0 3087 V
+stroke
+LTb
+2935 640 M
+0 63 V
+stroke
+2935 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.2)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+3972 640 M
+0 3087 V
+stroke
+LTb
+3972 640 M
+0 63 V
+stroke
+3972 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.3)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+5009 640 M
+0 3087 V
+stroke
+LTb
+5009 640 M
+0 63 V
+stroke
+5009 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.4)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+6046 640 M
+0 3087 V
+stroke
+LTb
+6046 640 M
+0 63 V
+stroke
+6046 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.5)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+7084 640 M
+0 3087 V
+stroke
+LTb
+7084 640 M
+0 63 V
+stroke
+7084 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.6)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+8121 640 M
+0 1824 V
+0 1200 R
+0 63 V
+stroke
+LTb
+8121 640 M
+0 63 V
+stroke
+8121 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.7)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTa
+9158 640 M
+0 1824 V
+0 1200 R
+0 63 V
+stroke
+LTb
+9158 640 M
+0 63 V
+stroke
+9158 440 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0.8)]
+] -66.7 MCshow
+1.000 UL
+LTb
+1.000 UL
+LTb
+LCb setrgbcolor
+860 640 M
+8983 0 V
+stroke
+LTb
+LCb setrgbcolor
+860 640 M
+0 3087 V
+stroke
+LCb setrgbcolor
+160 2183 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 200.0 0.0 true true 0 (g)]
+[(Helvetica) 160.0 -60.0 true true 0 (t)]
+[(Helvetica) 200.0 0.0 true true 0 (\( dS \))]
+] -46.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+5351 140 M
+[ [(Helvetica) 200.0 0.0 true true 0 (Spostamento dS)]
+] -66.7 MCshow
+LTb
+1.450 UP
+1.000 UL
+LTb
+% Begin plot #1
+0.800 UL
+LT0
+LC0 setrgbcolor
+LCb setrgbcolor
+8912 3564 M
+[ [(Symbol) 200.0 0.0 true true 0 (h)]
+[(Helvetica) 200.0 0.0 true true 0 ( = 0.785)]
+] -66.7 MRshow
+LT0
+LC0 setrgbcolor
+9032 3514 571 100 80 45 0 PatternFill
+860 640 3 318 80 45 0 PatternFill
+862 640 3 835 80 45 0 PatternFill
+864 640 3 1328 80 45 0 PatternFill
+866 640 3 1801 80 45 0 PatternFill
+868 640 2 2465 80 45 0 PatternFill
+869 640 3 2734 80 45 0 PatternFill
+871 640 3 3088 80 45 0 PatternFill
+873 640 3 3088 80 45 0 PatternFill
+875 640 3 3088 80 45 0 PatternFill
+877 640 3 3088 80 45 0 PatternFill
+879 640 2 3088 80 45 0 PatternFill
+880 640 3 3088 80 45 0 PatternFill
+882 640 3 3088 80 45 0 PatternFill
+884 640 3 3088 80 45 0 PatternFill
+886 640 3 3088 80 45 0 PatternFill
+888 640 3 3088 80 45 0 PatternFill
+890 640 2 3088 80 45 0 PatternFill
+891 640 3 3088 80 45 0 PatternFill
+893 640 3 3088 80 45 0 PatternFill
+895 640 3 3088 80 45 0 PatternFill
+897 640 3 3088 80 45 0 PatternFill
+899 640 3 3088 80 45 0 PatternFill
+901 640 3 3088 80 45 0 PatternFill
+903 640 2 3088 80 45 0 PatternFill
+904 640 3 3088 80 45 0 PatternFill
+906 640 3 3088 80 45 0 PatternFill
+908 640 3 3088 80 45 0 PatternFill
+910 640 3 3088 80 45 0 PatternFill
+912 640 3 3088 80 45 0 PatternFill
+914 640 2 3088 80 45 0 PatternFill
+915 640 3 3088 80 45 0 PatternFill
+917 640 3 3088 80 45 0 PatternFill
+919 640 3 3088 80 45 0 PatternFill
+921 640 3 3088 80 45 0 PatternFill
+923 640 3 3088 80 45 0 PatternFill
+925 640 2 3088 80 45 0 PatternFill
+926 640 3 3088 80 45 0 PatternFill
+928 640 3 3088 80 45 0 PatternFill
+930 640 3 3088 80 45 0 PatternFill
+932 640 3 3088 80 45 0 PatternFill
+934 640 3 3088 80 45 0 PatternFill
+936 640 3 3088 80 45 0 PatternFill
+938 640 2 3088 80 45 0 PatternFill
+939 640 3 3088 80 45 0 PatternFill
+941 640 3 3088 80 45 0 PatternFill
+943 640 3 3088 80 45 0 PatternFill
+945 640 3 3088 80 45 0 PatternFill
+947 640 3 3088 80 45 0 PatternFill
+949 640 2 3088 80 45 0 PatternFill
+950 640 3 3088 80 45 0 PatternFill
+952 640 3 3088 80 45 0 PatternFill
+954 640 3 3088 80 45 0 PatternFill
+956 640 3 3088 80 45 0 PatternFill
+958 640 3 3088 80 45 0 PatternFill
+960 640 2 3088 80 45 0 PatternFill
+961 640 3 3088 80 45 0 PatternFill
+963 640 3 3088 80 45 0 PatternFill
+965 640 3 3088 80 45 0 PatternFill
+967 640 3 3088 80 45 0 PatternFill
+969 640 3 3047 80 45 0 PatternFill
+971 640 3 2911 80 45 0 PatternFill
+973 640 2 2758 80 45 0 PatternFill
+974 640 3 2651 80 45 0 PatternFill
+976 640 3 2386 80 45 0 PatternFill
+978 640 3 2307 80 45 0 PatternFill
+980 640 3 2040 80 45 0 PatternFill
+982 640 3 2035 80 45 0 PatternFill
+984 640 2 1915 80 45 0 PatternFill
+985 640 3 1847 80 45 0 PatternFill
+987 640 3 1696 80 45 0 PatternFill
+989 640 3 1514 80 45 0 PatternFill
+991 640 3 1418 80 45 0 PatternFill
+993 640 3 1302 80 45 0 PatternFill
+995 640 2 1208 80 45 0 PatternFill
+996 640 3 1218 80 45 0 PatternFill
+998 640 3 1149 80 45 0 PatternFill
+1000 640 3 1041 80 45 0 PatternFill
+1002 640 3 965 80 45 0 PatternFill
+1004 640 3 907 80 45 0 PatternFill
+1006 640 2 883 80 45 0 PatternFill
+1007 640 3 833 80 45 0 PatternFill
+1009 640 3 732 80 45 0 PatternFill
+1011 640 3 656 80 45 0 PatternFill
+1013 640 3 583 80 45 0 PatternFill
+1015 640 3 559 80 45 0 PatternFill
+1017 640 3 559 80 45 0 PatternFill
+1019 640 2 483 80 45 0 PatternFill
+1020 640 3 478 80 45 0 PatternFill
+1022 640 3 472 80 45 0 PatternFill
+1024 640 3 421 80 45 0 PatternFill
+1026 640 3 325 80 45 0 PatternFill
+1028 640 3 351 80 45 0 PatternFill
+1030 640 2 323 80 45 0 PatternFill
+1031 640 3 319 80 45 0 PatternFill
+1033 640 3 341 80 45 0 PatternFill
+1035 640 3 288 80 45 0 PatternFill
+1037 640 3 259 80 45 0 PatternFill
+1039 640 3 238 80 45 0 PatternFill
+1041 640 2 192 80 45 0 PatternFill
+1042 640 3 211 80 45 0 PatternFill
+1044 640 3 214 80 45 0 PatternFill
+1046 640 3 172 80 45 0 PatternFill
+1048 640 3 170 80 45 0 PatternFill
+1050 640 3 172 80 45 0 PatternFill
+1052 640 3 172 80 45 0 PatternFill
+1054 640 2 157 80 45 0 PatternFill
+1055 640 3 172 80 45 0 PatternFill
+1057 640 3 122 80 45 0 PatternFill
+1059 640 3 106 80 45 0 PatternFill
+1061 640 3 134 80 45 0 PatternFill
+1063 640 3 106 80 45 0 PatternFill
+1065 640 2 108 80 45 0 PatternFill
+1066 640 3 108 80 45 0 PatternFill
+1068 640 3 99 80 45 0 PatternFill
+1070 640 3 99 80 45 0 PatternFill
+1072 640 3 88 80 45 0 PatternFill
+1074 640 3 106 80 45 0 PatternFill
+1076 640 2 95 80 45 0 PatternFill
+1077 640 3 71 80 45 0 PatternFill
+1079 640 3 58 80 45 0 PatternFill
+1081 640 3 80 80 45 0 PatternFill
+1083 640 3 67 80 45 0 PatternFill
+1085 640 3 80 80 45 0 PatternFill
+1087 640 2 73 80 45 0 PatternFill
+1088 640 3 64 80 45 0 PatternFill
+1090 640 3 89 80 45 0 PatternFill
+1092 640 3 76 80 45 0 PatternFill
+1094 640 3 84 80 45 0 PatternFill
+1096 640 3 69 80 45 0 PatternFill
+1098 640 3 60 80 45 0 PatternFill
+1100 640 2 64 80 45 0 PatternFill
+1101 640 3 76 80 45 0 PatternFill
+1103 640 3 71 80 45 0 PatternFill
+1105 640 3 86 80 45 0 PatternFill
+1107 640 3 76 80 45 0 PatternFill
+1109 640 3 60 80 45 0 PatternFill
+1111 640 2 76 80 45 0 PatternFill
+1112 640 3 47 80 45 0 PatternFill
+1114 640 3 49 80 45 0 PatternFill
+1116 640 3 62 80 45 0 PatternFill
+1118 640 3 58 80 45 0 PatternFill
+1120 640 3 53 80 45 0 PatternFill
+1122 640 2 51 80 45 0 PatternFill
+1123 640 3 53 80 45 0 PatternFill
+1125 640 3 65 80 45 0 PatternFill
+1127 640 3 62 80 45 0 PatternFill
+1129 640 3 54 80 45 0 PatternFill
+1131 640 3 43 80 45 0 PatternFill
+1133 640 3 62 80 45 0 PatternFill
+1135 640 2 54 80 45 0 PatternFill
+1136 640 3 51 80 45 0 PatternFill
+1138 640 3 67 80 45 0 PatternFill
+1140 640 3 51 80 45 0 PatternFill
+1142 640 3 62 80 45 0 PatternFill
+1144 640 3 45 80 45 0 PatternFill
+1146 640 2 41 80 45 0 PatternFill
+1147 640 3 75 80 45 0 PatternFill
+1149 640 3 67 80 45 0 PatternFill
+1151 640 3 54 80 45 0 PatternFill
+1153 640 3 53 80 45 0 PatternFill
+1155 640 3 47 80 45 0 PatternFill
+1157 640 2 75 80 45 0 PatternFill
+1158 640 3 73 80 45 0 PatternFill
+1160 640 3 49 80 45 0 PatternFill
+1162 640 3 47 80 45 0 PatternFill
+1164 640 3 36 80 45 0 PatternFill
+1166 640 3 43 80 45 0 PatternFill
+1168 640 2 58 80 45 0 PatternFill
+1169 640 3 60 80 45 0 PatternFill
+1171 640 3 53 80 45 0 PatternFill
+1173 640 3 40 80 45 0 PatternFill
+1175 640 3 51 80 45 0 PatternFill
+1177 640 3 43 80 45 0 PatternFill
+1179 640 3 56 80 45 0 PatternFill
+1181 640 2 47 80 45 0 PatternFill
+1182 640 3 41 80 45 0 PatternFill
+1184 640 3 40 80 45 0 PatternFill
+1186 640 3 43 80 45 0 PatternFill
+1188 640 3 32 80 45 0 PatternFill
+1190 640 3 36 80 45 0 PatternFill
+1192 640 2 51 80 45 0 PatternFill
+1193 640 3 25 80 45 0 PatternFill
+1195 640 3 41 80 45 0 PatternFill
+1197 640 3 43 80 45 0 PatternFill
+1199 640 3 27 80 45 0 PatternFill
+1201 640 3 30 80 45 0 PatternFill
+1203 640 2 49 80 45 0 PatternFill
+1204 640 3 34 80 45 0 PatternFill
+1206 640 3 43 80 45 0 PatternFill
+1208 640 3 30 80 45 0 PatternFill
+1210 640 3 45 80 45 0 PatternFill
+1212 640 3 23 80 45 0 PatternFill
+1214 640 3 36 80 45 0 PatternFill
+1216 640 2 40 80 45 0 PatternFill
+1217 640 3 27 80 45 0 PatternFill
+1219 640 3 32 80 45 0 PatternFill
+1221 640 3 36 80 45 0 PatternFill
+1223 640 3 41 80 45 0 PatternFill
+1225 640 3 53 80 45 0 PatternFill
+1227 640 2 47 80 45 0 PatternFill
+1228 640 3 16 80 45 0 PatternFill
+1230 640 3 32 80 45 0 PatternFill
+1232 640 3 29 80 45 0 PatternFill
+1234 640 3 45 80 45 0 PatternFill
+1236 640 3 38 80 45 0 PatternFill
+1238 640 2 38 80 45 0 PatternFill
+1239 640 3 36 80 45 0 PatternFill
+1241 640 3 32 80 45 0 PatternFill
+1243 640 3 32 80 45 0 PatternFill
+1245 640 3 51 80 45 0 PatternFill
+1247 640 3 30 80 45 0 PatternFill
+1249 640 3 23 80 45 0 PatternFill
+1251 640 2 36 80 45 0 PatternFill
+1252 640 3 34 80 45 0 PatternFill
+1254 640 3 32 80 45 0 PatternFill
+1256 640 3 41 80 45 0 PatternFill
+1258 640 3 25 80 45 0 PatternFill
+1260 640 3 27 80 45 0 PatternFill
+1262 640 2 29 80 45 0 PatternFill
+1263 640 3 23 80 45 0 PatternFill
+1265 640 3 25 80 45 0 PatternFill
+1267 640 3 21 80 45 0 PatternFill
+1269 640 3 30 80 45 0 PatternFill
+1271 640 3 29 80 45 0 PatternFill
+1273 640 2 38 80 45 0 PatternFill
+1274 640 3 32 80 45 0 PatternFill
+1276 640 3 29 80 45 0 PatternFill
+1278 640 3 34 80 45 0 PatternFill
+1280 640 3 29 80 45 0 PatternFill
+1282 640 3 23 80 45 0 PatternFill
+1284 640 2 18 80 45 0 PatternFill
+1285 640 3 23 80 45 0 PatternFill
+1287 640 3 40 80 45 0 PatternFill
+1289 640 3 27 80 45 0 PatternFill
+1291 640 3 23 80 45 0 PatternFill
+1293 640 3 23 80 45 0 PatternFill
+1295 640 3 45 80 45 0 PatternFill
+1297 640 2 51 80 45 0 PatternFill
+1298 640 3 34 80 45 0 PatternFill
+1300 640 3 18 80 45 0 PatternFill
+1302 640 3 14 80 45 0 PatternFill
+1304 640 3 30 80 45 0 PatternFill
+1306 640 3 25 80 45 0 PatternFill
+1308 640 2 30 80 45 0 PatternFill
+1309 640 3 41 80 45 0 PatternFill
+1311 640 3 23 80 45 0 PatternFill
+1313 640 3 19 80 45 0 PatternFill
+1315 640 3 27 80 45 0 PatternFill
+1317 640 3 40 80 45 0 PatternFill
+1319 640 2 41 80 45 0 PatternFill
+1320 640 3 29 80 45 0 PatternFill
+1322 640 3 47 80 45 0 PatternFill
+1324 640 3 30 80 45 0 PatternFill
+1326 640 3 30 80 45 0 PatternFill
+1328 640 3 23 80 45 0 PatternFill
+1330 640 3 41 80 45 0 PatternFill
+1332 640 2 30 80 45 0 PatternFill
+1333 640 3 27 80 45 0 PatternFill
+1335 640 3 27 80 45 0 PatternFill
+1337 640 3 27 80 45 0 PatternFill
+1339 640 3 38 80 45 0 PatternFill
+1341 640 3 36 80 45 0 PatternFill
+1343 640 2 36 80 45 0 PatternFill
+1344 640 3 38 80 45 0 PatternFill
+1346 640 3 27 80 45 0 PatternFill
+1348 640 3 23 80 45 0 PatternFill
+1350 640 3 16 80 45 0 PatternFill
+1352 640 3 16 80 45 0 PatternFill
+1354 640 2 40 80 45 0 PatternFill
+1355 640 3 21 80 45 0 PatternFill
+1357 640 3 23 80 45 0 PatternFill
+1359 640 3 21 80 45 0 PatternFill
+1361 640 3 30 80 45 0 PatternFill
+1363 640 3 49 80 45 0 PatternFill
+1365 640 2 32 80 45 0 PatternFill
+1366 640 3 30 80 45 0 PatternFill
+1368 640 3 32 80 45 0 PatternFill
+1370 640 3 19 80 45 0 PatternFill
+1372 640 3 19 80 45 0 PatternFill
+1374 640 3 36 80 45 0 PatternFill
+1376 640 3 25 80 45 0 PatternFill
+1378 640 2 12 80 45 0 PatternFill
+1379 640 3 19 80 45 0 PatternFill
+1381 640 3 18 80 45 0 PatternFill
+1383 640 3 32 80 45 0 PatternFill
+1385 640 3 23 80 45 0 PatternFill
+1387 640 3 21 80 45 0 PatternFill
+1389 640 2 10 80 45 0 PatternFill
+1390 640 3 30 80 45 0 PatternFill
+1392 640 3 21 80 45 0 PatternFill
+1394 640 3 25 80 45 0 PatternFill
+1396 640 3 40 80 45 0 PatternFill
+1398 640 3 25 80 45 0 PatternFill
+1400 640 2 18 80 45 0 PatternFill
+1401 640 3 10 80 45 0 PatternFill
+1403 640 3 7 80 45 0 PatternFill
+1405 640 3 23 80 45 0 PatternFill
+1407 640 3 10 80 45 0 PatternFill
+1409 640 3 25 80 45 0 PatternFill
+1411 640 3 16 80 45 0 PatternFill
+1413 640 2 18 80 45 0 PatternFill
+1414 640 3 16 80 45 0 PatternFill
+1416 640 3 18 80 45 0 PatternFill
+1418 640 3 25 80 45 0 PatternFill
+1420 640 3 25 80 45 0 PatternFill
+1422 640 3 14 80 45 0 PatternFill
+1424 640 2 14 80 45 0 PatternFill
+1425 640 3 12 80 45 0 PatternFill
+1427 640 3 29 80 45 0 PatternFill
+1429 640 3 12 80 45 0 PatternFill
+1431 640 3 14 80 45 0 PatternFill
+1433 640 3 16 80 45 0 PatternFill
+1435 640 2 16 80 45 0 PatternFill
+1436 640 3 19 80 45 0 PatternFill
+1438 640 3 7 80 45 0 PatternFill
+1440 640 3 10 80 45 0 PatternFill
+1442 640 3 7 80 45 0 PatternFill
+1444 640 3 8 80 45 0 PatternFill
+1446 640 2 7 80 45 0 PatternFill
+1447 640 3 14 80 45 0 PatternFill
+1449 640 3 10 80 45 0 PatternFill
+1451 640 3 19 80 45 0 PatternFill
+1453 640 3 8 80 45 0 PatternFill
+1455 640 3 8 80 45 0 PatternFill
+1457 640 3 10 80 45 0 PatternFill
+1459 640 2 10 80 45 0 PatternFill
+1460 640 3 7 80 45 0 PatternFill
+1462 640 3 3 80 45 0 PatternFill
+1464 640 3 7 80 45 0 PatternFill
+1466 640 3 3 80 45 0 PatternFill
+1468 640 3 5 80 45 0 PatternFill
+1470 640 2 8 80 45 0 PatternFill
+1471 640 3 8 80 45 0 PatternFill
+1473 640 3 5 80 45 0 PatternFill
+1475 640 3 7 80 45 0 PatternFill
+1479 640 3 3 80 45 0 PatternFill
+1481 640 2 5 80 45 0 PatternFill
+1482 640 3 3 80 45 0 PatternFill
+1484 640 3 3 80 45 0 PatternFill
+1488 640 3 3 80 45 0 PatternFill
+1490 640 3 3 80 45 0 PatternFill
+1492 640 3 3 80 45 0 PatternFill
+1494 640 2 5 80 45 0 PatternFill
+1495 640 3 3 80 45 0 PatternFill
+1497 640 3 3 80 45 0 PatternFill
+1499 640 3 7 80 45 0 PatternFill
+1501 640 3 3 80 45 0 PatternFill
+1503 640 3 3 80 45 0 PatternFill
+1505 640 2 3 80 45 0 PatternFill
+1506 640 3 5 80 45 0 PatternFill
+1508 640 3 3 80 45 0 PatternFill
+1510 640 3 5 80 45 0 PatternFill
+1516 640 2 5 80 45 0 PatternFill
+1519 640 3 7 80 45 0 PatternFill
+1523 640 3 7 80 45 0 PatternFill
+1551 640 2 3 80 45 0 PatternFill
+1562 640 2 3 80 45 0 PatternFill
+1565 640 3 3 80 45 0 PatternFill
+1575 640 2 3 80 45 0 PatternFill
+1587 640 3 5 80 45 0 PatternFill
+1595 640 3 3 80 45 0 PatternFill
+1598 640 3 3 80 45 0 PatternFill
+1600 640 3 3 80 45 0 PatternFill
+1606 640 3 3 80 45 0 PatternFill
+1610 640 2 3 80 45 0 PatternFill
+1619 640 3 3 80 45 0 PatternFill
+1621 640 2 3 80 45 0 PatternFill
+1624 640 3 3 80 45 0 PatternFill
+1628 640 3 3 80 45 0 PatternFill
+1630 640 3 3 80 45 0 PatternFill
+1656 640 2 3 80 45 0 PatternFill
+1667 640 2 3 80 45 0 PatternFill
+1685 640 3 3 80 45 0 PatternFill
+% End plot #1
+% Begin plot #2
+0.800 UL
+LT0
+LC1 setrgbcolor
+LCb setrgbcolor
+8912 3364 M
+[ [(Symbol) 200.0 0.0 true true 0 (h)]
+[(Helvetica) 200.0 0.0 true true 0 ( = 0.69)]
+] -66.7 MRshow
+LT0
+LC1 setrgbcolor
+9032 3314 571 100 80 -45 0 PatternFill
+861 640 6 24 80 -45 0 PatternFill
+866 640 5 66 80 -45 0 PatternFill
+870 640 6 119 80 -45 0 PatternFill
+875 640 5 155 80 -45 0 PatternFill
+879 640 6 187 80 -45 0 PatternFill
+884 640 5 249 80 -45 0 PatternFill
+888 640 6 281 80 -45 0 PatternFill
+893 640 5 296 80 -45 0 PatternFill
+897 640 6 356 80 -45 0 PatternFill
+902 640 5 344 80 -45 0 PatternFill
+906 640 6 420 80 -45 0 PatternFill
+911 640 5 478 80 -45 0 PatternFill
+915 640 6 503 80 -45 0 PatternFill
+920 640 5 524 80 -45 0 PatternFill
+924 640 6 547 80 -45 0 PatternFill
+929 640 5 591 80 -45 0 PatternFill
+933 640 6 652 80 -45 0 PatternFill
+938 640 5 644 80 -45 0 PatternFill
+942 640 6 681 80 -45 0 PatternFill
+947 640 5 731 80 -45 0 PatternFill
+951 640 6 750 80 -45 0 PatternFill
+956 640 5 773 80 -45 0 PatternFill
+960 640 6 816 80 -45 0 PatternFill
+965 640 5 888 80 -45 0 PatternFill
+969 640 6 835 80 -45 0 PatternFill
+974 640 5 892 80 -45 0 PatternFill
+978 640 6 949 80 -45 0 PatternFill
+983 640 5 926 80 -45 0 PatternFill
+987 640 6 1009 80 -45 0 PatternFill
+992 640 5 980 80 -45 0 PatternFill
+996 640 6 1027 80 -45 0 PatternFill
+1001 640 5 1034 80 -45 0 PatternFill
+1005 640 6 1052 80 -45 0 PatternFill
+1010 640 5 1101 80 -45 0 PatternFill
+1014 640 6 1129 80 -45 0 PatternFill
+1019 640 5 1122 80 -45 0 PatternFill
+1023 640 6 1177 80 -45 0 PatternFill
+1028 640 5 1155 80 -45 0 PatternFill
+1032 640 6 1186 80 -45 0 PatternFill
+1037 640 5 1165 80 -45 0 PatternFill
+1041 640 6 1165 80 -45 0 PatternFill
+1046 640 5 1186 80 -45 0 PatternFill
+1050 640 6 1202 80 -45 0 PatternFill
+1055 640 5 1199 80 -45 0 PatternFill
+1059 640 6 1253 80 -45 0 PatternFill
+1064 640 5 1253 80 -45 0 PatternFill
+1068 640 6 1266 80 -45 0 PatternFill
+1073 640 5 1293 80 -45 0 PatternFill
+1077 640 6 1281 80 -45 0 PatternFill
+1082 640 5 1332 80 -45 0 PatternFill
+1086 640 6 1313 80 -45 0 PatternFill
+1091 640 5 1284 80 -45 0 PatternFill
+1095 640 6 1237 80 -45 0 PatternFill
+1100 640 5 1285 80 -45 0 PatternFill
+1104 640 6 1354 80 -45 0 PatternFill
+1109 640 5 1319 80 -45 0 PatternFill
+1113 640 6 1327 80 -45 0 PatternFill
+1118 640 5 1352 80 -45 0 PatternFill
+1122 640 6 1275 80 -45 0 PatternFill
+1127 640 5 1308 80 -45 0 PatternFill
+1131 640 6 1366 80 -45 0 PatternFill
+1136 640 5 1363 80 -45 0 PatternFill
+1140 640 6 1387 80 -45 0 PatternFill
+1145 640 5 1376 80 -45 0 PatternFill
+1149 640 6 1341 80 -45 0 PatternFill
+1154 640 5 1358 80 -45 0 PatternFill
+1158 640 6 1317 80 -45 0 PatternFill
+1163 640 5 1342 80 -45 0 PatternFill
+1167 640 6 1339 80 -45 0 PatternFill
+1172 640 5 1381 80 -45 0 PatternFill
+1176 640 6 1281 80 -45 0 PatternFill
+1181 640 5 1275 80 -45 0 PatternFill
+1185 640 6 1314 80 -45 0 PatternFill
+1190 640 5 1307 80 -45 0 PatternFill
+1194 640 6 1239 80 -45 0 PatternFill
+1199 640 5 1247 80 -45 0 PatternFill
+1203 640 6 1286 80 -45 0 PatternFill
+1208 640 5 1268 80 -45 0 PatternFill
+1212 640 6 1277 80 -45 0 PatternFill
+1217 640 5 1281 80 -45 0 PatternFill
+1221 640 6 1276 80 -45 0 PatternFill
+1226 640 5 1291 80 -45 0 PatternFill
+1230 640 6 1224 80 -45 0 PatternFill
+1235 640 5 1215 80 -45 0 PatternFill
+1239 640 6 1177 80 -45 0 PatternFill
+1244 640 5 1225 80 -45 0 PatternFill
+1248 640 6 1195 80 -45 0 PatternFill
+1253 640 5 1216 80 -45 0 PatternFill
+1257 640 6 1223 80 -45 0 PatternFill
+1262 640 5 1186 80 -45 0 PatternFill
+1266 640 6 1145 80 -45 0 PatternFill
+1271 640 5 1200 80 -45 0 PatternFill
+1275 640 6 1177 80 -45 0 PatternFill
+1280 640 5 1153 80 -45 0 PatternFill
+1284 640 6 1119 80 -45 0 PatternFill
+1289 640 5 1111 80 -45 0 PatternFill
+1293 640 6 1146 80 -45 0 PatternFill
+1298 640 5 1156 80 -45 0 PatternFill
+1302 640 6 1046 80 -45 0 PatternFill
+1307 640 5 1082 80 -45 0 PatternFill
+1311 640 6 1055 80 -45 0 PatternFill
+1316 640 5 1067 80 -45 0 PatternFill
+1320 640 6 1043 80 -45 0 PatternFill
+1325 640 5 1026 80 -45 0 PatternFill
+1329 640 6 1004 80 -45 0 PatternFill
+1334 640 5 1057 80 -45 0 PatternFill
+1338 640 6 1040 80 -45 0 PatternFill
+1343 640 5 1028 80 -45 0 PatternFill
+1347 640 6 995 80 -45 0 PatternFill
+1352 640 5 953 80 -45 0 PatternFill
+1356 640 6 994 80 -45 0 PatternFill
+1361 640 5 995 80 -45 0 PatternFill
+1365 640 6 901 80 -45 0 PatternFill
+1370 640 5 925 80 -45 0 PatternFill
+1374 640 6 905 80 -45 0 PatternFill
+1379 640 5 903 80 -45 0 PatternFill
+1383 640 6 887 80 -45 0 PatternFill
+1388 640 5 896 80 -45 0 PatternFill
+1392 640 6 880 80 -45 0 PatternFill
+1397 640 5 852 80 -45 0 PatternFill
+1401 640 6 842 80 -45 0 PatternFill
+1406 640 5 858 80 -45 0 PatternFill
+1410 640 6 838 80 -45 0 PatternFill
+1415 640 5 777 80 -45 0 PatternFill
+1419 640 6 841 80 -45 0 PatternFill
+1424 640 5 802 80 -45 0 PatternFill
+1428 640 6 772 80 -45 0 PatternFill
+1433 640 5 798 80 -45 0 PatternFill
+1437 640 6 773 80 -45 0 PatternFill
+1442 640 5 778 80 -45 0 PatternFill
+1446 640 6 740 80 -45 0 PatternFill
+1451 640 5 763 80 -45 0 PatternFill
+1455 640 6 689 80 -45 0 PatternFill
+1460 640 5 755 80 -45 0 PatternFill
+1464 640 6 735 80 -45 0 PatternFill
+1469 640 5 696 80 -45 0 PatternFill
+1473 640 6 701 80 -45 0 PatternFill
+1478 640 5 659 80 -45 0 PatternFill
+1482 640 6 670 80 -45 0 PatternFill
+1487 640 5 671 80 -45 0 PatternFill
+1491 640 6 671 80 -45 0 PatternFill
+1496 640 5 633 80 -45 0 PatternFill
+1500 640 6 660 80 -45 0 PatternFill
+1505 640 5 611 80 -45 0 PatternFill
+1509 640 6 599 80 -45 0 PatternFill
+1514 640 5 623 80 -45 0 PatternFill
+1518 640 6 586 80 -45 0 PatternFill
+1523 640 5 570 80 -45 0 PatternFill
+1527 640 6 581 80 -45 0 PatternFill
+1532 640 5 583 80 -45 0 PatternFill
+1536 640 6 575 80 -45 0 PatternFill
+1541 640 5 542 80 -45 0 PatternFill
+1545 640 6 548 80 -45 0 PatternFill
+1550 640 5 537 80 -45 0 PatternFill
+1554 640 6 496 80 -45 0 PatternFill
+1559 640 5 509 80 -45 0 PatternFill
+1563 640 6 493 80 -45 0 PatternFill
+1568 640 5 500 80 -45 0 PatternFill
+1572 640 6 472 80 -45 0 PatternFill
+1577 640 5 465 80 -45 0 PatternFill
+1581 640 6 464 80 -45 0 PatternFill
+1586 640 5 474 80 -45 0 PatternFill
+1590 640 6 453 80 -45 0 PatternFill
+1595 640 5 435 80 -45 0 PatternFill
+1599 640 6 414 80 -45 0 PatternFill
+1604 640 5 450 80 -45 0 PatternFill
+1608 640 6 424 80 -45 0 PatternFill
+1613 640 5 405 80 -45 0 PatternFill
+1617 640 6 381 80 -45 0 PatternFill
+1622 640 5 396 80 -45 0 PatternFill
+1626 640 6 389 80 -45 0 PatternFill
+1631 640 5 382 80 -45 0 PatternFill
+1635 640 6 384 80 -45 0 PatternFill
+1640 640 5 370 80 -45 0 PatternFill
+1644 640 6 352 80 -45 0 PatternFill
+1649 640 5 338 80 -45 0 PatternFill
+1653 640 6 347 80 -45 0 PatternFill
+1658 640 5 332 80 -45 0 PatternFill
+1662 640 6 316 80 -45 0 PatternFill
+1667 640 5 318 80 -45 0 PatternFill
+1671 640 6 326 80 -45 0 PatternFill
+1676 640 5 310 80 -45 0 PatternFill
+1680 640 6 305 80 -45 0 PatternFill
+1685 640 5 312 80 -45 0 PatternFill
+1689 640 6 293 80 -45 0 PatternFill
+1694 640 5 274 80 -45 0 PatternFill
+1698 640 6 286 80 -45 0 PatternFill
+1703 640 5 269 80 -45 0 PatternFill
+1707 640 6 263 80 -45 0 PatternFill
+1712 640 5 274 80 -45 0 PatternFill
+1716 640 6 234 80 -45 0 PatternFill
+1721 640 5 280 80 -45 0 PatternFill
+1725 640 6 243 80 -45 0 PatternFill
+1730 640 5 234 80 -45 0 PatternFill
+1734 640 6 248 80 -45 0 PatternFill
+1739 640 5 214 80 -45 0 PatternFill
+1743 640 6 204 80 -45 0 PatternFill
+1748 640 5 219 80 -45 0 PatternFill
+1752 640 6 195 80 -45 0 PatternFill
+1757 640 5 217 80 -45 0 PatternFill
+1761 640 6 196 80 -45 0 PatternFill
+1766 640 5 176 80 -45 0 PatternFill
+1770 640 6 207 80 -45 0 PatternFill
+1775 640 5 170 80 -45 0 PatternFill
+1779 640 6 176 80 -45 0 PatternFill
+1784 640 5 185 80 -45 0 PatternFill
+1788 640 6 195 80 -45 0 PatternFill
+1793 640 5 168 80 -45 0 PatternFill
+1797 640 6 158 80 -45 0 PatternFill
+1802 640 5 152 80 -45 0 PatternFill
+1806 640 6 170 80 -45 0 PatternFill
+1811 640 5 147 80 -45 0 PatternFill
+1815 640 6 150 80 -45 0 PatternFill
+1820 640 5 131 80 -45 0 PatternFill
+1824 640 6 154 80 -45 0 PatternFill
+1829 640 5 141 80 -45 0 PatternFill
+1833 640 6 136 80 -45 0 PatternFill
+1838 640 5 142 80 -45 0 PatternFill
+1842 640 6 131 80 -45 0 PatternFill
+1847 640 5 128 80 -45 0 PatternFill
+1851 640 6 109 80 -45 0 PatternFill
+1856 640 5 112 80 -45 0 PatternFill
+1860 640 6 106 80 -45 0 PatternFill
+1865 640 5 121 80 -45 0 PatternFill
+1869 640 6 111 80 -45 0 PatternFill
+1874 640 5 113 80 -45 0 PatternFill
+1878 640 6 101 80 -45 0 PatternFill
+1883 640 5 94 80 -45 0 PatternFill
+1887 640 6 98 80 -45 0 PatternFill
+1892 640 5 97 80 -45 0 PatternFill
+1896 640 6 103 80 -45 0 PatternFill
+1901 640 5 82 80 -45 0 PatternFill
+1905 640 6 83 80 -45 0 PatternFill
+1910 640 5 82 80 -45 0 PatternFill
+1914 640 6 97 80 -45 0 PatternFill
+1919 640 5 89 80 -45 0 PatternFill
+1923 640 6 91 80 -45 0 PatternFill
+1928 640 5 79 80 -45 0 PatternFill
+1932 640 6 85 80 -45 0 PatternFill
+1937 640 5 79 80 -45 0 PatternFill
+1941 640 6 79 80 -45 0 PatternFill
+1946 640 5 72 80 -45 0 PatternFill
+1950 640 6 78 80 -45 0 PatternFill
+1955 640 5 60 80 -45 0 PatternFill
+1959 640 6 70 80 -45 0 PatternFill
+1964 640 5 70 80 -45 0 PatternFill
+1968 640 6 70 80 -45 0 PatternFill
+1973 640 5 59 80 -45 0 PatternFill
+1977 640 6 62 80 -45 0 PatternFill
+1982 640 5 61 80 -45 0 PatternFill
+1986 640 6 53 80 -45 0 PatternFill
+1991 640 5 57 80 -45 0 PatternFill
+1995 640 6 53 80 -45 0 PatternFill
+2000 640 5 53 80 -45 0 PatternFill
+2004 640 6 44 80 -45 0 PatternFill
+2009 640 5 58 80 -45 0 PatternFill
+2013 640 6 51 80 -45 0 PatternFill
+2018 640 5 42 80 -45 0 PatternFill
+2022 640 6 46 80 -45 0 PatternFill
+2027 640 5 39 80 -45 0 PatternFill
+2031 640 6 40 80 -45 0 PatternFill
+2036 640 5 46 80 -45 0 PatternFill
+2040 640 6 38 80 -45 0 PatternFill
+2045 640 5 43 80 -45 0 PatternFill
+2049 640 6 46 80 -45 0 PatternFill
+2054 640 5 40 80 -45 0 PatternFill
+2058 640 6 39 80 -45 0 PatternFill
+2063 640 5 38 80 -45 0 PatternFill
+2067 640 6 30 80 -45 0 PatternFill
+2072 640 5 35 80 -45 0 PatternFill
+2076 640 6 35 80 -45 0 PatternFill
+2081 640 5 36 80 -45 0 PatternFill
+2085 640 6 36 80 -45 0 PatternFill
+2090 640 5 27 80 -45 0 PatternFill
+2094 640 6 26 80 -45 0 PatternFill
+2099 640 5 31 80 -45 0 PatternFill
+2103 640 6 28 80 -45 0 PatternFill
+2108 640 5 25 80 -45 0 PatternFill
+2112 640 6 36 80 -45 0 PatternFill
+2117 640 5 26 80 -45 0 PatternFill
+2121 640 6 27 80 -45 0 PatternFill
+2126 640 5 22 80 -45 0 PatternFill
+2130 640 6 27 80 -45 0 PatternFill
+2135 640 5 18 80 -45 0 PatternFill
+2139 640 6 14 80 -45 0 PatternFill
+2144 640 5 18 80 -45 0 PatternFill
+2148 640 6 13 80 -45 0 PatternFill
+2153 640 5 23 80 -45 0 PatternFill
+2157 640 6 21 80 -45 0 PatternFill
+2162 640 5 23 80 -45 0 PatternFill
+2166 640 6 27 80 -45 0 PatternFill
+2171 640 5 17 80 -45 0 PatternFill
+2175 640 6 16 80 -45 0 PatternFill
+2180 640 5 19 80 -45 0 PatternFill
+2184 640 6 17 80 -45 0 PatternFill
+2189 640 5 15 80 -45 0 PatternFill
+2193 640 6 20 80 -45 0 PatternFill
+2198 640 5 14 80 -45 0 PatternFill
+2202 640 5 8 80 -45 0 PatternFill
+2206 640 6 12 80 -45 0 PatternFill
+2211 640 6 13 80 -45 0 PatternFill
+2216 640 5 13 80 -45 0 PatternFill
+2220 640 5 14 80 -45 0 PatternFill
+2224 640 6 12 80 -45 0 PatternFill
+2229 640 5 11 80 -45 0 PatternFill
+2233 640 6 8 80 -45 0 PatternFill
+2238 640 5 13 80 -45 0 PatternFill
+2242 640 6 10 80 -45 0 PatternFill
+2247 640 5 9 80 -45 0 PatternFill
+2251 640 6 9 80 -45 0 PatternFill
+2256 640 5 5 80 -45 0 PatternFill
+2260 640 6 9 80 -45 0 PatternFill
+2265 640 5 13 80 -45 0 PatternFill
+2269 640 6 8 80 -45 0 PatternFill
+2274 640 5 6 80 -45 0 PatternFill
+2278 640 6 14 80 -45 0 PatternFill
+2283 640 5 7 80 -45 0 PatternFill
+2287 640 6 9 80 -45 0 PatternFill
+2292 640 5 5 80 -45 0 PatternFill
+2296 640 6 7 80 -45 0 PatternFill
+2301 640 5 8 80 -45 0 PatternFill
+2305 640 6 3 80 -45 0 PatternFill
+2310 640 5 9 80 -45 0 PatternFill
+2314 640 6 2 80 -45 0 PatternFill
+2319 640 5 6 80 -45 0 PatternFill
+2323 640 6 8 80 -45 0 PatternFill
+2328 640 5 6 80 -45 0 PatternFill
+2332 640 6 6 80 -45 0 PatternFill
+2337 640 5 4 80 -45 0 PatternFill
+2341 640 6 5 80 -45 0 PatternFill
+2346 640 5 5 80 -45 0 PatternFill
+2350 640 6 4 80 -45 0 PatternFill
+2355 640 5 5 80 -45 0 PatternFill
+2359 640 6 3 80 -45 0 PatternFill
+2364 640 5 4 80 -45 0 PatternFill
+2368 640 6 3 80 -45 0 PatternFill
+2373 640 5 5 80 -45 0 PatternFill
+2377 640 6 5 80 -45 0 PatternFill
+2382 640 5 5 80 -45 0 PatternFill
+2386 640 6 4 80 -45 0 PatternFill
+2391 640 5 4 80 -45 0 PatternFill
+2395 640 6 3 80 -45 0 PatternFill
+2400 640 5 3 80 -45 0 PatternFill
+2404 640 6 6 80 -45 0 PatternFill
+2409 640 5 2 80 -45 0 PatternFill
+2413 640 6 3 80 -45 0 PatternFill
+2418 640 5 5 80 -45 0 PatternFill
+2422 640 6 3 80 -45 0 PatternFill
+2427 640 5 4 80 -45 0 PatternFill
+2431 640 6 3 80 -45 0 PatternFill
+2436 640 5 2 80 -45 0 PatternFill
+2440 640 6 3 80 -45 0 PatternFill
+2445 640 5 4 80 -45 0 PatternFill
+2449 640 6 3 80 -45 0 PatternFill
+2454 640 5 2 80 -45 0 PatternFill
+2458 640 6 3 80 -45 0 PatternFill
+2463 640 5 3 80 -45 0 PatternFill
+2467 640 6 2 80 -45 0 PatternFill
+2472 640 5 3 80 -45 0 PatternFill
+2476 640 6 2 80 -45 0 PatternFill
+2481 640 5 2 80 -45 0 PatternFill
+2485 640 6 2 80 -45 0 PatternFill
+2490 640 5 2 80 -45 0 PatternFill
+2494 640 6 3 80 -45 0 PatternFill
+2503 640 6 2 80 -45 0 PatternFill
+2508 640 5 3 80 -45 0 PatternFill
+2526 640 5 2 80 -45 0 PatternFill
+2530 640 6 2 80 -45 0 PatternFill
+2535 640 5 2 80 -45 0 PatternFill
+2544 640 5 2 80 -45 0 PatternFill
+2548 640 6 2 80 -45 0 PatternFill
+2553 640 5 2 80 -45 0 PatternFill
+2557 640 6 2 80 -45 0 PatternFill
+2566 640 6 3 80 -45 0 PatternFill
+2584 640 6 2 80 -45 0 PatternFill
+2589 640 5 2 80 -45 0 PatternFill
+2593 640 6 2 80 -45 0 PatternFill
+2611 640 6 2 80 -45 0 PatternFill
+2620 640 6 2 80 -45 0 PatternFill
+2629 640 6 2 80 -45 0 PatternFill
+2643 640 5 3 80 -45 0 PatternFill
+2656 640 6 2 80 -45 0 PatternFill
+2665 640 6 2 80 -45 0 PatternFill
+2674 640 6 2 80 -45 0 PatternFill
+2724 640 5 2 80 -45 0 PatternFill
+% End plot #2
+% Begin plot #3
+0.800 UL
+LT0
+LC3 setrgbcolor
+LCb setrgbcolor
+8912 3164 M
+[ [(Symbol) 200.0 0.0 true true 0 (h)]
+[(Helvetica) 200.0 0.0 true true 0 ( = 0.595)]
+] -66.7 MRshow
+LT0
+LC3 setrgbcolor
+9032 3114 571 100 40 30 0 PatternFill
+863 640 9 16 40 30 0 PatternFill
+871 640 9 29 40 30 0 PatternFill
+879 640 8 45 40 30 0 PatternFill
+886 640 9 50 40 30 0 PatternFill
+894 640 9 62 40 30 0 PatternFill
+902 640 8 72 40 30 0 PatternFill
+909 640 9 80 40 30 0 PatternFill
+917 640 9 106 40 30 0 PatternFill
+925 640 9 110 40 30 0 PatternFill
+933 640 8 120 40 30 0 PatternFill
+940 640 9 136 40 30 0 PatternFill
+948 640 9 151 40 30 0 PatternFill
+956 640 8 162 40 30 0 PatternFill
+963 640 9 164 40 30 0 PatternFill
+971 640 9 190 40 30 0 PatternFill
+979 640 8 199 40 30 0 PatternFill
+986 640 9 198 40 30 0 PatternFill
+994 640 9 215 40 30 0 PatternFill
+1002 640 8 234 40 30 0 PatternFill
+1009 640 9 233 40 30 0 PatternFill
+1017 640 9 258 40 30 0 PatternFill
+1025 640 8 270 40 30 0 PatternFill
+1032 640 9 286 40 30 0 PatternFill
+1040 640 9 288 40 30 0 PatternFill
+1048 640 8 301 40 30 0 PatternFill
+1055 640 9 288 40 30 0 PatternFill
+1063 640 9 307 40 30 0 PatternFill
+1071 640 9 305 40 30 0 PatternFill
+1079 640 8 343 40 30 0 PatternFill
+1086 640 9 344 40 30 0 PatternFill
+1094 640 9 357 40 30 0 PatternFill
+1102 640 8 358 40 30 0 PatternFill
+1109 640 9 375 40 30 0 PatternFill
+1117 640 9 404 40 30 0 PatternFill
+1125 640 8 389 40 30 0 PatternFill
+1132 640 9 382 40 30 0 PatternFill
+1140 640 9 428 40 30 0 PatternFill
+1148 640 8 408 40 30 0 PatternFill
+1155 640 9 418 40 30 0 PatternFill
+1163 640 9 450 40 30 0 PatternFill
+1171 640 8 442 40 30 0 PatternFill
+1178 640 9 479 40 30 0 PatternFill
+1186 640 9 437 40 30 0 PatternFill
+1194 640 8 478 40 30 0 PatternFill
+1201 640 9 464 40 30 0 PatternFill
+1209 640 9 500 40 30 0 PatternFill
+1217 640 9 531 40 30 0 PatternFill
+1225 640 8 487 40 30 0 PatternFill
+1232 640 9 527 40 30 0 PatternFill
+1240 640 9 528 40 30 0 PatternFill
+1248 640 8 520 40 30 0 PatternFill
+1255 640 9 558 40 30 0 PatternFill
+1263 640 9 554 40 30 0 PatternFill
+1271 640 8 541 40 30 0 PatternFill
+1278 640 9 551 40 30 0 PatternFill
+1286 640 9 551 40 30 0 PatternFill
+1294 640 8 567 40 30 0 PatternFill
+1301 640 9 601 40 30 0 PatternFill
+1309 640 9 556 40 30 0 PatternFill
+1317 640 8 592 40 30 0 PatternFill
+1324 640 9 595 40 30 0 PatternFill
+1332 640 9 611 40 30 0 PatternFill
+1340 640 8 600 40 30 0 PatternFill
+1347 640 9 605 40 30 0 PatternFill
+1355 640 9 614 40 30 0 PatternFill
+1363 640 8 626 40 30 0 PatternFill
+1370 640 9 611 40 30 0 PatternFill
+1378 640 9 643 40 30 0 PatternFill
+1386 640 9 621 40 30 0 PatternFill
+1394 640 8 647 40 30 0 PatternFill
+1401 640 9 640 40 30 0 PatternFill
+1409 640 9 623 40 30 0 PatternFill
+1417 640 8 668 40 30 0 PatternFill
+1424 640 9 654 40 30 0 PatternFill
+1432 640 9 645 40 30 0 PatternFill
+1440 640 8 656 40 30 0 PatternFill
+1447 640 9 675 40 30 0 PatternFill
+1455 640 9 640 40 30 0 PatternFill
+1463 640 8 638 40 30 0 PatternFill
+1470 640 9 640 40 30 0 PatternFill
+1478 640 9 688 40 30 0 PatternFill
+1486 640 8 672 40 30 0 PatternFill
+1493 640 9 639 40 30 0 PatternFill
+1501 640 9 658 40 30 0 PatternFill
+1509 640 8 668 40 30 0 PatternFill
+1516 640 9 656 40 30 0 PatternFill
+1524 640 9 666 40 30 0 PatternFill
+1532 640 9 669 40 30 0 PatternFill
+1540 640 8 637 40 30 0 PatternFill
+1547 640 9 671 40 30 0 PatternFill
+1555 640 9 667 40 30 0 PatternFill
+1563 640 8 664 40 30 0 PatternFill
+1570 640 9 689 40 30 0 PatternFill
+1578 640 9 662 40 30 0 PatternFill
+1586 640 8 677 40 30 0 PatternFill
+1593 640 9 662 40 30 0 PatternFill
+1601 640 9 672 40 30 0 PatternFill
+1609 640 8 693 40 30 0 PatternFill
+1616 640 9 657 40 30 0 PatternFill
+1624 640 9 666 40 30 0 PatternFill
+1632 640 8 620 40 30 0 PatternFill
+1639 640 9 681 40 30 0 PatternFill
+1647 640 9 647 40 30 0 PatternFill
+1655 640 8 636 40 30 0 PatternFill
+1662 640 9 610 40 30 0 PatternFill
+1670 640 9 631 40 30 0 PatternFill
+1678 640 9 633 40 30 0 PatternFill
+1686 640 8 651 40 30 0 PatternFill
+1693 640 9 635 40 30 0 PatternFill
+1701 640 9 615 40 30 0 PatternFill
+1709 640 8 625 40 30 0 PatternFill
+1716 640 9 631 40 30 0 PatternFill
+1724 640 9 625 40 30 0 PatternFill
+1732 640 8 633 40 30 0 PatternFill
+1739 640 9 592 40 30 0 PatternFill
+1747 640 9 608 40 30 0 PatternFill
+1755 640 8 617 40 30 0 PatternFill
+1762 640 9 613 40 30 0 PatternFill
+1770 640 9 613 40 30 0 PatternFill
+1778 640 8 581 40 30 0 PatternFill
+1785 640 9 616 40 30 0 PatternFill
+1793 640 9 601 40 30 0 PatternFill
+1801 640 8 605 40 30 0 PatternFill
+1808 640 9 557 40 30 0 PatternFill
+1816 640 9 593 40 30 0 PatternFill
+1824 640 9 570 40 30 0 PatternFill
+1832 640 8 590 40 30 0 PatternFill
+1839 640 9 558 40 30 0 PatternFill
+1847 640 9 558 40 30 0 PatternFill
+1855 640 8 552 40 30 0 PatternFill
+1862 640 9 562 40 30 0 PatternFill
+1870 640 9 549 40 30 0 PatternFill
+1878 640 8 548 40 30 0 PatternFill
+1885 640 9 548 40 30 0 PatternFill
+1893 640 9 526 40 30 0 PatternFill
+1901 640 8 519 40 30 0 PatternFill
+1908 640 9 543 40 30 0 PatternFill
+1916 640 9 514 40 30 0 PatternFill
+1924 640 8 527 40 30 0 PatternFill
+1931 640 9 528 40 30 0 PatternFill
+1939 640 9 529 40 30 0 PatternFill
+1947 640 8 502 40 30 0 PatternFill
+1954 640 9 505 40 30 0 PatternFill
+1962 640 9 489 40 30 0 PatternFill
+1970 640 8 466 40 30 0 PatternFill
+1977 640 9 459 40 30 0 PatternFill
+1985 640 9 460 40 30 0 PatternFill
+1993 640 9 468 40 30 0 PatternFill
+2001 640 8 444 40 30 0 PatternFill
+2008 640 9 447 40 30 0 PatternFill
+2016 640 9 463 40 30 0 PatternFill
+2024 640 8 431 40 30 0 PatternFill
+2031 640 9 444 40 30 0 PatternFill
+2039 640 9 410 40 30 0 PatternFill
+2047 640 8 442 40 30 0 PatternFill
+2054 640 9 425 40 30 0 PatternFill
+2062 640 9 417 40 30 0 PatternFill
+2070 640 8 408 40 30 0 PatternFill
+2077 640 9 402 40 30 0 PatternFill
+2085 640 9 422 40 30 0 PatternFill
+2093 640 8 413 40 30 0 PatternFill
+2100 640 9 395 40 30 0 PatternFill
+2108 640 9 389 40 30 0 PatternFill
+2116 640 8 405 40 30 0 PatternFill
+2123 640 9 362 40 30 0 PatternFill
+2131 640 9 373 40 30 0 PatternFill
+2139 640 9 371 40 30 0 PatternFill
+2147 640 8 351 40 30 0 PatternFill
+2154 640 9 360 40 30 0 PatternFill
+2162 640 9 325 40 30 0 PatternFill
+2170 640 8 361 40 30 0 PatternFill
+2177 640 9 346 40 30 0 PatternFill
+2185 640 9 346 40 30 0 PatternFill
+2193 640 8 345 40 30 0 PatternFill
+2200 640 9 329 40 30 0 PatternFill
+2208 640 9 344 40 30 0 PatternFill
+2216 640 8 324 40 30 0 PatternFill
+2223 640 9 323 40 30 0 PatternFill
+2231 640 9 311 40 30 0 PatternFill
+2239 640 8 303 40 30 0 PatternFill
+2246 640 9 297 40 30 0 PatternFill
+2254 640 9 307 40 30 0 PatternFill
+2262 640 8 278 40 30 0 PatternFill
+2269 640 9 284 40 30 0 PatternFill
+2277 640 9 276 40 30 0 PatternFill
+2285 640 9 282 40 30 0 PatternFill
+2293 640 8 286 40 30 0 PatternFill
+2300 640 9 257 40 30 0 PatternFill
+2308 640 9 262 40 30 0 PatternFill
+2316 640 8 242 40 30 0 PatternFill
+2323 640 9 245 40 30 0 PatternFill
+2331 640 9 230 40 30 0 PatternFill
+2339 640 8 238 40 30 0 PatternFill
+2346 640 9 233 40 30 0 PatternFill
+2354 640 9 227 40 30 0 PatternFill
+2362 640 8 232 40 30 0 PatternFill
+2369 640 9 218 40 30 0 PatternFill
+2377 640 9 210 40 30 0 PatternFill
+2385 640 8 214 40 30 0 PatternFill
+2392 640 9 198 40 30 0 PatternFill
+2400 640 9 200 40 30 0 PatternFill
+2408 640 8 206 40 30 0 PatternFill
+2415 640 9 209 40 30 0 PatternFill
+2423 640 9 200 40 30 0 PatternFill
+2431 640 9 194 40 30 0 PatternFill
+2439 640 8 196 40 30 0 PatternFill
+2446 640 9 175 40 30 0 PatternFill
+2454 640 9 172 40 30 0 PatternFill
+2462 640 8 177 40 30 0 PatternFill
+2469 640 9 192 40 30 0 PatternFill
+2477 640 9 177 40 30 0 PatternFill
+2485 640 8 166 40 30 0 PatternFill
+2492 640 9 166 40 30 0 PatternFill
+2500 640 9 170 40 30 0 PatternFill
+2508 640 8 159 40 30 0 PatternFill
+2515 640 9 159 40 30 0 PatternFill
+2523 640 9 150 40 30 0 PatternFill
+2531 640 8 163 40 30 0 PatternFill
+2538 640 9 139 40 30 0 PatternFill
+2546 640 9 139 40 30 0 PatternFill
+2554 640 8 143 40 30 0 PatternFill
+2561 640 9 136 40 30 0 PatternFill
+2569 640 9 141 40 30 0 PatternFill
+2577 640 8 131 40 30 0 PatternFill
+2584 640 9 121 40 30 0 PatternFill
+2592 640 9 123 40 30 0 PatternFill
+2600 640 9 126 40 30 0 PatternFill
+2608 640 8 113 40 30 0 PatternFill
+2615 640 9 112 40 30 0 PatternFill
+2623 640 9 113 40 30 0 PatternFill
+2631 640 8 109 40 30 0 PatternFill
+2638 640 9 121 40 30 0 PatternFill
+2646 640 9 106 40 30 0 PatternFill
+2654 640 8 121 40 30 0 PatternFill
+2661 640 9 89 40 30 0 PatternFill
+2669 640 9 101 40 30 0 PatternFill
+2677 640 8 93 40 30 0 PatternFill
+2684 640 9 86 40 30 0 PatternFill
+2692 640 9 100 40 30 0 PatternFill
+2700 640 8 83 40 30 0 PatternFill
+2707 640 9 95 40 30 0 PatternFill
+2715 640 9 95 40 30 0 PatternFill
+2723 640 8 82 40 30 0 PatternFill
+2730 640 9 90 40 30 0 PatternFill
+2738 640 9 72 40 30 0 PatternFill
+2746 640 9 72 40 30 0 PatternFill
+2754 640 8 76 40 30 0 PatternFill
+2761 640 9 65 40 30 0 PatternFill
+2769 640 9 72 40 30 0 PatternFill
+2777 640 8 72 40 30 0 PatternFill
+2784 640 9 62 40 30 0 PatternFill
+2792 640 9 57 40 30 0 PatternFill
+2800 640 8 65 40 30 0 PatternFill
+2807 640 9 58 40 30 0 PatternFill
+2815 640 9 69 40 30 0 PatternFill
+2823 640 8 56 40 30 0 PatternFill
+2830 640 9 55 40 30 0 PatternFill
+2838 640 9 52 40 30 0 PatternFill
+2846 640 8 56 40 30 0 PatternFill
+2853 640 9 47 40 30 0 PatternFill
+2861 640 9 60 40 30 0 PatternFill
+2869 640 8 44 40 30 0 PatternFill
+2876 640 9 50 40 30 0 PatternFill
+2884 640 9 42 40 30 0 PatternFill
+2892 640 9 42 40 30 0 PatternFill
+2900 640 8 42 40 30 0 PatternFill
+2907 640 9 43 40 30 0 PatternFill
+2915 640 9 42 40 30 0 PatternFill
+2923 640 8 38 40 30 0 PatternFill
+2930 640 9 38 40 30 0 PatternFill
+2938 640 9 39 40 30 0 PatternFill
+2946 640 8 35 40 30 0 PatternFill
+2953 640 9 39 40 30 0 PatternFill
+2961 640 9 36 40 30 0 PatternFill
+2969 640 8 39 40 30 0 PatternFill
+2976 640 9 32 40 30 0 PatternFill
+2984 640 9 37 40 30 0 PatternFill
+2992 640 8 31 40 30 0 PatternFill
+2999 640 9 28 40 30 0 PatternFill
+3007 640 9 25 40 30 0 PatternFill
+3015 640 8 27 40 30 0 PatternFill
+3022 640 9 30 40 30 0 PatternFill
+3030 640 9 31 40 30 0 PatternFill
+3038 640 9 20 40 30 0 PatternFill
+3046 640 8 28 40 30 0 PatternFill
+3053 640 9 25 40 30 0 PatternFill
+3061 640 9 25 40 30 0 PatternFill
+3069 640 8 23 40 30 0 PatternFill
+3076 640 9 26 40 30 0 PatternFill
+3084 640 9 18 40 30 0 PatternFill
+3092 640 8 27 40 30 0 PatternFill
+3099 640 9 21 40 30 0 PatternFill
+3107 640 9 23 40 30 0 PatternFill
+3115 640 8 19 40 30 0 PatternFill
+3122 640 9 21 40 30 0 PatternFill
+3130 640 9 18 40 30 0 PatternFill
+3138 640 8 15 40 30 0 PatternFill
+3145 640 9 21 40 30 0 PatternFill
+3153 640 9 19 40 30 0 PatternFill
+3161 640 8 17 40 30 0 PatternFill
+3168 640 9 16 40 30 0 PatternFill
+3176 640 9 13 40 30 0 PatternFill
+3184 640 8 10 40 30 0 PatternFill
+3191 640 9 12 40 30 0 PatternFill
+3199 640 9 11 40 30 0 PatternFill
+3207 640 9 16 40 30 0 PatternFill
+3215 640 8 12 40 30 0 PatternFill
+3222 640 9 11 40 30 0 PatternFill
+3230 640 9 9 40 30 0 PatternFill
+3238 640 8 9 40 30 0 PatternFill
+3245 640 9 10 40 30 0 PatternFill
+3253 640 9 9 40 30 0 PatternFill
+3261 640 8 10 40 30 0 PatternFill
+3268 640 9 7 40 30 0 PatternFill
+3276 640 9 8 40 30 0 PatternFill
+3284 640 8 11 40 30 0 PatternFill
+3291 640 9 6 40 30 0 PatternFill
+3299 640 9 11 40 30 0 PatternFill
+3307 640 8 10 40 30 0 PatternFill
+3314 640 9 7 40 30 0 PatternFill
+3322 640 9 9 40 30 0 PatternFill
+3330 640 8 9 40 30 0 PatternFill
+3337 640 9 8 40 30 0 PatternFill
+3345 640 9 8 40 30 0 PatternFill
+3353 640 9 7 40 30 0 PatternFill
+3361 640 8 5 40 30 0 PatternFill
+3368 640 9 4 40 30 0 PatternFill
+3376 640 9 4 40 30 0 PatternFill
+3384 640 8 5 40 30 0 PatternFill
+3391 640 9 5 40 30 0 PatternFill
+3399 640 9 6 40 30 0 PatternFill
+3407 640 8 8 40 30 0 PatternFill
+3414 640 9 4 40 30 0 PatternFill
+3422 640 9 7 40 30 0 PatternFill
+3430 640 8 8 40 30 0 PatternFill
+3437 640 9 5 40 30 0 PatternFill
+3445 640 9 5 40 30 0 PatternFill
+3453 640 8 4 40 30 0 PatternFill
+3460 640 9 5 40 30 0 PatternFill
+3468 640 9 6 40 30 0 PatternFill
+3476 640 8 5 40 30 0 PatternFill
+3483 640 9 4 40 30 0 PatternFill
+3491 640 9 4 40 30 0 PatternFill
+3499 640 9 4 40 30 0 PatternFill
+3507 640 8 4 40 30 0 PatternFill
+3514 640 9 5 40 30 0 PatternFill
+3522 640 9 5 40 30 0 PatternFill
+3530 640 8 4 40 30 0 PatternFill
+3537 640 9 3 40 30 0 PatternFill
+3545 640 9 4 40 30 0 PatternFill
+3553 640 8 3 40 30 0 PatternFill
+3560 640 9 5 40 30 0 PatternFill
+3568 640 9 4 40 30 0 PatternFill
+3576 640 8 2 40 30 0 PatternFill
+3583 640 9 3 40 30 0 PatternFill
+3591 640 9 2 40 30 0 PatternFill
+3599 640 8 2 40 30 0 PatternFill
+3606 640 9 5 40 30 0 PatternFill
+3614 640 9 1 40 30 0 PatternFill
+3622 640 8 3 40 30 0 PatternFill
+3629 640 9 3 40 30 0 PatternFill
+3637 640 9 3 40 30 0 PatternFill
+3645 640 9 3 40 30 0 PatternFill
+3653 640 8 3 40 30 0 PatternFill
+3660 640 9 2 40 30 0 PatternFill
+3668 640 9 1 40 30 0 PatternFill
+3676 640 8 3 40 30 0 PatternFill
+3683 640 9 2 40 30 0 PatternFill
+3691 640 9 3 40 30 0 PatternFill
+3699 640 8 1 40 30 0 PatternFill
+3706 640 9 3 40 30 0 PatternFill
+3714 640 9 3 40 30 0 PatternFill
+3722 640 8 2 40 30 0 PatternFill
+3729 640 9 2 40 30 0 PatternFill
+3737 640 9 2 40 30 0 PatternFill
+3745 640 8 2 40 30 0 PatternFill
+3752 640 9 2 40 30 0 PatternFill
+3760 640 9 1 40 30 0 PatternFill
+3768 640 8 1 40 30 0 PatternFill
+3775 640 9 1 40 30 0 PatternFill
+3783 640 9 2 40 30 0 PatternFill
+3791 640 8 1 40 30 0 PatternFill
+3798 640 9 1 40 30 0 PatternFill
+3814 640 9 1 40 30 0 PatternFill
+3829 640 9 1 40 30 0 PatternFill
+3868 640 8 2 40 30 0 PatternFill
+3883 640 9 2 40 30 0 PatternFill
+3898 640 9 2 40 30 0 PatternFill
+3914 640 8 1 40 30 0 PatternFill
+3991 640 8 1 40 30 0 PatternFill
+4006 640 9 1 40 30 0 PatternFill
+4083 640 8 1 40 30 0 PatternFill
+4129 640 9 1 40 30 0 PatternFill
+4144 640 9 2 40 30 0 PatternFill
+% End plot #3
+% Begin plot #4
+0.800 UL
+LT0
+LC4 setrgbcolor
+LCb setrgbcolor
+8912 2964 M
+[ [(Symbol) 200.0 0.0 true true 0 (h)]
+[(Helvetica) 200.0 0.0 true true 0 ( = 0.500)]
+] -66.7 MRshow
+LT0
+LC4 setrgbcolor
+9032 2914 571 100 40 -30 0 PatternFill
+863 640 11 9 40 -30 0 PatternFill
+873 640 11 18 40 -30 0 PatternFill
+883 640 11 32 40 -30 0 PatternFill
+893 640 11 40 40 -30 0 PatternFill
+903 640 11 42 40 -30 0 PatternFill
+913 640 11 51 40 -30 0 PatternFill
+923 640 11 64 40 -30 0 PatternFill
+933 640 11 77 40 -30 0 PatternFill
+943 640 11 96 40 -30 0 PatternFill
+953 640 11 86 40 -30 0 PatternFill
+963 640 11 105 40 -30 0 PatternFill
+973 640 11 111 40 -30 0 PatternFill
+983 640 11 117 40 -30 0 PatternFill
+993 640 11 126 40 -30 0 PatternFill
+1003 640 11 141 40 -30 0 PatternFill
+1013 640 11 144 40 -30 0 PatternFill
+1023 640 11 169 40 -30 0 PatternFill
+1033 640 11 159 40 -30 0 PatternFill
+1043 640 10 167 40 -30 0 PatternFill
+1052 640 11 190 40 -30 0 PatternFill
+1062 640 11 196 40 -30 0 PatternFill
+1072 640 11 206 40 -30 0 PatternFill
+1082 640 11 207 40 -30 0 PatternFill
+1092 640 11 222 40 -30 0 PatternFill
+1102 640 11 227 40 -30 0 PatternFill
+1112 640 11 229 40 -30 0 PatternFill
+1122 640 11 226 40 -30 0 PatternFill
+1132 640 11 244 40 -30 0 PatternFill
+1142 640 11 259 40 -30 0 PatternFill
+1152 640 11 263 40 -30 0 PatternFill
+1162 640 11 275 40 -30 0 PatternFill
+1172 640 11 292 40 -30 0 PatternFill
+1182 640 11 305 40 -30 0 PatternFill
+1192 640 11 306 40 -30 0 PatternFill
+1202 640 11 298 40 -30 0 PatternFill
+1212 640 11 325 40 -30 0 PatternFill
+1222 640 11 327 40 -30 0 PatternFill
+1232 640 11 327 40 -30 0 PatternFill
+1242 640 11 330 40 -30 0 PatternFill
+1252 640 11 336 40 -30 0 PatternFill
+1262 640 11 348 40 -30 0 PatternFill
+1272 640 11 372 40 -30 0 PatternFill
+1282 640 11 353 40 -30 0 PatternFill
+1292 640 11 367 40 -30 0 PatternFill
+1302 640 11 389 40 -30 0 PatternFill
+1312 640 11 379 40 -30 0 PatternFill
+1322 640 11 371 40 -30 0 PatternFill
+1332 640 11 395 40 -30 0 PatternFill
+1342 640 11 382 40 -30 0 PatternFill
+1352 640 10 413 40 -30 0 PatternFill
+1361 640 11 383 40 -30 0 PatternFill
+1371 640 11 432 40 -30 0 PatternFill
+1381 640 11 405 40 -30 0 PatternFill
+1391 640 11 400 40 -30 0 PatternFill
+1401 640 11 437 40 -30 0 PatternFill
+1411 640 11 442 40 -30 0 PatternFill
+1421 640 11 428 40 -30 0 PatternFill
+1431 640 11 439 40 -30 0 PatternFill
+1441 640 11 475 40 -30 0 PatternFill
+1451 640 11 450 40 -30 0 PatternFill
+1461 640 11 459 40 -30 0 PatternFill
+1471 640 11 441 40 -30 0 PatternFill
+1481 640 11 485 40 -30 0 PatternFill
+1491 640 11 479 40 -30 0 PatternFill
+1501 640 11 456 40 -30 0 PatternFill
+1511 640 11 476 40 -30 0 PatternFill
+1521 640 11 450 40 -30 0 PatternFill
+1531 640 11 482 40 -30 0 PatternFill
+1541 640 11 490 40 -30 0 PatternFill
+1551 640 11 468 40 -30 0 PatternFill
+1561 640 11 492 40 -30 0 PatternFill
+1571 640 11 505 40 -30 0 PatternFill
+1581 640 11 497 40 -30 0 PatternFill
+1591 640 11 503 40 -30 0 PatternFill
+1601 640 11 488 40 -30 0 PatternFill
+1611 640 11 491 40 -30 0 PatternFill
+1621 640 11 479 40 -30 0 PatternFill
+1631 640 11 475 40 -30 0 PatternFill
+1641 640 11 506 40 -30 0 PatternFill
+1651 640 11 516 40 -30 0 PatternFill
+1661 640 11 495 40 -30 0 PatternFill
+1671 640 10 519 40 -30 0 PatternFill
+1680 640 11 497 40 -30 0 PatternFill
+1690 640 11 489 40 -30 0 PatternFill
+1700 640 11 519 40 -30 0 PatternFill
+1710 640 11 512 40 -30 0 PatternFill
+1720 640 11 533 40 -30 0 PatternFill
+1730 640 11 504 40 -30 0 PatternFill
+1740 640 11 517 40 -30 0 PatternFill
+1750 640 11 530 40 -30 0 PatternFill
+1760 640 11 516 40 -30 0 PatternFill
+1770 640 11 514 40 -30 0 PatternFill
+1780 640 11 509 40 -30 0 PatternFill
+1790 640 11 507 40 -30 0 PatternFill
+1800 640 11 517 40 -30 0 PatternFill
+1810 640 11 526 40 -30 0 PatternFill
+1820 640 11 534 40 -30 0 PatternFill
+1830 640 11 507 40 -30 0 PatternFill
+1840 640 11 516 40 -30 0 PatternFill
+1850 640 11 523 40 -30 0 PatternFill
+1860 640 11 516 40 -30 0 PatternFill
+1870 640 11 532 40 -30 0 PatternFill
+1880 640 11 498 40 -30 0 PatternFill
+1890 640 11 532 40 -30 0 PatternFill
+1900 640 11 508 40 -30 0 PatternFill
+1910 640 11 508 40 -30 0 PatternFill
+1920 640 11 498 40 -30 0 PatternFill
+1930 640 11 477 40 -30 0 PatternFill
+1940 640 11 497 40 -30 0 PatternFill
+1950 640 11 499 40 -30 0 PatternFill
+1960 640 11 506 40 -30 0 PatternFill
+1970 640 11 466 40 -30 0 PatternFill
+1980 640 11 493 40 -30 0 PatternFill
+1990 640 10 512 40 -30 0 PatternFill
+1999 640 11 463 40 -30 0 PatternFill
+2009 640 11 501 40 -30 0 PatternFill
+2019 640 11 453 40 -30 0 PatternFill
+2029 640 11 470 40 -30 0 PatternFill
+2039 640 11 444 40 -30 0 PatternFill
+2049 640 11 485 40 -30 0 PatternFill
+2059 640 11 456 40 -30 0 PatternFill
+2069 640 11 469 40 -30 0 PatternFill
+2079 640 11 482 40 -30 0 PatternFill
+2089 640 11 451 40 -30 0 PatternFill
+2099 640 11 450 40 -30 0 PatternFill
+2109 640 11 451 40 -30 0 PatternFill
+2119 640 11 437 40 -30 0 PatternFill
+2129 640 11 471 40 -30 0 PatternFill
+2139 640 11 430 40 -30 0 PatternFill
+2149 640 11 436 40 -30 0 PatternFill
+2159 640 11 412 40 -30 0 PatternFill
+2169 640 11 404 40 -30 0 PatternFill
+2179 640 11 431 40 -30 0 PatternFill
+2189 640 11 436 40 -30 0 PatternFill
+2199 640 11 408 40 -30 0 PatternFill
+2209 640 11 427 40 -30 0 PatternFill
+2219 640 11 409 40 -30 0 PatternFill
+2229 640 11 421 40 -30 0 PatternFill
+2239 640 11 390 40 -30 0 PatternFill
+2249 640 11 394 40 -30 0 PatternFill
+2259 640 11 395 40 -30 0 PatternFill
+2269 640 11 382 40 -30 0 PatternFill
+2279 640 11 404 40 -30 0 PatternFill
+2289 640 11 401 40 -30 0 PatternFill
+2299 640 10 366 40 -30 0 PatternFill
+2308 640 11 369 40 -30 0 PatternFill
+2318 640 11 347 40 -30 0 PatternFill
+2328 640 11 361 40 -30 0 PatternFill
+2338 640 11 341 40 -30 0 PatternFill
+2348 640 11 365 40 -30 0 PatternFill
+2358 640 11 365 40 -30 0 PatternFill
+2368 640 11 343 40 -30 0 PatternFill
+2378 640 11 341 40 -30 0 PatternFill
+2388 640 11 352 40 -30 0 PatternFill
+2398 640 11 344 40 -30 0 PatternFill
+2408 640 11 334 40 -30 0 PatternFill
+2418 640 11 320 40 -30 0 PatternFill
+2428 640 11 310 40 -30 0 PatternFill
+2438 640 11 329 40 -30 0 PatternFill
+2448 640 11 334 40 -30 0 PatternFill
+2458 640 11 308 40 -30 0 PatternFill
+2468 640 11 311 40 -30 0 PatternFill
+2478 640 11 306 40 -30 0 PatternFill
+2488 640 11 287 40 -30 0 PatternFill
+2498 640 11 292 40 -30 0 PatternFill
+2508 640 11 307 40 -30 0 PatternFill
+2518 640 11 292 40 -30 0 PatternFill
+2528 640 11 287 40 -30 0 PatternFill
+2538 640 11 275 40 -30 0 PatternFill
+2548 640 11 289 40 -30 0 PatternFill
+2558 640 11 277 40 -30 0 PatternFill
+2568 640 11 266 40 -30 0 PatternFill
+2578 640 11 265 40 -30 0 PatternFill
+2588 640 11 265 40 -30 0 PatternFill
+2598 640 11 243 40 -30 0 PatternFill
+2608 640 11 231 40 -30 0 PatternFill
+2618 640 10 266 40 -30 0 PatternFill
+2627 640 11 249 40 -30 0 PatternFill
+2637 640 11 227 40 -30 0 PatternFill
+2647 640 11 242 40 -30 0 PatternFill
+2657 640 11 230 40 -30 0 PatternFill
+2667 640 11 228 40 -30 0 PatternFill
+2677 640 11 220 40 -30 0 PatternFill
+2687 640 11 203 40 -30 0 PatternFill
+2697 640 11 223 40 -30 0 PatternFill
+2707 640 11 218 40 -30 0 PatternFill
+2717 640 11 222 40 -30 0 PatternFill
+2727 640 11 217 40 -30 0 PatternFill
+2737 640 11 218 40 -30 0 PatternFill
+2747 640 11 190 40 -30 0 PatternFill
+2757 640 11 207 40 -30 0 PatternFill
+2767 640 11 179 40 -30 0 PatternFill
+2777 640 11 180 40 -30 0 PatternFill
+2787 640 11 183 40 -30 0 PatternFill
+2797 640 11 170 40 -30 0 PatternFill
+2807 640 11 172 40 -30 0 PatternFill
+2817 640 11 168 40 -30 0 PatternFill
+2827 640 11 177 40 -30 0 PatternFill
+2837 640 11 160 40 -30 0 PatternFill
+2847 640 11 159 40 -30 0 PatternFill
+2857 640 11 157 40 -30 0 PatternFill
+2867 640 11 161 40 -30 0 PatternFill
+2877 640 11 150 40 -30 0 PatternFill
+2887 640 11 143 40 -30 0 PatternFill
+2897 640 11 156 40 -30 0 PatternFill
+2907 640 11 134 40 -30 0 PatternFill
+2917 640 11 142 40 -30 0 PatternFill
+2927 640 11 131 40 -30 0 PatternFill
+2937 640 10 129 40 -30 0 PatternFill
+2946 640 11 128 40 -30 0 PatternFill
+2956 640 11 130 40 -30 0 PatternFill
+2966 640 11 125 40 -30 0 PatternFill
+2976 640 11 109 40 -30 0 PatternFill
+2986 640 11 120 40 -30 0 PatternFill
+2996 640 11 120 40 -30 0 PatternFill
+3006 640 11 121 40 -30 0 PatternFill
+3016 640 11 118 40 -30 0 PatternFill
+3026 640 11 107 40 -30 0 PatternFill
+3036 640 11 98 40 -30 0 PatternFill
+3046 640 11 107 40 -30 0 PatternFill
+3056 640 11 105 40 -30 0 PatternFill
+3066 640 11 98 40 -30 0 PatternFill
+3076 640 11 90 40 -30 0 PatternFill
+3086 640 11 106 40 -30 0 PatternFill
+3096 640 11 101 40 -30 0 PatternFill
+3106 640 11 93 40 -30 0 PatternFill
+3116 640 11 85 40 -30 0 PatternFill
+3126 640 11 91 40 -30 0 PatternFill
+3136 640 11 84 40 -30 0 PatternFill
+3146 640 11 88 40 -30 0 PatternFill
+3156 640 11 78 40 -30 0 PatternFill
+3166 640 11 82 40 -30 0 PatternFill
+3176 640 11 80 40 -30 0 PatternFill
+3186 640 11 77 40 -30 0 PatternFill
+3196 640 11 76 40 -30 0 PatternFill
+3206 640 11 69 40 -30 0 PatternFill
+3216 640 11 70 40 -30 0 PatternFill
+3226 640 11 58 40 -30 0 PatternFill
+3236 640 11 74 40 -30 0 PatternFill
+3246 640 11 63 40 -30 0 PatternFill
+3256 640 10 57 40 -30 0 PatternFill
+3265 640 11 59 40 -30 0 PatternFill
+3275 640 11 62 40 -30 0 PatternFill
+3285 640 11 54 40 -30 0 PatternFill
+3295 640 11 56 40 -30 0 PatternFill
+3305 640 11 53 40 -30 0 PatternFill
+3315 640 11 59 40 -30 0 PatternFill
+3325 640 11 48 40 -30 0 PatternFill
+3335 640 11 49 40 -30 0 PatternFill
+3345 640 11 55 40 -30 0 PatternFill
+3355 640 11 48 40 -30 0 PatternFill
+3365 640 11 52 40 -30 0 PatternFill
+3375 640 11 43 40 -30 0 PatternFill
+3385 640 11 43 40 -30 0 PatternFill
+3395 640 11 37 40 -30 0 PatternFill
+3405 640 11 46 40 -30 0 PatternFill
+3415 640 11 41 40 -30 0 PatternFill
+3425 640 11 44 40 -30 0 PatternFill
+3435 640 11 38 40 -30 0 PatternFill
+3445 640 11 38 40 -30 0 PatternFill
+3455 640 11 42 40 -30 0 PatternFill
+3465 640 11 35 40 -30 0 PatternFill
+3475 640 11 36 40 -30 0 PatternFill
+3485 640 11 33 40 -30 0 PatternFill
+3495 640 11 32 40 -30 0 PatternFill
+3505 640 11 34 40 -30 0 PatternFill
+3515 640 11 34 40 -30 0 PatternFill
+3525 640 11 38 40 -30 0 PatternFill
+3535 640 11 31 40 -30 0 PatternFill
+3545 640 11 30 40 -30 0 PatternFill
+3555 640 11 29 40 -30 0 PatternFill
+3565 640 10 26 40 -30 0 PatternFill
+3574 640 11 22 40 -30 0 PatternFill
+3584 640 11 26 40 -30 0 PatternFill
+3594 640 11 27 40 -30 0 PatternFill
+3604 640 11 30 40 -30 0 PatternFill
+3614 640 11 20 40 -30 0 PatternFill
+3624 640 11 21 40 -30 0 PatternFill
+3634 640 11 21 40 -30 0 PatternFill
+3644 640 11 21 40 -30 0 PatternFill
+3654 640 11 24 40 -30 0 PatternFill
+3664 640 11 22 40 -30 0 PatternFill
+3674 640 11 22 40 -30 0 PatternFill
+3684 640 11 21 40 -30 0 PatternFill
+3694 640 11 17 40 -30 0 PatternFill
+3704 640 11 15 40 -30 0 PatternFill
+3714 640 11 18 40 -30 0 PatternFill
+3724 640 11 17 40 -30 0 PatternFill
+3734 640 11 21 40 -30 0 PatternFill
+3744 640 11 15 40 -30 0 PatternFill
+3754 640 11 15 40 -30 0 PatternFill
+3764 640 11 12 40 -30 0 PatternFill
+3774 640 11 17 40 -30 0 PatternFill
+3784 640 11 14 40 -30 0 PatternFill
+3794 640 11 13 40 -30 0 PatternFill
+3804 640 11 10 40 -30 0 PatternFill
+3814 640 11 16 40 -30 0 PatternFill
+3824 640 11 14 40 -30 0 PatternFill
+3834 640 11 12 40 -30 0 PatternFill
+3844 640 11 11 40 -30 0 PatternFill
+3854 640 11 10 40 -30 0 PatternFill
+3864 640 11 11 40 -30 0 PatternFill
+3874 640 11 12 40 -30 0 PatternFill
+3884 640 10 8 40 -30 0 PatternFill
+3893 640 11 11 40 -30 0 PatternFill
+3903 640 11 9 40 -30 0 PatternFill
+3913 640 11 9 40 -30 0 PatternFill
+3923 640 11 8 40 -30 0 PatternFill
+3933 640 11 7 40 -30 0 PatternFill
+3943 640 11 12 40 -30 0 PatternFill
+3953 640 11 8 40 -30 0 PatternFill
+3963 640 11 9 40 -30 0 PatternFill
+3973 640 11 9 40 -30 0 PatternFill
+3983 640 11 5 40 -30 0 PatternFill
+3993 640 11 5 40 -30 0 PatternFill
+4003 640 11 8 40 -30 0 PatternFill
+4013 640 11 6 40 -30 0 PatternFill
+4023 640 11 7 40 -30 0 PatternFill
+4033 640 11 6 40 -30 0 PatternFill
+4043 640 11 4 40 -30 0 PatternFill
+4053 640 11 4 40 -30 0 PatternFill
+4063 640 11 6 40 -30 0 PatternFill
+4073 640 11 4 40 -30 0 PatternFill
+4083 640 11 5 40 -30 0 PatternFill
+4093 640 11 6 40 -30 0 PatternFill
+4103 640 11 4 40 -30 0 PatternFill
+4113 640 11 5 40 -30 0 PatternFill
+4123 640 11 5 40 -30 0 PatternFill
+4133 640 11 5 40 -30 0 PatternFill
+4143 640 11 6 40 -30 0 PatternFill
+4153 640 11 3 40 -30 0 PatternFill
+4163 640 11 4 40 -30 0 PatternFill
+4173 640 11 3 40 -30 0 PatternFill
+4183 640 11 5 40 -30 0 PatternFill
+4193 640 11 2 40 -30 0 PatternFill
+4203 640 10 3 40 -30 0 PatternFill
+4212 640 11 4 40 -30 0 PatternFill
+4222 640 11 3 40 -30 0 PatternFill
+4232 640 11 2 40 -30 0 PatternFill
+4242 640 11 3 40 -30 0 PatternFill
+4252 640 11 4 40 -30 0 PatternFill
+4262 640 11 2 40 -30 0 PatternFill
+4272 640 11 3 40 -30 0 PatternFill
+4282 640 11 3 40 -30 0 PatternFill
+4292 640 11 2 40 -30 0 PatternFill
+4302 640 11 3 40 -30 0 PatternFill
+4312 640 11 4 40 -30 0 PatternFill
+4322 640 11 3 40 -30 0 PatternFill
+4332 640 11 2 40 -30 0 PatternFill
+4342 640 11 2 40 -30 0 PatternFill
+4352 640 11 2 40 -30 0 PatternFill
+4362 640 11 2 40 -30 0 PatternFill
+4372 640 11 3 40 -30 0 PatternFill
+4382 640 11 2 40 -30 0 PatternFill
+4392 640 11 3 40 -30 0 PatternFill
+4402 640 11 2 40 -30 0 PatternFill
+4412 640 11 2 40 -30 0 PatternFill
+4422 640 11 2 40 -30 0 PatternFill
+4432 640 11 3 40 -30 0 PatternFill
+4442 640 11 2 40 -30 0 PatternFill
+4452 640 11 2 40 -30 0 PatternFill
+4462 640 11 2 40 -30 0 PatternFill
+4472 640 11 2 40 -30 0 PatternFill
+4482 640 11 2 40 -30 0 PatternFill
+4492 640 11 1 40 -30 0 PatternFill
+4512 640 10 1 40 -30 0 PatternFill
+4521 640 11 2 40 -30 0 PatternFill
+4531 640 11 2 40 -30 0 PatternFill
+4541 640 11 1 40 -30 0 PatternFill
+4551 640 11 2 40 -30 0 PatternFill
+4561 640 11 1 40 -30 0 PatternFill
+4571 640 11 2 40 -30 0 PatternFill
+4581 640 11 2 40 -30 0 PatternFill
+4601 640 11 3 40 -30 0 PatternFill
+4611 640 11 2 40 -30 0 PatternFill
+4631 640 11 1 40 -30 0 PatternFill
+4641 640 11 2 40 -30 0 PatternFill
+4671 640 11 1 40 -30 0 PatternFill
+4681 640 11 2 40 -30 0 PatternFill
+4701 640 11 2 40 -30 0 PatternFill
+4711 640 11 1 40 -30 0 PatternFill
+4721 640 11 1 40 -30 0 PatternFill
+4741 640 11 1 40 -30 0 PatternFill
+4751 640 11 2 40 -30 0 PatternFill
+4761 640 11 1 40 -30 0 PatternFill
+4771 640 11 1 40 -30 0 PatternFill
+4791 640 11 1 40 -30 0 PatternFill
+4811 640 11 1 40 -30 0 PatternFill
+4840 640 11 1 40 -30 0 PatternFill
+4850 640 11 1 40 -30 0 PatternFill
+4880 640 11 1 40 -30 0 PatternFill
+4890 640 11 1 40 -30 0 PatternFill
+4920 640 11 1 40 -30 0 PatternFill
+4930 640 11 1 40 -30 0 PatternFill
+4950 640 11 1 40 -30 0 PatternFill
+5020 640 11 1 40 -30 0 PatternFill
+5040 640 11 1 40 -30 0 PatternFill
+5050 640 11 1 40 -30 0 PatternFill
+5150 640 10 2 40 -30 0 PatternFill
+5209 640 11 1 40 -30 0 PatternFill
+% End plot #4
+% Begin plot #5
+1.800 UL
+LT0
+LC0 setrgbcolor
+861 957 M
+8 2291 V
+2 479 V
+101 0 R
+6 -557 V
+8 -592 V
+9 -473 V
+8 -371 V
+8 -285 V
+9 -214 V
+8 -157 V
+8 -114 V
+9 -81 V
+8 -58 V
+9 -41 V
+8 -29 V
+8 -19 V
+9 -13 V
+8 -8 V
+8 -6 V
+9 -5 V
+8 -4 V
+8 -2 V
+9 -2 V
+8 -1 V
+8 -2 V
+9 -2 V
+8 -3 V
+8 -3 V
+9 -3 V
+8 -2 V
+8 -2 V
+9 -2 V
+8 -1 V
+9 0 V
+8 -1 V
+8 -2 V
+9 -1 V
+8 -1 V
+8 -1 V
+9 0 V
+8 0 V
+8 0 V
+9 0 V
+8 0 V
+8 1 V
+9 0 V
+8 -1 V
+8 -1 V
+9 -1 V
+8 -1 V
+8 -1 V
+9 -2 V
+8 -1 V
+9 -2 V
+8 -1 V
+8 -2 V
+9 -1 V
+8 -2 V
+8 -2 V
+9 -2 V
+8 -2 V
+8 -1 V
+9 -2 V
+8 -1 V
+8 -1 V
+9 0 V
+8 -1 V
+8 0 V
+9 -1 V
+8 0 V
+8 0 V
+9 -1 V
+8 0 V
+9 0 V
+8 0 V
+8 1 V
+9 0 V
+8 0 V
+8 0 V
+9 0 V
+8 0 V
+8 0 V
+9 -1 V
+8 0 V
+8 0 V
+9 0 V
+8 0 V
+8 0 V
+9 0 V
+% End plot #5
+% Begin plot #6
+stroke
+LT0
+LC1 setrgbcolor
+863 663 M
+21 191 V
+20 168 V
+21 160 V
+20 148 V
+21 135 V
+20 120 V
+20 102 V
+21 81 V
+20 62 V
+21 50 V
+20 39 V
+20 27 V
+21 16 V
+20 3 V
+21 -11 V
+20 -22 V
+20 -27 V
+21 -30 V
+20 -35 V
+21 -38 V
+20 -43 V
+20 -45 V
+21 -48 V
+20 -49 V
+21 -50 V
+20 -49 V
+20 -48 V
+21 -46 V
+20 -46 V
+21 -45 V
+20 -44 V
+20 -44 V
+21 -43 V
+20 -41 V
+21 -40 V
+20 -38 V
+20 -36 V
+21 -34 V
+20 -32 V
+21 -30 V
+20 -29 V
+21 -27 V
+20 -25 V
+20 -23 V
+21 -22 V
+20 -19 V
+21 -18 V
+20 -15 V
+20 -15 V
+21 -12 V
+20 -11 V
+21 -10 V
+20 -9 V
+20 -9 V
+21 -7 V
+20 -7 V
+21 -6 V
+20 -6 V
+20 -5 V
+21 -4 V
+20 -4 V
+21 -4 V
+20 -3 V
+20 -3 V
+21 -3 V
+20 -2 V
+21 -2 V
+20 -2 V
+20 -1 V
+21 -1 V
+20 -2 V
+21 0 V
+20 -1 V
+20 -1 V
+21 0 V
+20 -1 V
+21 0 V
+20 0 V
+21 -1 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+21 -1 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+21 0 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+21 0 V
+20 0 V
+20 0 V
+21 0 V
+20 0 V
+21 0 V
+% End plot #6
+% Begin plot #7
+stroke
+LT0
+LC3 setrgbcolor
+867 655 M
+35 53 V
+35 55 V
+35 54 V
+35 53 V
+34 48 V
+35 46 V
+35 44 V
+35 43 V
+35 41 V
+35 38 V
+35 35 V
+34 30 V
+35 27 V
+35 24 V
+35 19 V
+35 14 V
+35 10 V
+34 6 V
+35 4 V
+35 0 V
+35 -3 V
+35 -8 V
+35 -10 V
+35 -12 V
+34 -13 V
+35 -14 V
+35 -16 V
+35 -19 V
+35 -20 V
+35 -22 V
+34 -23 V
+35 -24 V
+35 -24 V
+35 -23 V
+35 -23 V
+35 -23 V
+35 -22 V
+34 -22 V
+35 -23 V
+35 -22 V
+35 -23 V
+35 -21 V
+35 -20 V
+35 -18 V
+34 -17 V
+35 -16 V
+35 -15 V
+35 -14 V
+35 -14 V
+35 -13 V
+34 -12 V
+35 -12 V
+35 -10 V
+35 -10 V
+35 -9 V
+35 -8 V
+35 -8 V
+34 -6 V
+35 -6 V
+35 -5 V
+35 -4 V
+35 -4 V
+35 -3 V
+34 -4 V
+35 -3 V
+35 -3 V
+35 -2 V
+35 -2 V
+35 -2 V
+35 -1 V
+34 -1 V
+35 -1 V
+35 -1 V
+35 -1 V
+35 0 V
+35 -1 V
+34 0 V
+35 -1 V
+35 0 V
+35 0 V
+35 -1 V
+35 0 V
+35 0 V
+34 0 V
+35 -1 V
+35 0 V
+35 0 V
+35 0 V
+35 0 V
+34 0 V
+35 0 V
+35 0 V
+35 0 V
+35 0 V
+35 0 V
+35 0 V
+34 0 V
+35 0 V
+35 0 V
+% End plot #7
+% Begin plot #8
+stroke
+LT0
+LC4 setrgbcolor
+868 648 M
+45 42 V
+45 43 V
+46 41 V
+45 41 V
+45 38 V
+45 37 V
+46 37 V
+45 34 V
+45 30 V
+45 26 V
+45 25 V
+46 23 V
+45 21 V
+45 17 V
+45 13 V
+45 11 V
+46 8 V
+45 8 V
+45 5 V
+45 3 V
+45 0 V
+46 -3 V
+45 -7 V
+45 -9 V
+45 -12 V
+46 -12 V
+45 -14 V
+45 -15 V
+45 -16 V
+45 -17 V
+46 -17 V
+45 -18 V
+45 -18 V
+45 -18 V
+45 -18 V
+46 -18 V
+45 -18 V
+45 -18 V
+45 -18 V
+45 -18 V
+46 -17 V
+45 -17 V
+45 -17 V
+45 -15 V
+46 -15 V
+45 -13 V
+45 -12 V
+45 -12 V
+45 -10 V
+46 -10 V
+45 -9 V
+45 -9 V
+45 -8 V
+45 -7 V
+46 -6 V
+45 -6 V
+45 -5 V
+45 -4 V
+45 -4 V
+46 -4 V
+45 -3 V
+45 -4 V
+45 -2 V
+46 -3 V
+45 -2 V
+45 -2 V
+45 -2 V
+45 -1 V
+46 -1 V
+45 -2 V
+45 0 V
+45 -1 V
+45 -1 V
+46 0 V
+45 -1 V
+45 0 V
+45 0 V
+45 -1 V
+46 0 V
+45 0 V
+45 0 V
+45 0 V
+46 0 V
+45 -1 V
+45 0 V
+45 0 V
+45 0 V
+46 0 V
+45 0 V
+45 0 V
+45 0 V
+45 0 V
+46 0 V
+45 0 V
+45 0 V
+45 0 V
+45 0 V
+46 0 V
+45 0 V
+% End plot #8
+% Begin plot #9
+stroke
+0.700 UL
+LT6
+LCa setrgbcolor
+LCb setrgbcolor
+8912 2764 M
+[ [(Helvetica) 200.0 0.0 true true 0 (L/2)]
+] -66.7 MRshow
+LT6
+LCa setrgbcolor
+9032 2764 M
+571 0 V
+6046 640 M
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 13 V
+% End plot #9
+% Begin plot #10
+stroke
+LT6
+LCa setrgbcolor
+LCb setrgbcolor
+8912 2564 M
+[ [(Helvetica) 200.0 0.0 true true 0 (dS max)]
+] -66.7 MRshow
+LT6
+LCa setrgbcolor
+9032 2564 M
+571 0 V
+9843 640 M
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 44 V
+0 45 V
+0 45 V
+0 44 V
+0 45 V
+0 13 V
+% End plot #10
+1.450 UP
+stroke
+1.000 UL
+LTb
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Symbol Helvetica

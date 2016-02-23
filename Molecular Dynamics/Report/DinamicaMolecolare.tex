@@ -1,0 +1,868 @@
+\title{Introduzione alle Simulazioni di Dinamica Molecolare}
+\author{
+        Antonio Michele Miti \\
+	Mat: 072838
+%                Dipartimento di Fisica \\
+%        Università Milano-Bicocca\\
+%        Piazza della Scienza 3, Milano 20126, \underline{Italy}
+}
+%\date{\today}
+
+% Formato pagina!
+\documentclass[11pt]{article}
+%\documentclass{acmconf}
+\usepackage[paper=a4paper,dvips,top=1.5cm,left=1.5cm,right=1.5cm,
+    foot=1cm,bottom=1.5cm]{geometry}
+
+% Convenzioni Italiane
+\usepackage[italian]{babel}
+
+
+
+\usepackage{amsmath}
+
+%Teoremi
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[section]
+\theoremstyle{remark}
+\newtheorem{oss}{Osservazione}
+
+%campi numerici
+\usepackage{amsfonts}
+\newcommand\Naturals{\ensuremath{\mathbb{N}}\xspace}
+\newcommand\Integers{\ensuremath{\mathbb{Z}}\xspace}
+\newcommand\Rationals{\ensuremath{\mathbb{Q}}\xspace}
+\newcommand\Reals{\ensuremath{\mathbb{R}}\xspace}
+\newcommand\Complex{\ensuremath{\mathbb{C}}\xspace}
+
+
+%c C plus plus
+\usepackage{relsize}
+\usepackage{lipsum}
+%c from texinfo.tex
+\def\ifmonospace{\ifdim\fontdimen3\font=0pt }
+\def\C++{%
+\ifmonospace%
+    C++%
+\else%
+    C\kern-.1667em\raise.30ex\hbox{\smaller{++}}%
+\fi%
+\spacefactor1000 }
+%caratteri personalizzati per c++
+\newcommand\Cls[1]{\textsf{#1}}
+\newcommand\Lang[1]{\textsc{#1}}
+\newcommand{\kw}[1]{\texttt{\textbf{#1}}}
+\newcommand{\cd}[1]{\texttt{#1}}
+
+
+%lettere accentate
+\usepackage[utf8]{inputenc}
+
+
+%usare immagini
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{sidecap}
+\usepackage{placeins} %per usare \FloatBarrier
+
+%per visualizzare codice    http://texblog.org/2008/04/02/include-source-code-in-latex-with-listings/
+\usepackage{listings}
+\lstloadlanguages{ C++ }
+\lstset{language=C++, numbers=left, stepnumber=2, frame=single,}
+
+%Flow Chart
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+% Define block styles
+\tikzstyle{decision} = [diamond, draw,aspect=1.8,text width=8em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, 
+    text width=13.5em, text centered, rounded corners, minimum height=5em]
+\tikzstyle{block_largo} = [rectangle, draw, 
+    text width=16.25cm, text centered, rounded corners, minimum height=4em]
+\tikzstyle{block_med} = [rectangle, draw, 
+    text width=12cm, text centered, rounded corners, minimum height=4em]    
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=4.5cm,
+    minimum height=2em]
+
+%Diagrammi ad albero
+\usetikzlibrary{trees,decorations.pathreplacing,decorations.pathmorphing}
+\tikzstyle{casella} = [rectangle, draw, node distance=4.5cm,
+    text width=20em]
+
+%tabelle
+\usepackage{multirow}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In questo articolo verrà presentata una breve introduzione alle simulazioni computazionali di sistemi molecolari.
+
+Per cominciare vengono passate in rassegna le caratteristiche principali di un sistema molecolare e gli aspetti comuni che presentano le simulazioni computazionali di questo tipo di modelli.
+Gli algoritmi di dinamica molecolare vengono suddivisi generalmente in due classi: quelli per i sistemi a \emph{sfere soffici} e quelli per le \emph{sfere dure}.
+
+Nel Secondo capitolo sono affrontati i modelli a \emph{sfere dure}, i più semplici sistema molecolari che presentano una transizione di fase da solido a liquido. 
+Per prima cosa viene presentato l'algoritmo di simulazione utilizzato e viene valutata l'efficienza della sua implementazione computazionale. 
+Successivamente vengono studiate le proprietà del sistema simulato per sondare l'effettiva differenza di comportamento tra le diverse fasi del sistema e si conclude stimando il limite termodinamico delle quantità osservabili nell'ipotesi che il sistema rappresenti il punto macroscopico di un materiale continuo.
+
+Nell'ultimo capitolo è trattato il modello a \emph{sfere dure} seguendo lo stesso procedimento logico usato per il capitolo precedente.
+
+\end{abstract}
+
+%\tableofcontents
+%/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+\section{Introduzione}\label{Introduzione}
+Lo scopo delle simulazioni di Dinamica Molecolare è quello di dedurre le proprietà termodinamiche di un materiale continuo in un punto specifico calcolando l'evoluzione dinamica dei sui componenti microscopi.
+A questo scopo è necessario stabilire un modello della struttura microscopica che costituisce il sistema, ciò che nella scala macroscopica è solo un punto di un continuo verrà fatto corrispondere ad una moltitudine di particelle fondamentali che nel loro moto collettivo determinano le caratteristiche termodinamiche del sistema in un punto specifico. Tale punto viene detto  \emph{Punto Macroscopico} del sistema.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.5]{Immagini/PuntoMacro.png}
+\caption[Punto Macroscopico]{Punto Macroscopico}\label{fig: PuntoMacro}
+\end{figure}
+
+Un punto macroscopico di materiale continuo può essere modellizzato come una scatola cubica, di lato $L$ di estensione molto minore della dimensione lineare caratteristica del corpo, al cui interno sono contenute un numero $N$ (grande paragonabile al numero di Avogadro) di particelle, le molecole fondamentali costituenti l'oggetto.
+In questo articolo si intendono studiare la dinamica molecolare classica, pertanto le particelle microscopiche verranno modellizzate come semplici punti materiali (\emph{Punti Microscopici}) sottostanti alle leggi della dinamica di Newton.
+
+La scommessa della dinamica Molecolare è quella di dedurre lo stato macroscopico di un punto di un corpo continuo risolvendo la dinamica di un sistema microscopico opportunamente modellizzato.
+La teoria fisica sottostante è molto semplice, il punto macroscopico è semplicemente un sistema classico  a molte particelle, la complicazione viene portata dal grande numero di sistemi elementari che vanno studiati contemporaneamente, in questo caso l'aiuto del calcolo computazionale diventa indispensabile. 
+
+In conclusione il cuore di qualsiasi modello di Dinamica Molecolare classica saranno gli algoritmi di simulazione dei sistemi a molte particelle.
+
+\subsection{Dinamica dei sistemi a Molte Particelle}\label{cap: Intro dinamica}
+I sistemi che verranno considerati saranno una collezione di $N$ punti materiali di massa $m$ in uno spazio $\mathbb{R}^d$.
+La cinematica del sistema verrà specificata fornendo la descrizione dei vettori
+\begin{displaymath}
+\vec{\mathbf{R}}=(\vec{r_1},\ldots,\vec{r_N}) \qquad \vec{\mathbf{V}}=(\vec{v_1},\ldots,\vec{v_N}) \qquad \vec{\mathbf{A}}=(\vec{a_1},\ldots,\vec{a_N}) 
+\end{displaymath}
+in funzione del tempo.
+
+Ci si limiterà a considerare il sistema come isolato, le uniche interazioni saranno quelle esercitate reciprocamente dalle particelle costituenti. Le Forze verranno assunte conservative, la forma del potenziale corrispondende verrà considerata additiva e a due corpi (le interazioni a molti corpi verranno trascurate) pertanto l'equazione dell'energia interna del sistema assumerà la forma:
+\begin{displaymath}
+\mathcal{U}(\vec{\mathbf{R}}) = \sum\sum_{i>j}u(r_{ij})
+\end{displaymath}
+dove $u(r_{ij})$ è il potenziale di interazione tra due particelle poste a distanza scalare $r_ij = |\vec{r_i}-\vec{r_j}|$.
+
+
+Come detto in precedenza la dinamica è classica, quindi la traiettoria di ogni particella dovrà soddisfare l'equazione di Newton:
+\begin{displaymath}
+\vec{F}_i = - \dfrac{\textrm{d}}{\textrm{d}\vec{r_i}} \Bigr(\sum_{j \neq i}u(r_{ij}) \Bigr) = m \cdot \vec{a_i}
+\end{displaymath}
+nel complesso l'evoluzione risulterà regolata da un sistema di $N$ equazioni differenziali di questo tipo.
+
+In un sistema isolato l'energia meccanica totale $ E = K + \mathcal{U} $ dovrà essere costantemente conservata. Inoltre ponendosi nel sistema di riferimento del centro di massa la forza totale $\vec{\mathbf{F}}$ e il momento totale $\vec{\mathbf{P}}$ dovranno risultare costantemente nulli.
+\medskip\newline
+Ciò che veramente interesserà determinare del sistema microscopico saranno le sue osservabili collettive che definiscono lo stato termodinamico del sistema nel suo complesso (si contrappongono alle variabili $(\vec{\mathbf{R}},\vec{\mathbf{V}}$ che invece fissano lo stato microscopico del sistema). \newline
+Per un sistema di $N$ particelle contenute in volume $V=L^d$ si definiscono:
+
+\begin{itemize}
+\item \underline{Temperatura} $T$. Per il teorema di equipartizione dell'enegia risulta l'equazione:
+\begin{equation}\label{eq: temperatura}
+K = \dfrac{d}{2}N k T
+\end{equation}
+che definisce la temperatura istantanea della configurazione, il suo valore osservabile sarà una media temporale su molte configurazioni.
+
+\item \underline{Pressione} $P$. Dal teorema del viriale risulta l'equazione:
+\begin{equation}\label{eq: Pressione}
+Z = \dfrac{P V}{N kT} = 1 + \dfrac{1}{d N kT} \Biggr\langle \sum_{i=1}^N \vec{r_i}\cdot\vec{F_i}\Biggr\rangle
+\end{equation}
+dove $Z$ viene chiamato \emph{Fattore di comprimibilità} e con $\langle \cdot \rangle$ si intende la media temporale su molte configurazioni.
+
+\item \underline{Densità} $\rho$. Definita come il rapporto tra la massa totale delle particelle e il volume che le contiene. In un sistema classico non sono previsti fenomeni di creazioni o deformazione dei gradi di libertà interni delle particelle, pertanto sarà una costante a meno di scambi di materia del sistema con l'ambiente circostante.
+\end{itemize}
+Se il sistema si trova in uno stato di equilibrio termodinamico queste osservabili saranno delle costanti dell'evoluzione temporale del sistema.
+
+\medskip
+Ciò che distinguerà un modello di meccanica molecolare classica da un altro sarà la definizione della forma specifica del potenziale $u(r_{ij})$ di interazione a due corpi. Si riconoscono due classi di sistemi: quello dei corpi soffici, per cui le forze intermolecolari sono funzioni continue della distanza tra le molecole, e quella dei corpi duri dotati di potenziali discontinui.
+
+
+
+
+
+\FloatBarrier
+\subsection{Simulazione Computazionale dei sistemi a Molte Particelle}\label{cap: Simulazione in Generale}
+Tutti gli algoritmi di simulazione di dinamica molecolare classica presentano degli aspetti comuni.
+
+\begin{itemize}
+\item \underline{Numero di Particelle e Limite Termodinamico}\newline
+Se ci si aspetta che questi modelli descrivano il comportamento di una piccola porzione di un corpo continuo bisognerà considerare un numero di molecole paragonabile al numero di Avogadro ($N_A = 6,022 \cdot 10^23$), una quantità di variabili troppo grande per essere trattata in modo efficiente da un computer.
+
+In una simulazione computazionale si è obbligati a considerare un numero molto minore di particelle da quelle richieste teoricamente, questo limite determina degli errori sistematici sui valori ottenuti rispetto al valore atteso degli osservabili nel punto del sistema macroscopico.
+
+Questo vincolo di $N\ll N_A$ imposto dai limiti tecnici della simulazione non si può eliminare direttamente ma si può aggirare, ottenendo comunque una buona stima del valore d'aspattazione teorico, tramite un'estrapolazione dei dati.
+\newline
+Calcolando il valore d'aspettazione di un osservabile per numerosi sistemi nelle stesse condizioni termodinamiche (densità e temperatura) ma con numero di particelle diverso (sufficientemente grande da evitare situazioni patologiche per i potenziali ma limitato in modo da mantenere contenuto il tempo macchina necessario all'esecuzione) ed eseguendo un fit di tali dati in funzione di $N$ si potrà ottenere il valore atteso come il limite per $N\gg 1$ dell'andamento ottenuto (limite termodinamico).
+
+
+\item \underline{Disposizione Iniziale delle particelle}\newline
+Se lo scopo della simulazione del sistema a molte particelle è quello di simulare gli atomi costituenti un corpo macroscopico bisognerà come minimo imporre che la forma del potenziale sia repulsiva a corta distanza, ovvero che
+\begin{displaymath}
+u(r) \xrightarrow[r \rightarrow 0]{} \infty
+\end{displaymath}
+in modo da evitare che tutte le molecole collassiono in un solo punto.
+
+Un potenziale di questo tipo non permette di inizializzare il sistema con posizioni casuali, questa disposizione determinerebbe con frequenza stati in cui alcuni atomi sono molto vicini gli uni agli altri dando vita ad interazioni repulsive eccessivamente intense che distorcerebbero la dinamica del sistema.
+
+La soluzione migliore per controllare questo problema è di disporre le posizioni iniziali delle particelle del sistema lungo un reticolo ordinato (solitamente \emph{Cubico a Corpo Centrato} o BCC), dopo un certo lasso di tempo detto \emph{termalizzazione}, l'azione continua delle interazioni porterà il sistema ad evolversi verso una configurazione più probabile.
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.45]{Immagini/BCC.jpg}
+		\caption[BCC]{Disposizione in reticolo BCC}\label{fig: BCC}
+	\end{figure}
+
+
+\item \underline{Inizializzazione delle velocità}\newline
+Ciò che interessa studiare è un punto del continuo macroscopico a riposo, quindi è naturale porsi in un sistema di riferimento solidale con il centro di massa delle $N$ particelle microscopiche.
+In questo caso il momento totale del sistema dovrà essere necessariamente nullo.
+
+Per ottenere questa condizione è sufficiente inizializzare le componenti delle velocità di tutte le particelle in modo casuale , con $-1 < \vec{V}\cdot\hat{n} < 1$ ($\hat{n}$ versore di un asse del sistema cartesiano della "scatola"),e in seguito riscalare tutte le velocità in modo che il momento totale risulti azzerato:
+\begin{displaymath}
+\vec{v_i} \longmapsto \vec{v_i}\cdot \dfrac{1}{\sum_{i}^{}\vec{v_i}}
+\end{displaymath}
+
+
+\item \underline{Condizione di Bordo Periodico}\newline
+Per rappresentare un punto di un porzione continua di materiale il sistema non può essere considerato una scatola immersa nel vuoto ma deve essere necessariamente circondato da sistemi dello stesso tipo posti a distanza trascurabile rispetto alla dimensione caratteristica del blocco di sostanza. 
+Il sistema va quindi considerato confinato in una scatola cubica con altre scatole cubiche dello stesso tipo adiacenti ad ogni faccia, queste scatole modellizzano un insieme di punti macroscopici del materiale infinitamente vicini tra loro. 
+
+Solitamente lo studio è finalizzato a studiare un punto in equilibrio termodinamico con il resto di materiale a lui vicino, quindi tutti gli altri sistemi adiacenti dovranno trovarsi in uno stato microscopico simile al sistema considerato.
+\newline
+Questa condizione viene approssimata considerando tutti i sistemi adiacenti, in ogni direzione, nello stesso identico stato microscopico del sistema preso in esame. 
+
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/BordoPeriodo.jpg}
+		\caption[Bordo Periodico]{Bordo Periodico e metodo delle immagini.}\label{fig: BordoPeriodo}
+	\end{figure}
+
+Pertanto quando si computeranno le interazioni esercitate su una particelle non si potranno considerare solo le interazioni con le altre particelle del sistema contenute nella scatola ma anche quella con tutte le altre nei sistemi limitrofi che saranno copie esatte delle particelle del sistema traslate di un unità di lato $L$.
+(Quando si considerà questa approssimazione sarà necessario provvedere a "tagliare" la forma della funzione potenziale in modo da poter considerare nulla l'interazione ad una certa distanza).
+
+Resta da considerare che a queste condizioni la scatola contenente il sistema non può essere assunta infinita, infatti può capitare che una particella esca dalla scatola e entri nel volume adiacente.
+
+La \underline{condizione di bordo periodico} è la soluzione ideale per tenere conto di questo scabio termodinamico tra sistemi identici, un bordo di questo tipo compensa l'uscita della particella da una parete dellla scatola con l'ingresso di una particella identica dalla faccia opposta della scatola.
+
+
+\item \underline{Termalizzazione}\newline
+All'inizializzazione la distribuzione delle componenti delle velocità sarà uniforme, ovvero i campioni delle velocità del sistema saranno egualmente distribuite in un intervallo prestabilito.
+Lasciando evolvere naturalmente il sistema iniziale ordinato (in un reticolo BCC) per un intervallo di tempo sufficientemente grande il sistema si troverà in una configurazione ormai indipendente da quella inziale e soddiferà le ipotesi della distribuzione di \emph{Maxwell-Boltzman}.
+In questo caso l'insieme di una determinata componente cartesiana delle velocità di tutte le particelle costituenti il sistema soddisferà una distribuzione gaussiana di questo tipo:
+\begin{equation}
+f(v_i) dv_i = \dfrac{1}{N} \: N(v_i) dv_i = \dfrac{1}{\mathcal{N}} \: e^{-A v_i^2} \qquad 
+\textrm{dove} \; \mathcal{N} = \sqrt{\dfrac{\pi}{A}} \;\; \textrm{e} \;\; A = \dfrac{1}{2}\dfrac{m}{kT}
+\end{equation}
+qualsiasi sia la componente $i$ considerata.
+
+In un sistema con un numero $N$, finito e piccolo, di particelle non è possibile stimare una distribuzione continua. In tal caso lo studio dell'istogramma normalizzato dei valori delle velocità è un buon criterio per determinare la corretta termalizzazione del sistema simulato. 
+Per raffinare un grafico di questo tipo , oltre ad aumentare il numero di particelle della simulazione, si può incrementare la statistica raccolta accumulando velocità per diversi configurazioni a tempi successivi, se il sistema è effettivamente termalizzato i dati saranno compatibili e il sistema oscillerà tra configurazioni di equilibrio equiprobabili.
+
+In alternativa si può valutare la funzione di Boltzman che associa ad ogni configurazione un valore definito da:
+\begin{equation}
+H_x = \int dv_x f(v_x) \ln{\biggr(f(v_x)\biggr)} = \sum_{\Delta v_x}^{}f(v_x) \ln{ \biggr(f(v_x)\biggr)} \Delta v_x
+\end{equation} %=  - \dfrac{1 + \ln{(\mathcal{N}})}{2}
+dove nell'ultima eguaglianza è data la versione per un sistema finito tramite integrazione per rettangoli dell'istogramma.
+Quando la distribuzione presenta l'andamento gaussiano previsto risulterà:
+\begin{equation}
+H_i = \dfrac{1}{\mathcal{N}}\int dv_x \, e^{-A v_i^2} \, \ln{(\dfrac{e^{-A v_i^2}}{\mathcal{N}})} 
+= \dfrac{-1}{\mathcal{N}} \Biggr( \int dv_x(A\, v_i^2)\, e^{-A v_i^2} + \ln{\mathcal{N}}\int dv_x e^{-A v_i^2}  \Biggr)
+=- ( \dfrac{1}{2} + \ln{\mathcal{N}})
+\end{equation}
+
+Il discorso sull'aumento della statistica raccolta si applica anche in questo caso visto che l'integrale è calcolato sulla disribuzione discretizzata (l'istogramma).
+
+[h!]
+\item \underline{Grandezze Adimensionate}\newline
+Il calcolatore può trattare solo numeri puri quindi prima di implementare una qualsiasi algoritmo computazionale è necessario stabilire delle unità dimensionali specifiche del sistema in modo da poter interpretare fisicamente i dati ottenuti dalla simulazione.
+Un procedimento sicuro per ottenere un sistema di unità di misura classico completo è fissare tre unità tra MASSA LUNGHEZZA ENERGIA E TEMPO in modo da poter esprimere ogni altra grandezza derivata in funzione di esse.
+La scelta verrà effettuata sfruttando i parametri dimensionali caratteristici di ogni specifica simulazione.
+
+
+\item \underline{Studio delle Transizioni di Fase}\newline
+Come già detto lo scopo di questo studio è di derivare il comportamento fisico macroscopico dei continui come manifestazione della struttura microscopica della materia.
+Per un campione di materiale macroscopico si riconoscono almeno 3 stati fisici di aggregazione solido, liquido  e gassoso.
+Ci si aspetta che una simulazione di dinamica molecolare ben definita possa simulare, a seguito di una corretta termalizzazione, almeno una transizione da solido a  fluido al variare delle variabili di stato( pressione, volume e temperatura).
+
+Per semplicità si studia l'andamento di P in funzione di $\rho$ e T che sono variabili più facili da fissare durante l'inizializzazione del sistema, in tal caso si dice che la Pressione funge da parametro d'ordine.
+Ci si aspetta quindi che una qualsiasi irregolarità o discontinuità dell'andamento del parametro d'ordine, incompatibile con gli errori statistici sulla misura, possa essere sintomo di una transizione di fase del sistema.
+
+Oltre al parametro d'ordine $P$ è possibile studiare la diffussione per rilevare la fase in cui si trova il sistema.
+La differenza principale che intercorre tra un sistema in fase solida e in fase fluida e la libertà di movimento delle molecole.
+In un sistema solido  le particelle sono vincolate ad occupare una posizione prefisata in un reticolo potendo al limite oscillare attorno ad una posizione d'equilibrio.
+Al contrario in un sistema liquido o gassoso le particelle sono libere di fluire nel volume, attraversarlo e in sufficiente tempo anche uscire da esso.
+
+\begin{figure}[h!]\vspace{-5pt}
+     \begin{minipage}{0.55\textwidth}
+		\begin{flushright}
+		\includegraphics[scale=0.5]{Immagini/dS_quad_exp.png}
+		\end{flushright}
+     \end{minipage}\hfill
+     \begin{minipage}{0.4\textwidth}
+     	\begin{flushleft}
+		\caption[Spostamento quadratico medio atteso]{Andamento atteso dello spostamento quadratico medio in funzione del tempo di diffusione.}\label{fig: dS_quad_exp}
+     \end{flushleft}
+     \end{minipage}\vspace{-5pt}
+  \end{figure}
+
+Per determinare il comportamento di diffusione caratteristico dello stato del sistema è utile misurare due osservabili.
+La prima è lo \emph{spostamento quadratico medio} delle particelle :
+\begin{equation}
+\biggr\langle dS^2(t) \biggr\rangle = \biggr\langle\big\vert \vec{r_i}(t) - \vec{r_i}(0) \big\vert^2  \biggr\rangle
+\end{equation}
+dove la distanza è misurata senza applicare la condizione di bordo, seguendo quindi le particelle non loro moto libero di diffusione eventualmente anche fuori dal volume iniziale, mentre la media e calcolata su numerose coppie di configurazioni a distanza temporale $t$ e su tutte le particelle.
+
+L'andamento atteso è mostrato nella figura \ref{fig: dS_quad_exp}, nella fase liquida le particelle propagheranno quasi linearmente diffondendo fuori dal volume, nella fase solida invece lo spostamente medio non potrà aumentare oltre il valore dell'oscillazione massima.
+\medskip
+
+La seconda quantità che si può studiare è la \emph{funzione di distribuzione radiale} $g_t(r)$, ovvero la distribuzione dei valori dello distanza, calcolato con la condizione di bordo periodico, tra la posizione occupata da una particella al tempo $t_0=0$ e la posizione in cui si trova la stessa particella dopo un evoluzione temporale di $t$ del sistema. Ovvero, per un sistema finito, corrisponde all'istogramma dei valori di:
+\begin{equation}
+dS(t) = \big\vert \vec{r_i}(t) - \vec{r_i}(0) \big\vert
+\end{equation}
+campionati per diverse coppie di configurazioni a distanza temporale $t$ e per tutte le particelle.
+\newline
+Per un sistema solido si attende che la distribuzione $g_t(r)$ risulti molto piccata intorno ad un valore $r_o\ll D_{max}$(modulo dell'ampiezza di oscillazione) dove con $D_{max}$ si intende la massima distanza che si può estendere tra 2 punti in un sistema quadrato con condizioni di bordo periodico:
+\begin{equation}
+D_{max}= \frac{\sqrt{d}}{2}
+\end{equation}
+Mentre per un sistema fluido, se il tempo di evoluzione $t$ è sufficientemente alto, ci si aspetta che la distribuzione di probabilità di trovare la particella in punto specifico della scatola sia uniforme ovunque, ovvero dopo l'evoluzione la particella potrà trovarsi in ogni altro punto del volume in modo completamente casuale.
+
+\begin{figure}[htbp]
+     \begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+		\includegraphics[scale=1.25]{Immagini/RDF.png}
+		\end{flushright}
+     \end{minipage}\hfill
+     \begin{minipage}{0.55\textwidth}
+     	\begin{flushleft}
+		\caption[Funzione di Distribuzione Radiale]{\footnotesize Corona circolare che rappresenta l'elemento di superficie radiale a distanza $r$ dall'origine. Quando $r>L/2$ l'elemento non è più completamente inscritto nella scatola.}\label{fig: RDF}
+     \end{flushleft}
+     \end{minipage}
+  \end{figure}
+
+In tal caso la distribuzione radiale crescerà in accordo con la crescita del volumetto elementare (figura \ref{fig: RDF}). Più precisamente se $\mathcal{\tilde{\rho}}(P)=\textrm{cost}$ è la distribuzione di probabilità (uniforme) di trovare la particella nel punto $P$ dopo l'evoluzione temporale, risulterà che:
+\begin{eqnarray}
+g_t(r) dr &=& \mathcal{\tilde{\rho}} \cdot 2\pi r\,dr   \qquad \textrm{(in 2 dimensioni)}    \nonumber \\
+g_t(r) dr &=& \mathcal{\tilde{\rho}} \cdot \pi r^2\,dr   \qquad \textrm{(in 3 dimensioni)}    
+\end{eqnarray}
+almeno per distanze minori di $L/2$. 
+Per distanze maggiori invece l'elemento di volume tenderà a decrescere con l'aumentare della distanza, questo perchè sfere di raggio $L/2<r<D_{max}$ non possono essere completamente inscritte in un cubo di lato $L$, pertanto la distribuzione di probabilità tenderà a smorzarsi fino ad annullarsi a distanza $D_{max}$.
+\begin{figure}[h!]\vspace{-10pt}
+     \begin{minipage}{0.6\textwidth}
+		\begin{flushright}
+		\includegraphics[scale=0.45]{Immagini/DistrodS.png}
+		\end{flushright}
+     \end{minipage}\hfill
+     \begin{minipage}{0.4\textwidth}
+     	\begin{flushleft}
+			\caption[Distribuzione Radiale Attesa]{Andamento atteso delle distribuzioni radiali $g_t(r)$ a seconda della fase del sistema.}\label{fig: DistrodS}
+     \end{flushleft}
+     \end{minipage}\vspace{-15pt}
+  \end{figure}
+  
+In conclusione risulterà un'andamento simile a quello mostrato nella figura (\ref{fig: DistrodS}).
+% http://isaacs.sourceforge.net/phys/rdfs.html
+
+
+\item \underline{Fasi Metastabili}\newline
+In generale i sistemi considerati non mostrano delle transizioni di fase nette, presentano invece delle \emph{Fasi metastabili} intorno ad alcuni valori caratteristici delle variabili di stato.
+In sistuazioni di questo tipo si osserva un'oscillazione caotica  del parametro d'ordine tra le curve caratteristiche della fase precedente e di quella successiva.
+Infatti quando il sistema si trova in uno stato metastabile ha la possibilità di poter assumere caratteristiche di entrambe le fasi, non perchè si trova in una "via di mezzo" tra la fase liquida e la fase fluida ma perchè può termalizzare in una qualsiasi delle due a seconda di quali siano le condizioni iniziali scelte.
+Quando il sisteam si trova in una condizione di questo tipo anche una piccola variazione dei parametri di stato può determinarare un netto cambiamento di fase, mostrando un comportamento simile al caos deterministico della "mappa logistica".
+
+\end{itemize}
+Nei prossimi capitoli verrano applicate concretamente queste linee guida per studiare 2 modelli specifici di dinamica molecolare: il modello \emph{a "sfere dure"} e il modello \emph{a "sfere soffici"} con potenziale di \emph{ Lennard-Jones}.
+
+\clearpage
+%/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+\section{Sfere Dure}\label{Dure}
+In un modello di Dinamica Molecolare a sfere dure la forza di interazione intermolecolare è caratterizzata da una funzione discontinua della distanza corrispondente al potenziale:
+\begin{equation}
+u(r) =	\begin{cases} 
+			\infty  & \mbox{se }r\leq \sigma \\
+			0 		& \mbox{se }r> \sigma
+		\end{cases}
+\end{equation}
+dove $\sigma$ è il diametro della particella.
+In questo modello le particelle sono equivalenti a delle sfere completamente impenetrabili di diametro $\sigma$, l'unica interazione che si esercita tra loro è tramite collisioni totalmente elastiche.
+\medskip \newline 
+In un sistema di questo tipo non è necessario risolvere le equazioni differenziali del moto, le particelle si muovono di moto rettilineo uniforme ($a_i(t) = 0$) finchè non urtano con un'altra molecola.
+
+Lo studio della cinematica si riduce ad un calcolo puramente algebrico basto su poche leggi fondamentali. Per ogni coppia di particelle $P_1$ e $P_2$, siano :
+\begin{displaymath}
+\vec{r}_{12} = \vec{r}_1 - \vec{r}_2 \qquad \vec{v}_{12} = \vec{v}_1 - \vec{v}_2
+\end{displaymath}
+i vettori di "separazione", vale che:
+
+\begin{enumerate}
+\item Le due particelle  collidono se e solo se:
+\begin{equation}\begin{cases}\label{eq: condizioneurto}
+ & \vec{v}_{12}\cdot \vec{r}_{12} < 0\\
+ & \Delta = (\vec{v}_{12}\cdot \vec{r}_{12})^2 - v_{12}^2(r_{12}^2 -\sigma^2) \geq 0
+\end{cases}\end{equation}
+La prima condizione assicura che le due particelle siano in avvicinamento lungo la congiungente e la seconda assicura che ,ponendosi nel sistema di riferimento di una particella, la traiettoria dell'altra particella avrà una distanza di avvicinamento massimo minore di $\sigma$. 
+
+\item Siano $\vec{r_1}$ e $\vec{r_2}$ i vettori posizione della coppia di molecole al tempo $t_0$, se le particelle soddisfano la condizione (1) urteranno al tempo:
+\begin{equation}\label{eq: tempocollisione}
+ t_c = t_0 + \dfrac{-(\vec{v}_{12}\cdot \vec{r}_{12}) - \sqrt{\Delta} }{v_{12}^2}
+\end{equation}
+
+
+\item Dopo la collisione le particelle urtanti variano la loro velocità secondo l'equazione:
+\begin{equation}\begin{cases}\label{eq: cambiovel}
+ \vec{v}_{1}' & = \vec{v}_{1} - \big[ (\vec{v}_{1} - \vec{v}_{2})\cdot \hat{r}_{12} \big] \hat{r}_{12}\\
+ \vec{v}_{2}' & = \vec{v}_{1} + \big[ (\vec{v}_{1} - \vec{v}_{2})\cdot \hat{r}_{12} \big] \hat{r}_{12}
+\end{cases}\end{equation}
+ 
+ 
+\item Prima e dopo la collisione le particelle seguono una traiettoria rettilinea uniforme:
+\begin{equation}
+\vec{r}_i(t) = \vec{r}_i(t_0) + \vec{v}_i(t - t_0) \qquad \textrm{se } t<t_c
+\end{equation} 
+\end{enumerate}
+Tali equazioni derivano direttamente dalla condizione di urto totalmente elastico, caratterizzato dalla conservazione di energia cinetica e di momento totale durante la collisione.
+
+
+\subsection{Metodi Numerici e Simulazione Computazionale}
+Prima di poter studiare numericamente la dinamica è necessario stabilire quali sono le costanti dimensionali che forniranno le unità di misura fondamentali per il studio del sistema.
+
+\paragraph{Unità di Misura del sistema}
+\begin{itemize}
+\item[-] \underline{Massa}: $[M]=m=1$ 
+\newline Tutte le particelle sono identiche e la loro massa fornisce l'unità di misura più ovvia.
+
+\item[-] \underline{Lunghezza}: $[L]=L=1$ 
+\newline Il diametro $\sigma$ costituirebbe un'altra scelta possibile, ma in questo caso risulta più comodo esprimerlo in unità di lato.
+
+\item[-] \underline{Energia}: $[E]=kT=1$ 
+\newline L'energia totale del sistema è conservata e puramente cinetica, per il principio di equipartizione (eq: \ref{eq: temperatura}) è proporzionale alla temperatura del sistema. 
+\end{itemize}
+
+Scegliere la temperatura come unità significa che verranno simulati sempre sistemi con $kT=1$, gli osservabili calcolati per sistemi a temperatura diversa si otterranno dal primo tramite un semplice fattore di cambio di unità di misura. Il discorso vale in modo analogo anche per le distanze e le masse.
+Ad esempio, se per un sistema unitario si misura un tempo di collisione pari a $t^{*}$, per il generico sistema corrisponderà un valore:
+\begin{displaymath}
+t_c= t^* \biggr[L\sqrt{\dfrac{m}{kT}} \biggr]
+\end{displaymath}
+\newline\medskip
+
+\FloatBarrier
+\subsubsection{Algoritmo di Evoluzione del sitema: Metodo della tavola delle collisioni}
+L'evoluzione del sistema è determinata dalle collisioni, per tenere conto di quali particelle urtano per prime si costruisce una tabella detta \emph{tavola delle collisioni} che all'ingresso $(i,j)$ contiene il tempo che impiegherebbero le particelle $P_i$ e $P_j$ a collidere fra di loro in assenza di altri ostacoli.
+Questi tempi $Tc_{i,j}$ vengono calcolati considerando anche la condizione di bordo periodico, per cui le particelle possono urtare tra di loro anche dopo aver attraversato il bordo della scatola ed essere rientrare dalla parete opposta.
+\medskip\newline
+Per tenere conto di questa possibilità si usa il metodo delle \emph{Particelle Immagine} per cui il tempo di collisione tra le particelle $P_i$ e $P_j$ viene calcolato come il minimo fra i tempi di collisione della particella $P_i$ con tutte le copie di $P_j$ che si trovano nei sistemi identici limitrofi al volume del sistema considerato (ovviamente il minimo viene calcolato considerando anche la particelle originaria all'interno della scatola).
+\medskip\newline
+Chiaramente due particelle non devono collidere necessarimente con le copie più vicine, potrebbero collidere più lontano o non collidere affatto. Questo non determina un problema se si ha l'accorgimento di inizializzare il sistema con una densità di particelle sufficientemene alta. In tal caso, anche se una coppia non collide, avverranno altre collisioni che permettono al sistema di rimerscolarsi. 
+In questo caso non sarà necessario calcolare i tempi di collisione con le copie immagini molto distanti, basteranno solo le copie più vicine in modo da tenere correttamente conto di tutte le collisioni che avvengono in prossimità dei bordi del sistema e che altrimenti verrebbero ignorate.
+\medskip\newline
+La tavola delle collisioni viene costruita una sola volta in fase iniziale, dopo di che il sistema evolverà, un urto alla volta, secondo il seguente algoritmo:
+
+\begin{tikzpicture}[node distance = auto]
+    % Place nodes
+    \node [block_largo] (1) {Determinazione della prossima coppia di particelle urtanti e il loro tempo di Collisione. \newline \footnotesize( Trovare le coordinate $i,j$ corrispondenti all minimo della tavola delle collisioni e il suo valore $t_c$)};
+    \node [block_largo, below of=1,node distance=2.25cm] (2) {Evoluzione del sistema fino al tempo di collisione. \newline \footnotesize( Evolvere le posizioni di tutte le particelle $\vec{r_i} \mapsto \vec{r_i} + \vec{v_i} \cdot t_c $)};
+    \node [block_largo, below of=2,node distance=2.25cm] (3) {Applicazione della condizione di bordo periodico a tutte le particelle che sono uscite dal volume. \newline \footnotesize( Per ogni componente se $ r_x \geq L \Rightarrow r_x \mapsto r_x - L $ oppure se $ r_x<0 \Rightarrow r_x \mapsto r_x + L $ )};
+    \node [block_largo, below of=3,node distance=2.25cm] (4) {Aggiornamento delle velocità delle particelle urtanti. \newline \footnotesize( Evolvere la posizione delle particelle urtanti $\vec{v_i} \mapsto \vec{v_i} - \vec{\Delta V}$ e $\vec{v_j} \mapsto \vec{v_j} + \vec{\Delta V}$ secondo la formula.)};
+    \node [block_largo, below of=4,node distance=2.25cm] (5) {Aggiornamento della tavola di collisione. \newline \footnotesize( Si riscrivono solo la i-sima e j-sima colonna della tavola delle collisioni, ricalcolando i tempi di collisione relativi alle due particelle $i,j$ considerando la nuova velocità che hanno assunto dopo l'urto.)};
+
+
+    % Draw edges
+    \path [line] (1) -- (2);
+    \path [line] (2) -- (3);
+    \path [line] (3) -- (4);
+    \path [line] (4) -- (5);
+	\path [line] (5) -- +(9.5,0)  |- (1); 
+ 
+\end{tikzpicture}
+
+\FloatBarrier
+\subsubsection{Implementazione computazionale dell'algoritmo}
+Per simulare questo sistema verrà sfruttata la programmazione ad oggetti del linguaggio C++.
+L'idea è di definire una classe \Cls{sistema\_rigido()} che contenga tra i suoi parametri tutti i dati necessari per definire lo stato microscopico del sistema, in questo caso gli attributi fondamentali saranno:
+i definire la classe \Cls{sistema\_soffice()} dotata degli attributi necessari a descrivere lo stato microscopico del sistema:
+\begin{itemize}
+\item 2 array di vettori per memorizzare posizione e velocità di tutte le particelle costituenti il sistema.
+
+\item 1 array bidimensionale per salvare la tavola delle collisioni.
+
+\item 3 variabili \emph{double} per contenere le costanti $\sigma$, $L$, $\eta$ del sistema. 2 varibili \emph{int} per salvare il numero di particelle e la dimensione spaziale della simulazione.
+
+\end{itemize}
+%\medskip\newline
+Il costruttore della classe costituirà la fase di \emph{inizializzazione} dell'algoritmo, ovvero salverà le posizioni inziali in bcc, fornirà velocità iniziali casuali riscalandole a Momento totale nullo e a temperatura unitaria e infine costruirà la tavola delle collisioni completa.
+Le variabili richieste per inizializzare il sistema saranno la dimensione spaziale $d$, la funzione di impacchettamento $\eta = V_\textrm{particelle} / V_\textrm{scatola}$ e il numero $L$ di particelle disposte lungo una riga del reticolo iniziale.
+\medskip\newline
+Il metodo \cd{evoluzione()} sarà il cardine della simulazione, questa funzione fornisce l'evoluzione temporale del sistema dalla configurazione corrente fino al primo urto in accordo con l'algoritmo precedente.
+\medskip\newline
+La fase di \emph{termalizzazione} si otterrà applicando questo metodo un numero di volte sufficiente a realizzare la distribuzione di Maxwell-Boltzman per le velocità.
+\medskip\newline
+Similmente la fase di \emph{produzione} si realizza intervallando la raccolta di osservabili istantanei sulla configurazione del sistema all'evoluzione temporale necessaria per ottenere un'altra configurazione sufficientemente scorrelata dalla prima.
+\medskip\newline
+Per ottenere rapidamente una successione di sistemi inizializzati con un parametro $\eta$ differente si usa il metodo \cd{rinizializzazione()} che prende in ingresso un nuovo valore della frazione di impacchettamento (più piccolo del precedente) e si limita ad aggiornare il parametro $\sigma$ rimpicciolendo il raggio delle sfere ma conservando la disposizione e le velocità ottenute dalle simulazioni precedenti.
+
+\FloatBarrier
+\subsection{Caratteristiche dell'algoritmo di Simulazione}
+Dall'osservazione della disposizione delle particelle del sistema dopo diversi urti si possono dedurre le prime considerazioni qualitative sulle proprietà del sistema.
+Nella figura (\ref{fig: snap2d}) sono mostrate 4 istantanee delle configurazioni in cui si trova il sistema in seguito alla termalizzazione a vari valori di $\eta$.
+Dall'immagine si nota come siano presenti due fasi distinte e come la transizione tra di esse sia di natura puramente geometrica. Essendo le molecole impenetrabili al superamento di un certo valore di densità non ci sarà più possibilità di diffusione, infatti tenderanno ad incastrarsi tra di loro  disponendosi in un reticolo (di forma esagonale con particella centrale) più "denso" della disposizione BCC scelta in partenza.
+\begin{figure}[htbp]
+		\caption[Sfere Rigide$/$Preliminari\_Snap2D.cpp]{Immagini del sistema 2D termalizzato a diversi valori di impacchettamento. (In alto a sinistra è visibile la configurazione inziale prima dell'evoluzione temporale).}	\vspace{-15pt}
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.85\textwidth]{Immagini/Rigide/SnapInizio_2D}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.85\textwidth]{Immagini/Rigide/SnapSolido_2D}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+          %(or a blank line to force the subfigure onto a new line)
+\vspace{-15pt}
+
+        \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.85\textwidth]{Immagini/Rigide/SnapMeta_2D}
+        \end{subfigure}
+                \begin{subfigure}[b]{0.5\textwidth}
+                \centering
+                \includegraphics[width=0.85\textwidth]{Immagini/Rigide/SnapLiquido_2D}
+        \end{subfigure}
+		
+		 \centering  \footnotesize{$N= 200$ , $d=2$ , N urti evoluzione=$ 200 $ per particella}
+		\label{fig: snap2d}
+\end{figure}
+
+\subsubsection{Tempo di esecuzione}
+La maggior parte dello sforzo computazionale viene ovviamente investita nel calcolo dei singoli step di evoluzione temporale.
+Nella figura (\ref{fig: TempoEsecuzione}) è mostrato l'andamento del tempo di esecuzione medio necessario per il calcolo di una singola evoluzione in funzione del numero di particelle del modello.
+\begin{figure}[htbp]
+	\centering
+\caption[Sfere Rigide$/$Preliminari\_TempoEsecuzione.cpp]{Andamento del tempo macchina medio necessario a calcolare un passo d'evoluzione in funzione del numero di particelle.}\vspace{-15pt}
+	\includegraphics[scale=0.95]{Immagini/Rigide/T_esec}
+	\newline \footnotesize{$\eta_{2D}= 0.7$ , $\eta_{3D}= 0.515$ , media su $10000$ collisioni}
+	\label{fig: TempoEsecuzione}
+\end{figure}
+Naturalmente il tempo macchina necessario dipenderà dal numero di particelle, infatti il numero di coppie che possono essere coinvolte in una collisione risulta:
+\begin{displaymath}
+N_\textrm{coppie} = \dfrac{N (N-1)}{2}
+\end{displaymath}
+quindi il tempo necessario per ricalcolare la tavola di collisione e calcolarne il minimo aumenta di conseguenza.
+\newline
+Dal grafico è anche evidente la forte dipendenza dalla dimensione spaziale del modello. Questo dato entra pesantemente nel calcolo dei tempi di collisione con il metodo delle immagini, infatti il numero di copie che vanno considerate aumenta con la dimensione come $ N_\textrm{immagini} = 3^d $.
+
+
+\subsubsection{Tempo di Termalizzazione}
+Per poter effettuare una raccolta effettiva delle caratteristiche del modello in un determinato stato è necessario disporre di una configurazione correttamente termalizzata.
+Per stabilire il numero di collisioni necessari a portare il sistema nella condizione prescelta si procede allo studio della funzione di Boltzman in funzione degli step evolutivi.
+
+\begin{figure}[htbp]
+\centering
+	\caption[Sfere Rigide$/$Preliminari\_Termalizzazione.cpp]{Andamento della funzione di Boltzman istantanea e media in funzione del numero di passi evolutivi.}
+	\vspace{-15pt}
+	\includegraphics[scale=0.95]{Immagini/Rigide/HvsStep3D}
+	\newline\footnotesize{$N= 686$ , $d=3$ , campioni raccolti ogni urto.}
+	\label{fig: Termalizzazione}
+\end{figure}
+
+Dal grafico (\ref{fig: Termalizzazione}) si nota come l'andamento della funzione $H$ istantanea continui a rimanere piuttosto rumoroso durante l'evoluzione del sistema, questo effetto è dovuto al basso numero di particelle che con una sola configurazione campionata fornisce una statistica insufficiente allo studio della distribuzione di probabilità.
+\newline
+L'andamento della funzione mediata è invece più regolare. La convergenza al valore atteso avviene in media dopo 10 urti per particella lontano dalla fase metastabile che richiede più tempo per essere termalizzare rispetto agli altri valori di $\eta$.
+
+\begin{figure}[htbp]
+\centering
+\caption[Sfere Rigide$/$Preliminari\_Termalizzazione.cpp]{Distribuzione delle componenti x delle velocità dopo N passi.}
+	\vspace{-15pt}
+	\includegraphics[scale=0.95]{Immagini/Rigide/DistroVx}
+	\newline
+	\footnotesize{$N= 686$ , $d=3$ , campioni$= 5000$ per particella, intervallo di raccolta campioni = $1$ urto per particella,  urti termal=$ 5000 \cdot N$.}
+	\label{fig: IstoTermalizzazione}
+\end{figure}
+
+Nella figura (\ref{fig: IstoTermalizzazione}) si può osservare come in seguito della termalizzazione la distribuzione delle velocità sia la stessa per tutte le fasi e sia in accordo con la distribuzione gaussiana attesa.
+
+\FloatBarrier
+\subsection{Caratteristiche del modello, studio delle transizioni di fase}
+Come era intuibile dalla figura (\ref{fig: snap2d}), il sistema a sfere rigide è in grado di presentare una transizione di fase nonostante sia dotato di un potenziale d'interazione molto semplice.
+Si procede quindi allo studio di questo fenomeno come indicato nelle linee guida del capitolo \ref{cap: Simulazione in Generale}.
+\subsubsection{Studio del fattore di comprimibilità come parametro d'ordine}
+Nel capitolo precedente è stato introdotto il fattore di comprimibilità come media sui momenti angolari delle forze (equazione \ref{eq: Pressione}).
+Le sfere dure, però, esercitano solo una forza di durata istantanea nel momento esatto in cui avviene la collisione. 
+In questo caso è necessario dedurre un'espressione per $Z$ specifica per questo modello, sfruttando il teorema dell'impulso si ottiene:
+\begin{equation}\label{eq: termPRigido}
+Z = \dfrac{P V}{N kT} = 1 + \dfrac{m}{d N kT} \dfrac{1}{t} \sum_{c=1}^{N_c}\vert \Delta \vec{v}_{ij}(t_c) \vert 
+\end{equation}
+dove $t$ è il tempo trascorso durante le $N_c$ collisioni e $\Delta \vec{v}_{ij}(t_c)$ è il vettore che da la variazione di velocità subita dalla coppia di particelle urtante nell'istante $t_c$.
+
+\begin{figure}[htbp]
+\centering
+\caption[Sfere Rigide$/$PvsEta\_2D.cpp]{Andamento dal parametro d'ordine $Z$ in funzione della frazione d'impacchettamento.}	\vspace{-15pt}
+\includegraphics[scale=0.9]{Immagini/Rigide/PvsEta2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 100$ per particella,  urti termal=$ 50 \cdot N$}
+	\label{fig: PvsEta2D}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\caption[Sfere Rigide$/$PvsEta\_3D.cpp]{Andamento dal parametro d'ordine $Z$ in funzione della frazione d'impacchettamento.}	\vspace{-15pt}
+\includegraphics[scale=0.9]{Immagini/Rigide/PvsEta3D}
+	\newline \footnotesize{$N= 250$ , $d=3$ , campioni$= 100000$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: PvsEta3D}
+\end{figure}
+Nelle figure (\ref{fig: PvsEta2D}) e (\ref{fig: PvsEta3D}) è mostrato l'andamento del parametro d'ordine $Z$ in funzione della frazione d'impacchettamento $\eta$.
+Dai grafici si stima la presenza di una fase metastabile nei seguenti intervalli:
+
+\begin{center}
+\begin{tabular}{|c|r c l |}
+\hline
+	$2D$ & 0.685 & $<\eta_{\textrm{meta}}<$ & 0.735 \\
+\hline
+	$3D$ & 0.49 & $<\eta_{\textrm{meta}}<$ & 0.55\\
+\hline
+\end{tabular}
+\end{center}
+La natura instabile del sistema in queste regioni può essere evidenziata da un secondo calcolo del valore di $Z$ effettuato a partire da una configurazione iniziale differente.
+Ad esempio si può scegliere di rinizializzare il sistema ogni volta, così che ad ogni passo la termalizzazione viene effettuata a partire dal reticolo iniziale senza tener conto della configurazione raggiunta dal sistema nella simulazione precedente.
+
+Con questo procedimento si ottiene l'andamento mostrato nelle figure (\ref{fig: PvsEta2D_Zoom}) e (\ref{fig: PvsEta3D_Zoom}), è facile notare come, in questo caso, i valori di $\langle Z \rangle$  oscillino tra le due curve caratteristiche delle fase liquida e della fase solida.
+
+\begin{figure}[!ht]
+\centering
+\caption[Sfere Rigide$/$PvsEta\_2D\_ZonaMeta.cpp]{Ingrandimento sulla zona metastabile ( caso 2D ).} 	\vspace{-15pt}
+\includegraphics[scale=0.85]{Immagini/Rigide/PvsEta2DZoom}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 100000$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: PvsEta2D_Zoom}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\caption[Sfere Rigide$/$PvsEta\_3D\_ZonaMeta.cpp]{Ingrandimento sulla zona metastabile( caso 3D ).} 	\vspace{-15pt}
+\includegraphics[scale=0.85]{Immagini/Rigide/PvsEta3DZoom}
+	\newline \footnotesize{$N= 250$ , $d=3$ , campioni$= 100000$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: PvsEta3D_Zoom}
+\end{figure}
+
+In tutte le misurazioni precedenti è stato stimato l'errore tramite il metodo di \emph{Binning} in modo da limitare l'effetto dell'autocorrelazione delle configurazioni temporalmente vicine.
+
+\FloatBarrier 
+\subsubsection{Tempi di Collisione e Libero Cammino Medio}
+Due quantità che è possibile monitorare per studiare il cambiamento di fase sono il tempo di collisione medio e il libero cammino medio.
+
+  \begin{figure}[h!]\vspace{-10pt}
+     \begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+		\includegraphics[scale=0.65]{Immagini/Rigide/Lc_2D}
+		\end{flushright}
+     \end{minipage}\hfill
+     \begin{minipage}{0.55\textwidth}
+     	\begin{flushleft}
+		\caption[Sfere Rigide$/$Preliminari\_Cammino.cpp]{Cammino percorso da una particella durante l'evoluzione di $1 [t]$ .\newline \footnotesize{$N= 450$ , $d=2$ ,  urti termal=$ 20 \cdot N$}}\label{fig: SnapLiberoCammino}
+     \end{flushleft}
+     \end{minipage}\vspace{-15pt}
+  \end{figure}
+
+In un sistema molto denso le particelle tenderanno ad incontrarsi più spesso, in questo caso la frequenza degli urti sarà molto alta e il cammino libero medio tendenzialmente molto basso.
+
+\begin{figure}[htbp]
+\centering
+\caption[Sfere Rigide$/$Problema2.cpp]{Andamento del tempo di collisione medio in funzione di $\eta$.}\vspace{-15pt}
+\includegraphics[scale=0.95]{Immagini/Rigide/TcvsEta2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 50\cdot N$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: TcvsEta}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\caption[Sfere Rigide$/$Problema4.cpp]{Andamento del libero cammino medio in funzione di $\eta$.}\vspace{-15pt}
+\includegraphics[scale=0.95]{Immagini/Rigide/LcvsEta2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 50\cdot N$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: LcvsEta}
+\end{figure}
+
+Nelle figure (\ref{fig: TcvsEta}) e (\ref{fig: LcvsEta}) è possibile osservare come il modello segua l'andamento previsto, le curve presentano una piccola flessione in presenza della zona metastabile ($\eta \simeq 0.7$) dove il sistema oscilla tra stato fluido e stato solido.
+
+
+\begin{figure}[htbp]
+\centering
+	\caption[Sfere Rigide$/$Problema3.cpp]{Distribuzione dei tempi di collisione per vari valori di $\eta$.}\vspace{-15pt}
+	\includegraphics[scale=0.95]{Immagini/Rigide/DistroTc2D}
+\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 50\cdot N$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: DistroTc}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+	\caption[Sfere Rigide$/$Problema4\_2.cpp]{Distribuzione dei valori del libero cammino per vari valori di $\eta$.}\vspace{-15pt}
+	\includegraphics[scale=0.95]{Immagini/Rigide/DistroLc2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 50\cdot N$ ,  urti termal=$ 50 \cdot N$}
+	\label{fig: DistroLc}
+\end{figure}
+Nei grafici precedenti è stato mostrato l'andamento degli osservabili medi, studiando la distribuzione di probabilità dei valori raccolti è possibile determinare il modo in cui i valori campioni si dispongono attorno a a tale valore medio.
+Nelle figure (\ref{fig: DistroTc}) e (\ref{fig: DistroLc}) è mostrato l'andamento di tali distribuzioni di probabilità. Si può notare come la distribuzione risulti estremamente piccata attorno al valore medio nel caso della fase solida e come invece, nella fase liquida e in quella metastabile, i campioni tendano a distribursi in modo quasi uniforme in un largo intervallo di valori .
+
+Il risultato non è sorprendente, la collisione costituisce un evento \emph{pseudo-casuale}( il sistema è classico quindi deterministico).
+Mentre in un sistema fluido tale evento può avvenire ad intervalli di tempo molto diversi, in un sistema solido, dove ogni particella è incastrata in un reticolo, le particelle non hanno lo spazio materiale per fluire e urteranno necessariamente con immediatamente vicine. 
+In altre partole la mancanza di spazio determinata dall'elevata densità non da la possibilità alle particelle limitrofe di aprire un varco che consenta alla particelle di viaggiare liberamente.
+\FloatBarrier 
+Unendo questi dati ai risultati ottenuti nel capitolo precedente è possibile determinare la natura delle transizioni di fase al variare della frazione d'impacchettamento:
+\begin{center}
+\begin{tabular}{|c|c | c | c |}
+\hline
+		 & Fase Liquida & Fase Metastabile & Fase solida	\\
+\hline
+	$2D$ & $\eta < 0.685$ & $0.685 <\eta < 0.735$ & $\eta > 0.735$ \\
+\hline
+	$3D$ & $\eta < 0.49$ & $0.49 <\eta < 0.55$ & $\eta > 0.55$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\FloatBarrier 
+\subsubsection{Studio della Diffusione: spostamento quadratico medio.}
+Un ulteriore osservabile che può essere utile per distinguere le fasi del sistema è lo spostamento quadratico medio.
+
+  \begin{figure}[h!]\vspace{-10pt}
+     \begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\includegraphics[scale=0.55]{Immagini/Rigide/Eta4_2D}
+		\end{flushright}
+     \end{minipage}\hfill
+     \begin{minipage}{0.4\textwidth}
+     	\begin{flushleft}
+		\caption[Sfere Rigide$/$Preliminari\_Diffusione.cpp]{Immagine della diffusione del sistema dopo $1 [t]$ . \newline \footnotesize{$N= 242$ , $d=2$ ,  urti termal=$ 20 \cdot N$}}
+     \end{flushleft}
+     \end{minipage}\vspace{-10pt}
+  \end{figure}
+Anche in questo caso le due regioni di $\eta$ individuate in precedenza mostrano le proprietà attese teoricamente.
+
+\begin{figure}[!htbp]
+\caption[a) Sfere Rigide$/$Problema5\_0.cpp $\quad / \quad$b) Sfere Rigide$/$Problema7\_0.cpp]{Andamento dello spostamento quadratico medio in funzione del tempo di evoluzione per vari valori di $\eta$.}\vspace{-10pt}
+		\begin{subfigure}[b]{\textwidth}
+          	\begin{center}
+	\caption[Sfere Rigide$/$Problema5\_0.cpp]{( caso 2D )}\vspace{-10pt}
+	\includegraphics[scale=0.75]{Immagini/Rigide/dSquadvsDt_2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 2000$,  urti termal=$ 20 \cdot N$} 
+	\label{fig: dSquadvsDt_2D}	
+          	\end{center}
+        \end{subfigure}%
+  	\medskip
+  	
+        \begin{subfigure}[b]{\textwidth}
+            \begin{center}           
+			\caption[Sfere Rigide$/$Problema7\_0.cpp]{ \centering ( caso 3D )}\vspace{-10pt}	
+			\includegraphics[scale=0.75]{Immagini/Rigide/dSquadvsDt_3D}
+			\newline \footnotesize{$N= 250$ , $d=3$ , campioni$= 2000$,  urti termal=$ 50 \cdot N$}
+			\label{fig: dSquadvsDt_3D}
+			\end{center}
+        \end{subfigure}
+\end{figure}
+Nelle  figure (\ref{fig: dSquadvsDt_2D}) e (\ref{fig: dSquadvsDt_3D}) è mostrato l'andamento dalla distanza quadratica media percorsa dalle particelle del sistema in un intervallo di tempo di diffusione  fisso. 
+Si può notare come nella fase liquida lo spostamente quadratico medio cresca linearmente con l'aumentare del tempo di diffusione mentre , nella fase solida, rimanga costante attorno allo spostamento di oscillazione termica medio. 
+
+\FloatBarrier 
+Lo studio dell'andamento dello spostamento quadratico medio( in un intervallo di tempo fissato) al variare della densità del sistema fornisce un altro criterio per mostrare il camibiamento di fase subito dal sistema.
+Dalle figure (\ref{fig: dSquadvsEta_2D}) e (\ref{fig: dSquadvsEta_3D}) si nota come la distanza (quadratica) media percorsa dalle particelle nel loro moto di diffusione decada con l'aumento della frazione d'impacchettamento in accordo con l'aumento della frequenza della collisioni che hanno l'effetto di deviare la traiettoria rettilinea della molecola.
+
+\begin{figure}[!htbp]
+\caption[a) Sfere Rigide$/$Problema5\_1.cpp $\quad / \quad$b) Sfere Rigide$/$Problema7\_1.cpp]{Andamento dello spostamento quadratico medio in $0.5[t]$ di evoluzione in funzione di $\eta$.}\vspace{-10pt}
+		\begin{subfigure}[b]{\textwidth}
+          	\begin{center}
+	\caption[Sfere Rigide$/$Problema5\_1.cpp]{( caso 2D )}\vspace{-15pt}
+	\includegraphics[scale=0.85]{Immagini/Rigide/dSquadvsEta_2D}
+	\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 500$ per particella,  urti termal=$ 20 \cdot N$}
+	\label{fig: dSquadvsEta_2D}
+          	\end{center}
+        \end{subfigure}%
+  	\medskip
+  	
+        \begin{subfigure}[b]{\textwidth}
+            \begin{center}           
+	\caption[Sfere Rigide$/$Problema7\_1.cpp]{( caso 3D )}\vspace{-15pt}
+	\includegraphics[scale=0.85]{Immagini/Rigide/dSquadvsEta_3D}
+	\newline \footnotesize{$N= 250$ , $d=3$ , campioni$= 500$ per particella,  urti termal=$ 100 \cdot N$}
+	\label{fig: dSquadvsEta_3D}
+			\end{center}
+        \end{subfigure}
+\end{figure}
+
+
+
+\FloatBarrier 
+\subsubsection{Studio della Diffusione: Funzione di Distribuzione Radiale}
+Un'altro indicatore dell'effettivo comportamento solido-liquido manifestato del sistema a sfere rigide è fornito dalla fuzione di distribuzione radiale al tempo t $g_t(r)$.
+\newline
+L'andamento della funzione mostrato nelle figure (\ref{fig: DistrodS_2D}) e (\ref{fig: DistrodS_3D}) è esattamente quello previsto nel capitolo \ref{cap: Simulazione in Generale}.
+\newline
+Nelle figure è anche possibile notare come nella fase metastabile due valori (curve blu e verde), molto simili ma diversi, possano dare distribuzioni completamente diverse a secondo di quale sia la configurazione a partire da cui vengono inizializzati.
+
+\begin{figure}[htbp]
+\centering
+		\caption[Sfere Rigide$/$Problema5\_2.cpp]{Funzione di distribuzione radiale del sistema dopo $250[t]$ di evoluzione.}\vspace{-15pt}
+		\includegraphics[scale=1]{Immagini/Rigide/DistrodS_2D}
+		\newline \footnotesize{$N= 450$ , $d=2$ , campioni$= 500$ per particella,  urti termal=$ 150 \cdot N$}
+	\label{fig: DistrodS_2D}
+
+\centering
+	\caption[Sfere Rigide$/$Problema7\_2.cpp]{Funzione di distribuzione radiale del sistema dopo $10[t]$ di evoluzione.}\vspace{-15pt}
+	\includegraphics[scale=1]{Immagini/Rigide/DistrodS_3D}
+	\newline \footnotesize{$N= 250$ , $d=3$ , campioni$= 800$ per particella,  urti termal=$ 150 \cdot N$}
+	\label{fig: DistrodS_3D}
+\end{figure}
+
+
+
+\FloatBarrier 
+\subsection{Studio del limite termodinamico}
+Nella figura (\ref{fig: Limite Termo}) è mostrato il valore di $\langle Z-1 \rangle$  calcolato per sistemi caratterizzati dalla stessa frazione di impacchettamento ma simulati con diverso numero di particelle.
+
+\begin{figure}[htbp]
+\centering
+	\caption[Sfere Rigide$/$Problema8.cpp]{Andamento del parametro Z in funzione di $N$. Limite Termodinamico }\vspace{-10pt}
+	\includegraphics[scale= 1]{Immagini/Rigide/termPvsN3D}
+	\newline\footnotesize{ $d=3$ , campioni$= 500000$,  urti termal=$ 500000$}
+	\label{fig: Limite Termo}
+\end{figure}
+
+Eseguendo un fit dei valori calcolati rispetto ad un andamento del tipo:
+\begin{equation}\label{eq: limiteTermo}
+ (Z-1) = A + \dfrac{B}{N}
+\end{equation}
+si ottengono le seguenti stime per i parametri della funzione:
+\begin{center}
+\begin{tabular}{|c c r c l |}
+\hline
+	A	 & $=$ & $ 2.98 $ & $\pm$ & $0.01 $	\\
+	B	 & $=$ & $ 2.70$ & $\pm$ & $0.2 $	\\
+\hline
+\end{tabular}
+\end{center}
+
+Calcolando il limite per $N\rightarrow \infty$ si ottiene una stima del fattore di comprimibilità al limite termodinamico pari a: 
+\begin{displaymath}
+Z_{\textrm{TD}} (\eta = 0.3) = 3.98 \pm 0.01
+\end{displaymath}
+
+
+\clearpage
+\input{./Soffici.tex}
+
+\FloatBarrier
+\listoffigures
+
+\bibliographystyle{plain}
+\bibliography{Bibi.bib}
+
+
+\end{document}
+This is never printed
+
+
+classi \Cls{Nomeclasse}
+
+metodi \cd{NomeMetodo}
+
+tipo \cd{Nometipo}

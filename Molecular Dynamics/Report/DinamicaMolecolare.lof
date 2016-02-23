@@ -1,0 +1,44 @@
+\select@language {italian}
+\contentsline {figure}{\numberline {1}{\ignorespaces Punto Macroscopico}}{1}
+\contentsline {figure}{\numberline {2}{\ignorespaces BCC}}{3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Bordo Periodico}}{4}
+\contentsline {figure}{\numberline {4}{\ignorespaces Spostamento quadratico medio atteso}}{6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Funzione di Distribuzione Radiale}}{6}
+\contentsline {figure}{\numberline {6}{\ignorespaces Distribuzione Radiale Attesa}}{7}
+\contentsline {figure}{\numberline {7}{\ignorespaces Sfere Rigide$/$Preliminari\_Snap2D.cpp}}{11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Sfere Rigide$/$Preliminari\_TempoEsecuzione.cpp}}{12}
+\contentsline {figure}{\numberline {9}{\ignorespaces Sfere Rigide$/$Preliminari\_Termalizzazione.cpp}}{12}
+\contentsline {figure}{\numberline {10}{\ignorespaces Sfere Rigide$/$Preliminari\_Termalizzazione.cpp}}{13}
+\contentsline {figure}{\numberline {11}{\ignorespaces Sfere Rigide$/$PvsEta\_2D.cpp}}{13}
+\contentsline {figure}{\numberline {12}{\ignorespaces Sfere Rigide$/$PvsEta\_3D.cpp}}{14}
+\contentsline {figure}{\numberline {13}{\ignorespaces Sfere Rigide$/$PvsEta\_2D\_ZonaMeta.cpp}}{14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Sfere Rigide$/$PvsEta\_3D\_ZonaMeta.cpp}}{14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sfere Rigide$/$Preliminari\_Cammino.cpp}}{15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Sfere Rigide$/$Problema2.cpp}}{15}
+\contentsline {figure}{\numberline {17}{\ignorespaces Sfere Rigide$/$Problema4.cpp}}{16}
+\contentsline {figure}{\numberline {18}{\ignorespaces Sfere Rigide$/$Problema3.cpp}}{16}
+\contentsline {figure}{\numberline {19}{\ignorespaces Sfere Rigide$/$Problema4\_2.cpp}}{16}
+\contentsline {figure}{\numberline {20}{\ignorespaces Sfere Rigide$/$Preliminari\_Diffusione.cpp}}{17}
+\contentsline {figure}{\numberline {21}{\ignorespaces a) Sfere Rigide$/$Problema5\_0.cpp $\hskip 1em\relax / \hskip 1em\relax $b) Sfere Rigide$/$Problema7\_0.cpp}}{17}
+\contentsline {figure}{\numberline {22}{\ignorespaces a) Sfere Rigide$/$Problema5\_1.cpp $\hskip 1em\relax / \hskip 1em\relax $b) Sfere Rigide$/$Problema7\_1.cpp}}{18}
+\contentsline {figure}{\numberline {23}{\ignorespaces Sfere Rigide$/$Problema5\_2.cpp}}{19}
+\contentsline {figure}{\numberline {24}{\ignorespaces Sfere Rigide$/$Problema7\_2.cpp}}{19}
+\contentsline {figure}{\numberline {25}{\ignorespaces Sfere Rigide$/$Problema8.cpp}}{20}
+\contentsline {figure}{\numberline {26}{\ignorespaces Potenziale di L.-J.}}{21}
+\contentsline {figure}{\numberline {27}{\ignorespaces Potenziale di L.-J. tagliato}}{22}
+\contentsline {figure}{\numberline {28}{\ignorespaces Sfere Soffici$/$Preliminari\_Snap2D.cpp}}{25}
+\contentsline {figure}{\numberline {29}{\ignorespaces Sfere Soffici$/$Preliminari\_TempoEsecuzione.cpp}}{26}
+\contentsline {figure}{\numberline {30}{\ignorespaces Sfere Soffici$/$Preliminari\_TempoEsecuzione.cpp}}{26}
+\contentsline {figure}{\numberline {31}{\ignorespaces Sfere Soffici$/$Preliminari\_Termalizzazione.cpp}}{27}
+\contentsline {figure}{\numberline {32}{\ignorespaces Sfere Soffici$/$Preliminari\_Termalizzazione.cpp}}{28}
+\contentsline {figure}{\numberline {33}{\ignorespaces Sfere Soffici$/$Preliminari\_Termalizzazione.cpp}}{28}
+\contentsline {figure}{\numberline {34}{\ignorespaces Sfere Soffici$/$Problema9.cpp}}{29}
+\contentsline {figure}{\numberline {35}{\ignorespaces Sfere Soffici$/$Problema9.cpp}}{30}
+\contentsline {figure}{\numberline {36}{\ignorespaces Sfere Soffici$/$Problema10.cpp}}{30}
+\contentsline {figure}{\numberline {37}{\ignorespaces Sfere Soffici$/$Problema11.cpp}}{31}
+\contentsline {figure}{\numberline {38}{\ignorespaces Sfere Soffici$/$Problema11$\_$v2C.cpp}}{31}
+\contentsline {figure}{\numberline {39}{\ignorespaces Sfere Soffici$/$Problema11$\_$v2B.cpp}}{32}
+\contentsline {figure}{\numberline {40}{\ignorespaces Sfere Soffici$/$Problema11$\_$v2A.cpp}}{32}
+\contentsline {figure}{\numberline {41}{\ignorespaces Sfere Soffici$/$Problema12.cpp $\hskip 1em\relax \rightarrow \hskip 1em\relax $ ZvsN\_file.p}}{33}
+\contentsline {figure}{\numberline {42}{\ignorespaces Sfere Soffici$/$Problema12.cpp $\hskip 1em\relax \rightarrow \hskip 1em\relax $ UvsN\_file.p}}{33}
+\contentsline {figure}{\numberline {43}{\ignorespaces Sfere Soffici$/$Problema12.cpp $\hskip 1em\relax \rightarrow \hskip 1em\relax $ TvsN\_file.p}}{34}

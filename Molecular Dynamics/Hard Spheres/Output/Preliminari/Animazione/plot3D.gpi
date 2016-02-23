@@ -1,0 +1,1010 @@
+clear
+reset
+set key center top
+set size ratio -1
+unset key
+set terminal gif animate delay 10
+set output "animate.gif"
+ L=1
+set xrange [ 0 : L ] noreverse nowriteback
+set yrange [ 0 : L ] noreverse nowriteback
+set title "step : 0" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 0 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 1" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 1 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 2" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 2 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 3" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 3 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 4" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 4 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 5" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 5 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 6" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 6 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 7" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 7 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 8" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 8 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 9" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 9 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 10" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 10 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 11" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 11 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 12" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 12 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 13" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 13 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 14" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 14 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 15" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 15 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 16" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 16 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 17" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 17 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 18" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 18 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 19" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 19 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 20" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 20 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 21" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 21 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 22" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 22 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 23" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 23 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 24" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 24 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 25" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 25 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 26" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 26 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 27" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 27 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 28" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 28 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 29" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 29 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 30" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 30 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 31" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 31 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 32" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 32 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 33" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 33 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 34" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 34 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 35" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 35 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 36" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 36 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 37" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 37 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 38" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 38 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 39" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 39 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 40" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 40 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 41" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 41 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 42" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 42 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 43" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 43 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 44" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 44 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 45" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 45 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 46" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 46 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 47" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 47 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 48" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 48 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 49" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 49 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 50" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 50 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 51" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 51 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 52" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 52 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 53" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 53 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 54" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 54 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 55" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 55 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 56" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 56 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 57" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 57 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 58" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 58 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 59" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 59 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 60" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 60 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 61" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 61 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 62" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 62 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 63" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 63 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 64" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 64 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 65" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 65 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 66" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 66 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 67" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 67 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 68" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 68 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 69" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 69 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 70" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 70 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 71" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 71 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 72" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 72 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 73" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 73 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 74" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 74 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 75" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 75 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 76" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 76 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 77" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 77 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 78" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 78 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 79" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 79 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 80" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 80 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 81" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 81 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 82" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 82 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 83" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 83 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 84" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 84 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 85" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 85 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 86" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 86 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 87" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 87 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 88" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 88 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 89" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 89 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 90" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 90 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 91" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 91 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 92" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 92 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 93" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 93 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 94" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 94 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 95" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 95 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 96" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 96 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 97" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 97 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 98" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 98 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 99" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 99 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 100" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 100 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 101" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 101 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 102" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 102 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 103" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 103 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 104" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 104 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 105" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 105 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 106" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 106 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 107" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 107 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 108" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 108 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 109" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 109 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 110" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 110 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 111" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 111 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 112" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 112 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 113" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 113 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 114" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 114 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 115" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 115 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 116" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 116 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 117" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 117 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 118" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 118 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 119" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 119 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 120" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 120 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 121" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 121 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 122" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 122 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 123" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 123 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 124" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 124 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 125" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 125 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 126" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 126 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 127" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 127 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 128" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 128 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 129" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 129 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 130" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 130 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 131" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 131 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 132" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 132 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 133" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 133 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 134" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 134 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 135" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 135 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 136" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 136 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 137" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 137 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 138" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 138 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 139" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 139 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 140" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 140 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 141" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 141 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 142" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 142 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 143" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 143 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 144" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 144 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 145" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 145 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 146" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 146 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 147" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 147 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 148" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 148 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 149" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 149 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 150" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 150 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 151" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 151 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 152" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 152 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 153" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 153 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 154" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 154 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 155" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 155 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 156" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 156 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 157" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 157 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 158" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 158 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 159" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 159 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 160" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 160 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 161" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 161 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 162" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 162 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 163" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 163 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 164" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 164 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 165" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 165 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 166" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 166 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 167" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 167 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 168" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 168 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 169" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 169 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 170" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 170 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 171" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 171 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 172" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 172 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 173" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 173 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 174" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 174 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 175" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 175 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 176" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 176 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 177" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 177 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 178" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 178 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 179" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 179 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 180" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 180 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 181" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 181 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 182" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 182 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 183" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 183 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 184" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 184 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 185" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 185 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 186" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 186 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 187" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 187 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 188" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 188 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 189" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 189 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 190" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 190 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 191" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 191 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 192" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 192 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 193" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 193 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 194" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 194 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 195" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 195 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 196" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 196 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 197" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 197 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 198" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 198 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 199" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 199 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 200" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 200 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 201" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 201 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 202" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 202 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 203" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 203 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 204" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 204 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 205" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 205 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 206" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 206 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 207" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 207 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 208" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 208 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 209" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 209 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 210" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 210 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 211" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 211 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 212" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 212 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 213" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 213 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 214" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 214 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 215" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 215 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 216" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 216 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 217" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 217 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 218" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 218 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 219" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 219 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 220" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 220 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 221" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 221 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 222" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 222 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 223" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 223 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 224" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 224 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 225" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 225 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 226" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 226 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 227" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 227 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 228" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 228 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 229" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 229 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 230" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 230 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 231" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 231 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 232" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 232 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 233" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 233 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 234" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 234 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 235" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 235 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 236" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 236 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 237" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 237 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 238" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 238 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 239" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 239 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 240" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 240 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 241" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 241 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 242" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 242 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 243" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 243 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 244" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 244 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 245" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 245 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 246" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 246 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 247" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 247 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 248" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 248 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 249" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 249 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 250" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 250 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 251" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 251 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 252" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 252 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 253" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 253 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 254" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 254 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 255" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 255 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 256" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 256 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 257" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 257 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 258" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 258 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 259" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 259 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 260" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 260 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 261" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 261 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 262" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 262 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 263" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 263 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 264" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 264 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 265" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 265 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 266" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 266 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 267" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 267 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 268" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 268 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 269" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 269 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 270" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 270 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 271" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 271 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 272" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 272 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 273" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 273 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 274" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 274 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 275" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 275 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 276" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 276 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 277" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 277 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 278" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 278 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 279" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 279 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 280" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 280 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 281" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 281 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 282" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 282 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 283" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 283 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 284" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 284 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 285" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 285 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 286" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 286 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 287" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 287 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 288" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 288 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 289" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 289 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 290" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 290 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 291" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 291 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 292" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 292 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 293" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 293 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 294" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 294 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 295" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 295 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 296" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 296 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 297" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 297 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 298" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 298 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 299" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 299 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 300" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 300 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 301" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 301 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 302" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 302 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 303" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 303 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 304" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 304 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 305" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 305 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 306" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 306 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 307" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 307 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 308" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 308 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 309" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 309 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 310" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 310 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 311" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 311 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 312" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 312 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 313" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 313 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 314" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 314 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 315" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 315 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 316" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 316 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 317" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 317 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 318" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 318 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 319" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 319 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 320" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 320 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 321" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 321 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 322" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 322 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 323" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 323 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 324" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 324 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 325" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 325 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 326" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 326 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 327" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 327 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 328" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 328 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 329" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 329 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 330" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 330 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 331" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 331 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 332" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 332 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 333" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 333 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 334" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 334 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 335" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 335 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 336" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 336 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 337" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 337 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 338" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 338 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 339" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 339 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 340" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 340 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 341" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 341 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 342" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 342 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 343" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 343 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 344" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 344 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 345" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 345 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 346" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 346 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 347" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 347 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 348" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 348 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 349" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 349 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 350" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 350 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 351" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 351 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 352" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 352 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 353" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 353 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 354" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 354 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 355" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 355 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 356" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 356 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 357" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 357 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 358" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 358 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 359" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 359 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 360" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 360 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 361" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 361 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 362" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 362 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 363" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 363 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 364" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 364 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 365" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 365 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 366" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 366 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 367" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 367 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 368" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 368 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 369" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 369 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 370" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 370 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 371" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 371 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 372" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 372 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 373" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 373 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 374" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 374 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 375" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 375 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 376" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 376 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 377" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 377 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 378" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 378 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 379" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 379 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 380" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 380 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 381" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 381 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 382" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 382 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 383" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 383 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 384" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 384 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 385" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 385 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 386" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 386 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 387" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 387 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 388" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 388 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 389" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 389 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 390" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 390 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 391" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 391 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 392" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 392 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 393" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 393 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 394" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 394 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 395" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 395 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 396" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 396 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 397" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 397 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 398" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 398 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 399" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 399 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 400" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 400 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 401" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 401 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 402" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 402 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 403" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 403 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 404" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 404 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 405" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 405 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 406" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 406 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 407" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 407 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 408" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 408 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 409" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 409 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 410" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 410 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 411" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 411 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 412" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 412 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 413" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 413 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 414" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 414 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 415" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 415 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 416" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 416 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 417" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 417 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 418" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 418 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 419" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 419 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 420" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 420 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 421" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 421 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 422" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 422 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 423" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 423 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 424" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 424 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 425" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 425 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 426" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 426 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 427" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 427 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 428" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 428 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 429" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 429 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 430" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 430 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 431" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 431 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 432" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 432 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 433" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 433 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 434" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 434 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 435" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 435 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 436" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 436 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 437" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 437 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 438" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 438 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 439" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 439 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 440" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 440 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 441" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 441 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 442" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 442 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 443" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 443 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 444" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 444 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 445" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 445 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 446" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 446 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 447" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 447 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 448" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 448 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 449" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 449 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 450" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 450 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 451" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 451 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 452" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 452 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 453" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 453 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 454" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 454 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 455" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 455 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 456" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 456 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 457" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 457 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 458" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 458 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 459" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 459 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 460" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 460 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 461" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 461 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 462" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 462 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 463" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 463 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 464" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 464 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 465" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 465 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 466" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 466 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 467" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 467 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 468" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 468 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 469" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 469 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 470" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 470 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 471" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 471 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 472" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 472 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 473" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 473 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 474" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 474 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 475" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 475 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 476" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 476 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 477" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 477 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 478" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 478 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 479" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 479 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 480" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 480 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 481" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 481 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 482" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 482 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 483" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 483 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 484" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 484 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 485" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 485 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 486" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 486 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 487" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 487 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 488" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 488 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 489" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 489 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 490" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 490 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 491" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 491 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 492" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 492 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 493" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 493 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 494" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 494 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 495" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 495 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 496" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 496 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 497" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 497 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 498" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 498 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1
+set title "step : 499" 
+splot 'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index 499 u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*($1)):(L*($2)):(L*($3)):(L*($4)):(L*($5)):(L*($6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1

@@ -1,0 +1,25 @@
+#!/bin/bash 
+MAX=499
+echo "clear" > plot3D.gpi
+echo "reset" >> plot3D.gpi
+
+echo "set key center top">> plot3D.gpi
+echo "set size ratio -1">> plot3D.gpi
+echo "unset key">> plot3D.gpi
+echo "set terminal gif animate delay 10" >> plot3D.gpi
+echo "set output \"animate.gif\"" >> plot3D.gpi
+# echo "unset border ; unset xtics ; unset ytics ; unset ztics " >> plot3D.gpi
+
+
+	echo " L=1" >> plot3D.gpi
+	echo "set xrange [ 0 : L ] noreverse nowriteback" >> plot3D.gpi
+	echo "set yrange [ 0 : L ] noreverse nowriteback" >> plot3D.gpi
+
+
+for i in `seq 0 ${MAX}`
+do
+echo "set title \"step : ${i}\" " \
+>> plot3D.gpi
+echo "splot 'Box3D_v2.dat'	u (L*(\$1)):(L*(\$2)):(L*(\$3)):(L*(\$4)):(L*(\$5)):(L*(\$6)) index 0 notitle  w vector nohead  lc 0 lt -1 lw 1 , 'prova.dat' index ${i} u 1:2:3  pt 7 ,  'Box3D_v2.dat'	u (L*(\$1)):(L*(\$2)):(L*(\$3)):(L*(\$4)):(L*(\$5)):(L*(\$6)) index 1 notitle  w vector nohead  lc 0 lt -0 lw 1" \
+>> plot3D.gpi
+done
